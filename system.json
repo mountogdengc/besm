@@ -1,0 +1,24 @@
+{
+  "id": "besm4e",
+  "title": "BESM 4th Edition",
+  "description": "Big Eyes, Small Mouth 4th Edition for Foundry VTT",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": ["dist/besm4e.js"],
+  "styles": ["dist/style.css"],
+  "documentTypes": {
+    "Actor": {
+      "character": {}
+    }
+  },
+  "authors": [
+    {
+      "name": "mountogdengc"
+    }
+  ],
+  "socket": false,
+  "url": "https://github.com/mountogdengc/besm.git"
+}
