@@ -1,9 +1,15 @@
+import { resolveSkillCost } from "../../engine/skills.mjs";
+
 export class SkillData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
     return {
       description: new fields.HTMLField(),
       group: new fields.StringField({ initial: "" }),
+      costClass: new fields.StringField({
+        initial: "framework",
+        choices: ["framework", "adventure", "genre"],
+      }),
       rank: new fields.NumberField({ integer: true, initial: 1, min: 0 }),
       resolvedCostPerRank: new fields.NumberField({ integer: true, initial: 1 }),
       totalSpCost: new fields.NumberField({ integer: true, initial: 0 }),
@@ -24,5 +30,31 @@ export class SkillData extends foundry.abstract.TypeDataModel {
       sourceTemplateId: new fields.StringField({ initial: "" }),
       sourceTemplateName: new fields.StringField({ initial: "" }),
     };
+  }
+
+  prepareDerivedData() {
+    // Layer 2: genre overrides (empty until Phase 8 compendium data)
+    const genreOverrides = {};
+
+    // Layer 3: world overrides
+    let worldOverrides = {};
+    try {
+      worldOverrides = game.settings.get("besm", "worldSkillOverrides") ?? {};
+    } catch (e) {}
+
+    // Resolve cost through three layers
+    const result = resolveSkillCost(
+      this.parent.name, this.costClass, genreOverrides, worldOverrides
+    );
+
+    this.resolvedCostPerRank = this.isFlavor ? 0 : result.costPerRank;
+    this.isAvailable = result.available;
+
+    // Compute total SP cost
+    const rankCost = this.rank * this.resolvedCostPerRank;
+    const specCost = this.specialisations
+      .filter(s => !s.isFree)
+      .reduce((sum, s) => sum + s.spCost, 0);
+    this.totalSpCost = rankCost + specCost;
   }
 }
