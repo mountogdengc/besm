@@ -1,3 +1,5 @@
+import { effectiveLevel, totalAttributeCost } from "../../engine/calculations.mjs";
+
 export class AttributeData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
@@ -52,5 +54,12 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       sourceTemplateName: new fields.StringField({ initial: "" }),
       notes: new fields.HTMLField(),
     };
+  }
+
+  prepareDerivedData() {
+    this.effectiveLevel = effectiveLevel(
+      this.purchasedLevel, this.enhancements, this.limiters, this.isWeapon
+    );
+    this.totalCost = totalAttributeCost(this.baseCostPerLevel, this.purchasedLevel);
   }
 }
