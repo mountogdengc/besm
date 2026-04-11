@@ -18,11 +18,10 @@ export class BESMActorSheet extends foundry.applications.api.DocumentSheetV2 {
 
   _replaceHTML(element, html, options) {
     super._replaceHTML(element, html, options);
-    const target = element.querySelector(".svelte-mount") ?? element;
 
     if (!this.#svelteComponent) {
       this.#svelteComponent = mount(CharacterSheet, {
-        target,
+        target: html,
         props: { document: this.document, sheet: this },
       });
     }
