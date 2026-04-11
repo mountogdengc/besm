@@ -4,6 +4,7 @@ import {
   computeDamageMultipliers, computeMovement, computeSanity, computeSocv,
 } from "../../engine/calculations.mjs";
 import { validateBenchmarks } from "../../engine/benchmarks.mjs";
+import { computeSPPool, computeSPSpent } from "../../engine/skills.mjs";
 
 export class CharacterData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
@@ -122,6 +123,23 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     this.cpTotal = this.cpBase + defectCP;
     this.cpSpent = statCP + attributeCP;
     this.cpRemaining = this.cpTotal - this.cpSpent;
+
+    // Step 5b: SP pool (point-buy mode only)
+    try {
+      if (game.settings.get("besm", "skillMode") === "pointbuy") {
+        const skillsAttr = items.find(
+          i => i.type === "attribute" && i.system.isSkillsAttribute
+        );
+        if (skillsAttr) {
+          const spPool = computeSPPool(skillsAttr.system.purchasedLevel);
+          const skillItems = [...items].filter(i => i.type === "skill");
+          const spSpent = computeSPSpent(skillItems.map(s => s.system));
+          this.spPool = spPool;
+          this.spSpent = spSpent;
+          this.spRemaining = spPool - spSpent;
+        }
+      }
+    } catch (e) { /* settings not yet registered during init */ }
 
     // Step 6: Combat values
     this.derived.baseCv = computeBaseCv(bv, mv, sv);
