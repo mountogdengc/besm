@@ -1,3 +1,8 @@
+import {
+  statCpCost, resolveStatValue, computeBaseCv,
+  computeHP, computeDamageMultipliers,
+} from "../../engine/calculations.mjs";
+
 export class MechaData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
@@ -60,5 +65,55 @@ export class MechaData extends foundry.abstract.TypeDataModel {
       passengerCapacity: new fields.NumberField({ integer: true, initial: 0 }),
       notes: new fields.HTMLField(),
     };
+  }
+
+  prepareDerivedData() {
+    const items = this.parent.items;
+
+    for (const stat of Object.values(this.stats)) {
+      stat.cpCost = stat.mode === "missing" ? 0 : statCpCost(stat.value);
+    }
+    const statCP = Object.values(this.stats).reduce((sum, s) => sum + s.cpCost, 0);
+
+    const attributeCP = items
+      .filter(i => i.type === "attribute")
+      .reduce((sum, attr) => sum + attr.system.totalCost, 0);
+
+    const defectCP = items
+      .filter(i => i.type === "defect")
+      .reduce((sum, d) => sum + d.system.cpGranted, 0);
+
+    this.cpTotal = this.cpBase + defectCP;
+    this.cpSpent = statCP + attributeCP;
+    this.cpRemaining = this.cpTotal - this.cpSpent;
+
+    const bv = resolveStatValue(this.stats.body);
+    const mv = resolveStatValue(this.stats.mind);
+    const sv = resolveStatValue(this.stats.soul);
+
+    this.derived.baseCv = computeBaseCv(bv, mv, sv);
+
+    const attackMastery = items.find(i => i.type === "attribute" && i.name === "Attack Mastery");
+    this.derived.acv = this.derived.baseCv + (attackMastery?.system.effectiveLevel ?? 0);
+
+    const defenceMastery = items.find(i => i.type === "attribute" && i.name === "Defence Mastery");
+    this.derived.dcv = this.derived.baseCv + (defenceMastery?.system.effectiveLevel ?? 0);
+
+    const tough = items.find(i => i.type === "attribute" && i.name === "Tough");
+    const fragile = items.find(i => i.type === "defect" && i.name === "Fragile");
+    const hpResult = computeHP(bv, sv, tough?.system.effectiveLevel ?? 0, fragile?.system.rankLevel ?? 0);
+    this.derived.hp = hpResult.hp;
+    this.derived.hpMax = hpResult.hp;
+    this.derived.hpApplicable = hpResult.applicable;
+
+    this.derived.ar = items
+      .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
+
+    const massiveDamage = items.find(i => i.type === "attribute" && i.name === "Massive Damage");
+    const superstrength = items.find(i => i.type === "attribute" && i.name === "Superstrength");
+    const dm = computeDamageMultipliers(massiveDamage?.system.effectiveLevel ?? 0, superstrength?.system.effectiveLevel ?? 0);
+    this.derived.damageMultiplier = dm.base;
+    this.derived.meleeDamageMultiplier = dm.melee;
   }
 }

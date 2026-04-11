@@ -1,3 +1,5 @@
+import { statCpCost, resolveStatValue, computeHP } from "../../engine/calculations.mjs";
+
 export class VehicleData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
@@ -49,5 +51,40 @@ export class VehicleData extends foundry.abstract.TypeDataModel {
       passengerCapacity: new fields.NumberField({ integer: true, initial: 0 }),
       notes: new fields.HTMLField(),
     };
+  }
+
+  prepareDerivedData() {
+    const items = this.parent.items;
+
+    for (const stat of Object.values(this.stats)) {
+      stat.cpCost = stat.mode === "missing" ? 0 : statCpCost(stat.value);
+    }
+    const statCP = Object.values(this.stats).reduce((sum, s) => sum + s.cpCost, 0);
+
+    const attributeCP = items
+      .filter(i => i.type === "attribute")
+      .reduce((sum, attr) => sum + attr.system.totalCost, 0);
+
+    const defectCP = items
+      .filter(i => i.type === "defect")
+      .reduce((sum, d) => sum + d.system.cpGranted, 0);
+
+    this.cpTotal = this.cpBase + defectCP;
+    this.cpSpent = statCP + attributeCP;
+    this.cpRemaining = this.cpTotal - this.cpSpent;
+
+    const bv = resolveStatValue(this.stats.body);
+    const sv = resolveStatValue(this.stats.soul);
+
+    const tough = items.find(i => i.type === "attribute" && i.name === "Tough");
+    const fragile = items.find(i => i.type === "defect" && i.name === "Fragile");
+    const hpResult = computeHP(bv, sv, tough?.system.effectiveLevel ?? 0, fragile?.system.rankLevel ?? 0);
+    this.derived.hp = hpResult.hp;
+    this.derived.hpMax = hpResult.hp;
+    this.derived.hpApplicable = hpResult.applicable;
+
+    this.derived.ar = items
+      .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
   }
 }

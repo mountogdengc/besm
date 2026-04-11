@@ -1,3 +1,10 @@
+import {
+  statCpCost, resolveStatValue, computeBaseCv,
+  computeHP, computeEP, computeShockValue,
+  computeDamageMultipliers, computeMovement, computeSanity, computeSocv,
+} from "../../engine/calculations.mjs";
+import { validateBenchmarks } from "../../engine/benchmarks.mjs";
+
 export class NPCData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
@@ -70,5 +77,91 @@ export class NPCData extends foundry.abstract.TypeDataModel {
       }),
       notes: new fields.HTMLField(),
     };
+  }
+
+  prepareDerivedData() {
+    const items = this.parent.items;
+
+    const bv = resolveStatValue(this.stats.body);
+    const mv = resolveStatValue(this.stats.mind);
+    const sv = resolveStatValue(this.stats.soul);
+
+    for (const stat of Object.values(this.stats)) {
+      stat.cpCost = stat.mode === "missing" ? 0 : statCpCost(stat.value);
+    }
+    const statCP = Object.values(this.stats).reduce((sum, s) => sum + s.cpCost, 0);
+
+    const attributeCP = items
+      .filter(i => i.type === "attribute")
+      .reduce((sum, attr) => sum + attr.system.totalCost, 0);
+
+    const defectCP = items
+      .filter(i => i.type === "defect")
+      .reduce((sum, d) => sum + d.system.cpGranted, 0);
+
+    this.cpTotal = this.cpBase + defectCP;
+    this.cpSpent = statCP + attributeCP;
+    this.cpRemaining = this.cpTotal - this.cpSpent;
+
+    this.derived.baseCv = computeBaseCv(bv, mv, sv);
+
+    const attackMastery = items.find(i => i.type === "attribute" && i.name === "Attack Mastery");
+    this.derived.acv = this.derived.baseCv + (attackMastery?.system.effectiveLevel ?? 0);
+
+    const defenceMastery = items.find(i => i.type === "attribute" && i.name === "Defence Mastery");
+    this.derived.dcv = this.derived.baseCv + (defenceMastery?.system.effectiveLevel ?? 0);
+
+    const tough = items.find(i => i.type === "attribute" && i.name === "Tough");
+    const fragile = items.find(i => i.type === "defect" && i.name === "Fragile");
+    const hpResult = computeHP(bv, sv, tough?.system.effectiveLevel ?? 0, fragile?.system.rankLevel ?? 0);
+    this.derived.hp = hpResult.hp;
+    this.derived.hpMax = hpResult.hp;
+    this.derived.hpApplicable = hpResult.applicable;
+
+    const energised = items.find(i => i.type === "attribute" && i.name === "Energised");
+    const epResult = computeEP(mv, sv, energised?.system.effectiveLevel ?? 0);
+    this.derived.ep = epResult.ep;
+    this.derived.epMax = epResult.ep;
+    this.derived.epApplicable = epResult.applicable;
+
+    const hardboiledCount = items.filter(i => i.type === "attribute" && i.name === "Combat Technique (Hardboiled)").length;
+    this.derived.sv = computeShockValue(this.derived.hp, this.derived.hpApplicable, hardboiledCount);
+
+    const massiveDamage = items.find(i => i.type === "attribute" && i.name === "Massive Damage");
+    const superstrength = items.find(i => i.type === "attribute" && i.name === "Superstrength");
+    const dm = computeDamageMultipliers(massiveDamage?.system.effectiveLevel ?? 0, superstrength?.system.effectiveLevel ?? 0);
+    this.derived.damageMultiplier = dm.base;
+    this.derived.meleeDamageMultiplier = dm.melee;
+
+    this.derived.ar = items
+      .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
+
+    Object.assign(this.derived, computeMovement(bv));
+
+    try {
+      if (game.settings.get("besm", "sanityEnabled")) {
+        const unassailable = items.find(i => i.type === "attribute" && i.name === "Unassailable");
+        const unsettled = items.find(i => i.type === "defect" && i.name === "Unsettled");
+        const sanity = computeSanity(mv, sv, unassailable?.system.effectiveLevel ?? 0, unsettled?.system.rankLevel ?? 0);
+        if (sanity !== null) { this.derived.sanityPoints = sanity; this.derived.sanityMax = sanity; }
+      }
+    } catch (e) {}
+
+    try {
+      if (game.settings.get("besm", "socialCombatEnabled")) {
+        const socv = computeSocv(mv, sv);
+        if (socv !== null) { this.derived.socv = socv; this.derived.societyPoints = socv; this.derived.societyPointsMax = socv; }
+      }
+    } catch (e) {}
+
+    try {
+      if (game.settings.get("besm", "enforceBenchmarks")) {
+        const powerLevel = game.settings.get("besm", "powerLevel");
+        const result = validateBenchmarks(powerLevel, this.stats, [...items], this.derived);
+        this.benchmarkWarnings = result.warnings;
+        this.benchmarkValid = result.valid;
+      }
+    } catch (e) {}
   }
 }
