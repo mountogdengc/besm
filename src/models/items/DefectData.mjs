@@ -7,8 +7,9 @@ export class DefectData extends foundry.abstract.TypeDataModel {
       rankLevel: new fields.NumberField({ integer: true, initial: 1, min: 1 }),
       isUnique: new fields.BooleanField({ initial: false }),
       tier: new fields.StringField({
-        initial: "",
-        choices: ["", "lesser", "greater", "serious"],
+        initial: null,
+        nullable: true,
+        choices: ["lesser", "greater", "serious"],
       }),
       uniqueDescription: new fields.HTMLField(),
       sourceTemplateId: new fields.StringField({ initial: "" }),

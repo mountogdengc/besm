@@ -31,8 +31,9 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       }),
       isSkillGroup: new fields.BooleanField({ initial: false }),
       skillGroupCategory: new fields.StringField({
-        initial: "",
-        choices: ["", "background", "field", "action"],
+        initial: null,
+        nullable: true,
+        choices: ["background", "field", "action"],
       }),
       skillGroupType: new fields.StringField({ initial: "" }),
       isSkillsAttribute: new fields.BooleanField({ initial: false }),
@@ -42,8 +43,9 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       isBenchmarkException: new fields.BooleanField({ initial: false }),
       isUnique: new fields.BooleanField({ initial: false }),
       tier: new fields.StringField({
-        initial: "",
-        choices: ["", "lesser", "greater", "serious"],
+        initial: null,
+        nullable: true,
+        choices: ["lesser", "greater", "serious"],
       }),
       uniqueDescription: new fields.HTMLField(),
       sourceTemplateId: new fields.StringField({ initial: "" }),
