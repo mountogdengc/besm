@@ -8,7 +8,7 @@
     "verified": "14"
   },
   "esmodules": ["dist/besm4e.js"],
-  "styles": ["dist/style.css"],
+  "styles": ["dist/besm4e.css"],
   "documentTypes": {
     "Actor": {
       "character": {}
