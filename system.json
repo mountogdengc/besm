@@ -11,7 +11,18 @@
   "styles": ["dist/besm4e.css"],
   "documentTypes": {
     "Actor": {
-      "character": {}
+      "character": {},
+      "npc": {},
+      "vehicle": {},
+      "mecha": {}
+    },
+    "Item": {
+      "attribute": {},
+      "enhancement": {},
+      "limiter": {},
+      "defect": {},
+      "possession": {},
+      "skill": {}
     }
   },
   "authors": [
