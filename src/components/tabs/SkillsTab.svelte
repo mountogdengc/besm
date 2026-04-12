@@ -50,7 +50,7 @@
       <p class="text-xs text-slate-500 italic">No skills. Drag from compendium to add.</p>
     {:else}
       {#each skills as skill (skill.id)}
-        <SkillRow {skill} />
+        <SkillRow {skill} {actor} />
       {/each}
     {/if}
   {:else}

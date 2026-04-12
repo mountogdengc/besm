@@ -1,11 +1,24 @@
 <script>
-  let { skill } = $props();
+  import RollButton from "./RollButton.svelte";
+  import { performSkillRoll } from "../../rolls/BESMRoll.mjs";
+
+  let { skill, actor } = $props();
 
   let unavailable = $derived(!skill.system.isAvailable);
   let specialisations = $derived(skill.system.specialisations ?? []);
 
   function openSheet() {
     skill.sheet.render(true);
+  }
+
+  function rollSkill(e) {
+    e.stopPropagation();
+    performSkillRoll(
+      actor,
+      skill.system.linkedStat,
+      skill.system.rank,
+      skill.name
+    );
   }
 </script>
 
@@ -38,4 +51,8 @@
   {/each}
 
   <span class="text-slate-400 ml-auto">{skill.system.totalSpCost} SP</span>
+
+  {#if !unavailable && !skill.system.isFlavor}
+    <RollButton onclick={rollSkill} title="Roll {skill.name}" />
+  {/if}
 </div>
