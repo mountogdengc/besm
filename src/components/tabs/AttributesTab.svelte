@@ -2,8 +2,6 @@
   import CollapsibleSection from "../ui/CollapsibleSection.svelte";
   import AttributeRow from "../ui/AttributeRow.svelte";
   import DefectRow from "../ui/DefectRow.svelte";
-  import GearBudget from "../ui/GearBudget.svelte";
-
   let { actor } = $props();
 
   let attributes = $derived(
@@ -46,8 +44,6 @@
       {/each}
     {/if}
   </CollapsibleSection>
-
-  <GearBudget {actor} />
 
   <CollapsibleSection title="Defects" count={defects.length} headerClass="text-red-400">
     {#if defects.length === 0}

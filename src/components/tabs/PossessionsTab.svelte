@@ -1,24 +1,45 @@
 <script>
+  import PossessionRow from "../ui/PossessionRow.svelte";
+  import GearBudget from "../ui/GearBudget.svelte";
+
   let { actor } = $props();
 
   let possessions = $derived(
     [...actor.items].filter(i => i.type === "possession")
   );
+
+  async function handleDrop(event) {
+    event.preventDefault();
+    let data;
+    try {
+      data = JSON.parse(event.dataTransfer.getData("text/plain"));
+    } catch { return; }
+
+    if (data.type !== "Item") return;
+    const item = await fromUuid(data.uuid);
+    if (!item) return;
+
+    if (item.type === "possession") {
+      await actor.createEmbeddedDocuments("Item", [item.toObject()]);
+    }
+  }
+
+  function handleDragOver(event) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "copy";
+  }
 </script>
 
-<div class="p-3">
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="p-3" ondragover={handleDragOver} ondrop={handleDrop}>
+  <GearBudget {actor} />
+
   <div class="text-xs text-slate-500 uppercase tracking-wide mb-2">Possessions</div>
   {#if possessions.length === 0}
-    <p class="text-xs text-slate-500 italic">No possessions.</p>
+    <p class="text-xs text-slate-500 italic">No possessions. Drag from compendium to add.</p>
   {:else}
-    {#each possessions as item}
-      <div class="flex justify-between items-center px-2 py-1.5 border-b border-slate-800 text-xs">
-        <span class="text-slate-200">{item.name}</span>
-        <span class="text-slate-400">{item.system.category}</span>
-        <span class="text-xs px-1.5 py-0.5 rounded {item.system.isMechanical ? 'bg-blue-900 text-blue-300' : 'bg-slate-700 text-slate-400'}">
-          {item.system.isMechanical ? 'mechanical' : 'flavor'}
-        </span>
-      </div>
+    {#each possessions as item (item.id)}
+      <PossessionRow possession={item} {actor} />
     {/each}
   {/if}
 </div>
