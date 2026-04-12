@@ -1,5 +1,6 @@
 import "./styles/global.css";
 import { BESMActorSheet } from "./sheets/BESMActorSheet.mjs";
+import { BESMItemSheet } from "./sheets/BESMItemSheet.mjs";
 import { BESMNPCSheet } from "./sheets/BESMNPCSheet.mjs";
 import { BESMVehicleSheet } from "./sheets/BESMVehicleSheet.mjs";
 import { BESMMechaSheet } from "./sheets/BESMMechaSheet.mjs";
@@ -54,5 +55,11 @@ Hooks.on("init", () => {
     types: ["mecha"],
     makeDefault: true,
     label: "BESM4e.SheetMecha",
+  });
+
+  foundry.documents.collections.Items.registerSheet("besm", BESMItemSheet, {
+    types: ["attribute", "defect", "enhancement", "limiter", "possession", "skill"],
+    makeDefault: true,
+    label: "BESM4e.SheetItem",
   });
 });
