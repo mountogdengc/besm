@@ -33,6 +33,18 @@ Hooks.on("init", () => {
 
   registerSettings();
 
+  // Initiative override
+  try {
+    const initMode = game.settings.get("besm", "initiativeMode");
+    if (initMode === "cv_static") {
+      CONFIG.Combat.initiative = { formula: "@derived.acv", decimals: 0 };
+    } else {
+      CONFIG.Combat.initiative = { formula: "2d6 + @derived.acv", decimals: 0 };
+    }
+  } catch {
+    CONFIG.Combat.initiative = { formula: "2d6 + @derived.acv", decimals: 0 };
+  }
+
   foundry.documents.collections.Actors.registerSheet("besm", BESMActorSheet, {
     types: ["character"],
     makeDefault: true,
