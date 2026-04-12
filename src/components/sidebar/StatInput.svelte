@@ -1,5 +1,7 @@
 <script>
-  let { label, value, cpCost, mode, onUpdate, onModeChange } = $props();
+  import RollButton from "../ui/RollButton.svelte";
+
+  let { label, value, cpCost, mode, onUpdate, onRoll = null } = $props();
 
   function increment() {
     if (mode === "missing" || mode === "zero") return;
@@ -43,6 +45,9 @@
         disabled={mode === "zero"}
       >+</button>
     </div>
-    <span class="text-xs text-slate-500 w-8 text-right">{cpCost}cp</span>
+    <span class="text-xs text-slate-500 w-6 text-right">{cpCost}cp</span>
+    {#if onRoll}
+      <RollButton onclick={onRoll} title="Roll {label}" />
+    {/if}
   </div>
 {/if}

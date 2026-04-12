@@ -3,6 +3,7 @@
   import CPTracker from "./CPTracker.svelte";
   import SPTracker from "./SPTracker.svelte";
   import DerivedStats from "./DerivedStats.svelte";
+  import { performStatRoll } from "../../rolls/BESMRoll.mjs";
 
   let {
     actor,
@@ -17,6 +18,10 @@
 
   function updateStat(key, value) {
     actor.update({ [`system.stats.${key}.value`]: value });
+  }
+
+  function rollStat(key) {
+    performStatRoll(actor, key);
   }
 </script>
 
@@ -40,6 +45,7 @@
           cpCost={stat.cpCost}
           mode={stat.mode}
           onUpdate={(v) => updateStat(key, v)}
+          onRoll={() => rollStat(key)}
         />
       {/each}
     </div>
