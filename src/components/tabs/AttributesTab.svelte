@@ -1,5 +1,8 @@
 <script>
   import CollapsibleSection from "../ui/CollapsibleSection.svelte";
+  import AttributeRow from "../ui/AttributeRow.svelte";
+  import DefectRow from "../ui/DefectRow.svelte";
+  import GearBudget from "../ui/GearBudget.svelte";
 
   let { actor } = $props();
 
@@ -9,38 +12,49 @@
   let defects = $derived(
     [...actor.items].filter(i => i.type === "defect")
   );
+
+  async function handleDrop(event) {
+    event.preventDefault();
+    let data;
+    try {
+      data = JSON.parse(event.dataTransfer.getData("text/plain"));
+    } catch { return; }
+
+    if (data.type !== "Item") return;
+    const item = await fromUuid(data.uuid);
+    if (!item) return;
+
+    if (item.type === "attribute" || item.type === "defect") {
+      await actor.createEmbeddedDocuments("Item", [item.toObject()]);
+    }
+  }
+
+  function handleDragOver(event) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "copy";
+  }
 </script>
 
-<div class="p-3">
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="p-3" ondragover={handleDragOver} ondrop={handleDrop}>
   <CollapsibleSection title="Attributes" count={attributes.length} headerClass="text-slate-100">
     {#if attributes.length === 0}
       <p class="text-xs text-slate-500 italic px-2">No attributes. Drag from compendium to add.</p>
     {:else}
-      {#each attributes as attr}
-        <div class="flex justify-between items-center px-2 py-1.5 border-b border-slate-800 text-xs">
-          <span class="text-slate-200">{attr.name}</span>
-          <span class="text-slate-400">
-            Lv {attr.system.purchasedLevel}
-            {#if attr.system.purchasedLevel !== attr.system.effectiveLevel}
-              <span class="text-amber-400">→ Eff {attr.system.effectiveLevel}</span>
-            {/if}
-          </span>
-          <span class="text-slate-400">{attr.system.totalCost} CP</span>
-        </div>
+      {#each attributes as attr (attr.id)}
+        <AttributeRow attribute={attr} {actor} />
       {/each}
     {/if}
   </CollapsibleSection>
+
+  <GearBudget {actor} />
 
   <CollapsibleSection title="Defects" count={defects.length} headerClass="text-red-400">
     {#if defects.length === 0}
       <p class="text-xs text-slate-500 italic px-2">No defects.</p>
     {:else}
-      {#each defects as defect}
-        <div class="flex justify-between items-center px-2 py-1.5 border-b border-slate-800 text-xs">
-          <span class="text-red-300">{defect.name}</span>
-          <span class="text-slate-400">Rank {defect.system.rankLevel}</span>
-          <span class="text-emerald-400">+{defect.system.cpGranted} CP</span>
-        </div>
+      {#each defects as defect (defect.id)}
+        <DefectRow {defect} />
       {/each}
     {/if}
   </CollapsibleSection>
