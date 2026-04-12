@@ -1,5 +1,8 @@
 import "./styles/global.css";
 import { BESMActorSheet } from "./sheets/BESMActorSheet.mjs";
+import { BESMNPCSheet } from "./sheets/BESMNPCSheet.mjs";
+import { BESMVehicleSheet } from "./sheets/BESMVehicleSheet.mjs";
+import { BESMMechaSheet } from "./sheets/BESMMechaSheet.mjs";
 import { CharacterData } from "./models/actors/CharacterData.mjs";
 import { NPCData } from "./models/actors/NPCData.mjs";
 import { VehicleData } from "./models/actors/VehicleData.mjs";
@@ -33,5 +36,23 @@ Hooks.on("init", () => {
     types: ["character"],
     makeDefault: true,
     label: "BESM4e.SheetCharacter",
+  });
+
+  foundry.documents.collections.Actors.registerSheet("besm", BESMNPCSheet, {
+    types: ["npc"],
+    makeDefault: true,
+    label: "BESM4e.SheetNPC",
+  });
+
+  foundry.documents.collections.Actors.registerSheet("besm", BESMVehicleSheet, {
+    types: ["vehicle"],
+    makeDefault: true,
+    label: "BESM4e.SheetVehicle",
+  });
+
+  foundry.documents.collections.Actors.registerSheet("besm", BESMMechaSheet, {
+    types: ["mecha"],
+    makeDefault: true,
+    label: "BESM4e.SheetMecha",
   });
 });
