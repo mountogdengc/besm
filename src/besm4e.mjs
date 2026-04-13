@@ -15,6 +15,7 @@ import { DefectData } from "./models/items/DefectData.mjs";
 import { PossessionData } from "./models/items/PossessionData.mjs";
 import { SkillData } from "./models/items/SkillData.mjs";
 import { registerSettings } from "./settings/registerSettings.mjs";
+import { registerFolderHooks } from "./hooks/folderHooks.mjs";
 import { BESM_STATUS_EFFECTS } from "./combat/statusEffects.mjs";
 import { performDefenceRoll, applyDamage, promptEpBonus } from "./rolls/BESMCombat.mjs";
 import { performSocialDefenceRoll, applySocialDamage } from "./rolls/BESMSocial.mjs";
@@ -35,6 +36,7 @@ Hooks.on("init", () => {
   CONFIG.Item.dataModels.skill = SkillData;
 
   registerSettings();
+  registerFolderHooks();
 
   // Initiative override
   try {
