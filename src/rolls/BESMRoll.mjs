@@ -59,13 +59,25 @@ export async function performStatRoll(actor, statKey, options = {}) {
   const total = resolveRollTotal(rollData.diceTotal, resolved.value);
 
   const modifiers = [{ label: resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1), value: resolved.value }];
-  const content = formatRollBreakdown("stat", rollData, modifiers, total);
+  const rollHtml = formatRollBreakdown("stat", rollData, modifiers, total);
+  const content = `${rollHtml}
+<div class="besm-roll-actions" style="margin-top:4px;">
+  <button data-action="spend-ep" data-actor-id="${actor.id}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
+</div>`;
 
-  await ChatMessage.create({
+  const msg = await ChatMessage.create({
     content,
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
   });
+
+  // Patch message ID into EP button
+  const el = document.createElement("div");
+  el.innerHTML = msg.content;
+  el.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
+    btn.setAttribute("data-message-id", msg.id);
+  });
+  await msg.update({ content: el.innerHTML });
 
   return { roll, total, statValue: resolved.value };
 }
@@ -83,13 +95,24 @@ export async function performSkillRoll(actor, statKey, skillLevel, skillName, op
     { label: resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1), value: resolved.value },
     { label: skillName, value: skillLevel },
   ];
-  const content = formatRollBreakdown("skill", rollData, modifiers, total);
+  const rollHtml = formatRollBreakdown("skill", rollData, modifiers, total);
+  const content = `${rollHtml}
+<div class="besm-roll-actions" style="margin-top:4px;">
+  <button data-action="spend-ep" data-actor-id="${actor.id}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
+</div>`;
 
-  await ChatMessage.create({
+  const msg = await ChatMessage.create({
     content,
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
   });
+
+  const el = document.createElement("div");
+  el.innerHTML = msg.content;
+  el.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
+    btn.setAttribute("data-message-id", msg.id);
+  });
+  await msg.update({ content: el.innerHTML });
 
   return { roll, total, statValue: resolved.value, skillLevel };
 }
