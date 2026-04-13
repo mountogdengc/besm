@@ -15,6 +15,9 @@ import { DefectData } from "./models/items/DefectData.mjs";
 import { PossessionData } from "./models/items/PossessionData.mjs";
 import { SkillData } from "./models/items/SkillData.mjs";
 import { registerSettings } from "./settings/registerSettings.mjs";
+import { BESM_STATUS_EFFECTS } from "./combat/statusEffects.mjs";
+import { performDefenceRoll, applyDamage, promptEpBonus } from "./rolls/BESMCombat.mjs";
+import { performSocialDefenceRoll, applySocialDamage } from "./rolls/BESMSocial.mjs";
 
 Hooks.on("init", () => {
   console.log("BESM 4e | Initializing BESM 4th Edition system");
@@ -45,6 +48,9 @@ Hooks.on("init", () => {
     CONFIG.Combat.initiative = { formula: "2d6 + @derived.acv", decimals: 0 };
   }
 
+  // Register BESM status effects
+  CONFIG.statusEffects = BESM_STATUS_EFFECTS;
+
   foundry.documents.collections.Actors.registerSheet("besm", BESMActorSheet, {
     types: ["character"],
     makeDefault: true,
@@ -73,5 +79,86 @@ Hooks.on("init", () => {
     types: ["attribute", "defect", "enhancement", "limiter", "possession", "skill"],
     makeDefault: true,
     label: "BESM4e.SheetItem",
+  });
+});
+
+Hooks.on("renderChatMessage", (message, html) => {
+  // Defend button
+  html.querySelectorAll('[data-action="defend"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const msgId = btn.getAttribute("data-message-id");
+      const attackMsg = game.messages.get(msgId);
+      if (!attackMsg) return;
+      const controlled = canvas.tokens?.controlled?.[0];
+      const defender = controlled?.actor ?? game.user.character;
+      if (!defender) {
+        ui.notifications.warn("Select a token or assign a character to defend.");
+        return;
+      }
+      await performDefenceRoll(defender, attackMsg);
+    });
+  });
+
+  // Auto-Defend button
+  html.querySelectorAll('[data-action="auto-defend"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const msgId = btn.getAttribute("data-message-id");
+      const attackMsg = game.messages.get(msgId);
+      if (!attackMsg) return;
+      const controlled = canvas.tokens?.controlled?.[0];
+      const defender = controlled?.actor;
+      if (!defender) {
+        ui.notifications.warn("Select the defending token first.");
+        return;
+      }
+      await performDefenceRoll(defender, attackMsg);
+    });
+  });
+
+  // Apply Damage button
+  html.querySelectorAll('[data-action="apply-damage"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const defenderId = btn.getAttribute("data-defender-id");
+      const damage = Number(btn.getAttribute("data-damage"));
+      const defender = game.actors.get(defenderId);
+      if (defender) await applyDamage(defender, damage);
+    });
+  });
+
+  // Spend EP button
+  html.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const actorId = btn.getAttribute("data-actor-id");
+      const total = Number(btn.getAttribute("data-total"));
+      const msgId = btn.getAttribute("data-message-id");
+      const actor = game.actors.get(actorId);
+      if (actor) await promptEpBonus(actor, total, msgId);
+    });
+  });
+
+  // Social Defend button
+  html.querySelectorAll('[data-action="social-defend"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const msgId = btn.getAttribute("data-message-id");
+      const attackMsg = game.messages.get(msgId);
+      if (!attackMsg) return;
+      const controlled = canvas.tokens?.controlled?.[0];
+      const defender = controlled?.actor ?? game.user.character;
+      if (!defender) {
+        ui.notifications.warn("Select a token or assign a character to defend.");
+        return;
+      }
+      await performSocialDefenceRoll(defender, attackMsg);
+    });
+  });
+
+  // Apply Social Damage button
+  html.querySelectorAll('[data-action="apply-social-damage"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const defenderId = btn.getAttribute("data-defender-id");
+      const damage = Number(btn.getAttribute("data-damage"));
+      const defender = game.actors.get(defenderId);
+      if (defender) await applySocialDamage(defender, damage);
+    });
   });
 });
