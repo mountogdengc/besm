@@ -12,6 +12,10 @@ const ROLL_TYPE_LABELS = {
   stat: "Stat Roll",
   skill: "Skill Roll",
   initiative: "Initiative",
+  attack: "Attack Roll",
+  defence: "Defence Roll",
+  sanity: "Sanity Roll",
+  social: "Social Combat Roll",
 };
 
 export function formatRollBreakdown(type, rollData, modifiers, total) {
