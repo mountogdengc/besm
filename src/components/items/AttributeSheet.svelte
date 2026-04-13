@@ -127,6 +127,11 @@
         onchange={(e) => update("system.isUnique", e.target.checked)} />
       Unique
     </label>
+    <label class="flex items-center gap-1 text-slate-400">
+      <input type="checkbox" checked={item.system.transformationHeal}
+        onchange={(e) => update("system.transformationHeal", e.target.checked)} />
+      Transformation Heal
+    </label>
   </div>
 
   <!-- Skill Group Options -->
