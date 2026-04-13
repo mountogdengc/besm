@@ -1,4 +1,6 @@
 <script>
+  import { swapToAlternateForm } from "../../hooks/alternateForm.mjs";
+
   let { attribute, actor } = $props();
 
   let linkedActor = $derived(
@@ -13,9 +15,16 @@
 
   let cpValid = $derived(cpSpent <= cpBudget);
 
+  let isAlternateForm = $derived(/alternate/i.test(attribute.name));
+
   function openLinkedSheet(e) {
     e.stopPropagation();
     if (linkedActor) linkedActor.sheet.render(true);
+  }
+
+  function swapForm(e) {
+    e.stopPropagation();
+    if (linkedActor && actor) swapToAlternateForm(actor, linkedActor);
   }
 </script>
 
@@ -30,5 +39,12 @@
       onclick={openLinkedSheet}
       title="Open {linkedActor.name} sheet"
     >Open</button>
+    {#if isAlternateForm}
+      <button
+        class="text-amber-400 hover:text-amber-200 bg-transparent border-0 cursor-pointer text-xs p-0"
+        onclick={swapForm}
+        title="Swap to {linkedActor.name}"
+      >Swap</button>
+    {/if}
   </span>
 {/if}
