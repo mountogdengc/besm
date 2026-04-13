@@ -82,10 +82,7 @@ Hooks.on("init", () => {
   });
 });
 
-Hooks.on("renderChatMessage", (message, html) => {
-  // In Foundry V14, html may be a jQuery object, HTMLElement, or wrapper — normalize to DOM element
-  const el = html instanceof HTMLElement ? html : html?.[0] ?? html?.element ?? html;
-  if (!el || typeof el.querySelectorAll !== "function") return;
+Hooks.on("renderChatMessageHTML", (message, el) => {
 
   // Defend button
   el.querySelectorAll('[data-action="defend"]').forEach(btn => {
