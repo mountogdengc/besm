@@ -83,8 +83,12 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("renderChatMessage", (message, html) => {
+  // In Foundry V14, html may be a jQuery object, HTMLElement, or wrapper — normalize to DOM element
+  const el = html instanceof HTMLElement ? html : html?.[0] ?? html?.element ?? html;
+  if (!el || typeof el.querySelectorAll !== "function") return;
+
   // Defend button
-  html.querySelectorAll('[data-action="defend"]').forEach(btn => {
+  el.querySelectorAll('[data-action="defend"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const msgId = btn.getAttribute("data-message-id");
       const attackMsg = game.messages.get(msgId);
@@ -100,7 +104,7 @@ Hooks.on("renderChatMessage", (message, html) => {
   });
 
   // Auto-Defend button
-  html.querySelectorAll('[data-action="auto-defend"]').forEach(btn => {
+  el.querySelectorAll('[data-action="auto-defend"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const msgId = btn.getAttribute("data-message-id");
       const attackMsg = game.messages.get(msgId);
@@ -116,7 +120,7 @@ Hooks.on("renderChatMessage", (message, html) => {
   });
 
   // Apply Damage button
-  html.querySelectorAll('[data-action="apply-damage"]').forEach(btn => {
+  el.querySelectorAll('[data-action="apply-damage"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const defenderId = btn.getAttribute("data-defender-id");
       const damage = Number(btn.getAttribute("data-damage"));
@@ -126,7 +130,7 @@ Hooks.on("renderChatMessage", (message, html) => {
   });
 
   // Spend EP button
-  html.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
+  el.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const actorId = btn.getAttribute("data-actor-id");
       const total = Number(btn.getAttribute("data-total"));
@@ -137,7 +141,7 @@ Hooks.on("renderChatMessage", (message, html) => {
   });
 
   // Social Defend button
-  html.querySelectorAll('[data-action="social-defend"]').forEach(btn => {
+  el.querySelectorAll('[data-action="social-defend"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const msgId = btn.getAttribute("data-message-id");
       const attackMsg = game.messages.get(msgId);
@@ -153,7 +157,7 @@ Hooks.on("renderChatMessage", (message, html) => {
   });
 
   // Apply Social Damage button
-  html.querySelectorAll('[data-action="apply-social-damage"]').forEach(btn => {
+  el.querySelectorAll('[data-action="apply-social-damage"]').forEach(btn => {
     btn.addEventListener("click", async () => {
       const defenderId = btn.getAttribute("data-defender-id");
       const damage = Number(btn.getAttribute("data-damage"));
