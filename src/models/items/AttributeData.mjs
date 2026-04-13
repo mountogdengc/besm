@@ -52,6 +52,7 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       uniqueDescription: new fields.HTMLField(),
       sourceTemplateId: new fields.StringField({ initial: "" }),
       sourceTemplateName: new fields.StringField({ initial: "" }),
+      linkedActorId: new fields.StringField({ initial: "" }),
       notes: new fields.HTMLField(),
     };
   }
