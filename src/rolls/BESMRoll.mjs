@@ -32,13 +32,11 @@ export async function resolveStatForRoll(actor, nominalStat) {
     return { value: available[0].value, label: available[0].key };
   }
 
-  const buttons = {};
-  for (const s of available) {
-    buttons[s.key] = {
-      label: `${s.label} (${s.value})`,
-      action: s.key,
-    };
-  }
+  const buttons = available.map(s => ({
+    label: `${s.label} (${s.value})`,
+    action: s.key,
+    callback: () => s.key,
+  }));
 
   const chosen = await foundry.applications.api.DialogV2.wait({
     window: { title: "Missing Stat — Choose Substitute" },
