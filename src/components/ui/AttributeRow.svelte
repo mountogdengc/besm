@@ -1,5 +1,6 @@
 <script>
   import RollButton from "./RollButton.svelte";
+  import LinkedActorBadge from "./LinkedActorBadge.svelte";
   import { performAttackRoll } from "../../rolls/BESMCombat.mjs";
 
   let { attribute, actor } = $props();
@@ -93,5 +94,9 @@
 
   {#if attribute.system.isWeapon}
     <RollButton onclick={attackRoll} title="Attack with {attribute.name}" />
+  {/if}
+
+  {#if attribute.system.linkedActorId}
+    <LinkedActorBadge {attribute} {actor} />
   {/if}
 </div>
