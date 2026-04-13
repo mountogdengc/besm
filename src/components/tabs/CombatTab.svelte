@@ -1,8 +1,21 @@
 <script>
   import ResourceBar from "../ui/ResourceBar.svelte";
+  import RollButton from "../ui/RollButton.svelte";
+  import { performSanityRoll } from "../../rolls/BESMCombat.mjs";
+  import { performSocialAttackRoll, openSocialEdgeDialog } from "../../rolls/BESMSocial.mjs";
 
   let { actor } = $props();
   let d = $derived(actor.system.derived);
+
+  let sanityEnabled = $state(false);
+  let socialEnabled = $state(false);
+
+  $effect(() => {
+    try {
+      sanityEnabled = game.settings.get("besm", "sanityEnabled");
+      socialEnabled = game.settings.get("besm", "socialCombatEnabled");
+    } catch {}
+  });
 
   function updateCurrentHp(val) {
     actor.update({ "system.derived.currentHp": val });
@@ -10,6 +23,14 @@
 
   function updateCurrentEp(val) {
     actor.update({ "system.derived.currentEp": val });
+  }
+
+  function rollSanity() {
+    performSanityRoll(actor);
+  }
+
+  function rollSocialAttack() {
+    performSocialAttackRoll(actor, 0, "Social", null);
   }
 </script>
 
@@ -52,4 +73,30 @@
       <div class="text-lg font-bold text-slate-100">{d.ar}</div>
     </div>
   </div>
+
+  <!-- Sanity (settings-gated) -->
+  {#if sanityEnabled && d.sanityPoints > 0}
+    <div class="border-t border-slate-700 pt-3">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-xs text-slate-500 uppercase">Sanity</div>
+        <RollButton onclick={rollSanity} title="Sanity Roll" />
+      </div>
+      <div class="text-sm text-slate-300">
+        Sanity Points: {d.currentSanity ?? d.sanityPoints} / {d.sanityMax}
+      </div>
+    </div>
+  {/if}
+
+  <!-- Social Combat (settings-gated) -->
+  {#if socialEnabled && d.socv > 0}
+    <div class="border-t border-slate-700 pt-3">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-xs text-slate-500 uppercase">Social Combat</div>
+        <RollButton onclick={rollSocialAttack} title="Social Attack Roll" />
+      </div>
+      <div class="text-sm text-slate-300">
+        SoCV: {d.socv} | Society Points: {d.currentSocietyPoints ?? d.societyPoints} / {d.societyPointsMax}
+      </div>
+    </div>
+  {/if}
 </div>

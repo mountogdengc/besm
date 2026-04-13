@@ -1,5 +1,13 @@
 <script>
+  import RollButton from "./RollButton.svelte";
+  import { performAttackRoll } from "../../rolls/BESMCombat.mjs";
+
   let { attribute, actor } = $props();
+
+  function attackRoll(e) {
+    e.stopPropagation();
+    performAttackRoll(actor, attribute);
+  }
 
   let enhancements = $derived(attribute.system.enhancements ?? []);
   let limiters = $derived(attribute.system.limiters ?? []);
@@ -82,4 +90,8 @@
   {/each}
 
   <span class="text-slate-400 ml-auto flex-shrink-0">{attribute.system.totalCost} CP</span>
+
+  {#if attribute.system.isWeapon}
+    <RollButton onclick={attackRoll} title="Attack with {attribute.name}" />
+  {/if}
 </div>
