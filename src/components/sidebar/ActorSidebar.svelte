@@ -36,14 +36,21 @@
     if (pilotActor) pilotActor.sheet.render(true);
   }
 
+  function cleanActorId(input) {
+    let id = input.trim();
+    if (id.startsWith("Actor.")) id = id.slice(6);
+    return id;
+  }
+
   async function linkPilot() {
-    if (!pilotIdInput.trim()) return;
-    const resolved = game.actors.get(pilotIdInput.trim());
+    const id = cleanActorId(pilotIdInput);
+    if (!id) return;
+    const resolved = game.actors.get(id);
     if (!resolved) {
       ui.notifications.warn("Pilot actor not found.");
       return;
     }
-    await actor.update({ "system.pilotId": pilotIdInput.trim() });
+    await actor.update({ "system.pilotId": id });
     pilotIdInput = "";
   }
 

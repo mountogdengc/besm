@@ -73,6 +73,7 @@
   }
 </script>
 
+{#key version}
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="flex h-full bg-slate-900 text-slate-100" ondragover={handleDragOver} ondrop={handleTemplateDrop}>
   <ActorSidebar {actor} showSP={true} showEP={true} showCV={true} />
@@ -97,3 +98,4 @@
     </div>
   </div>
 </div>
+{/key}

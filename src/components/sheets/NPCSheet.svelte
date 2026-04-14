@@ -46,6 +46,7 @@
   });
 </script>
 
+{#key version}
 <div class="flex h-full bg-slate-900 text-slate-100">
   <ActorSidebar {actor} showSP={false} showEP={true} showCV={true} />
 
@@ -64,3 +65,4 @@
     </div>
   </div>
 </div>
+{/key}

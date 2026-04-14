@@ -14,14 +14,21 @@
     return game.actors.get(actorId);
   }
 
+  function cleanActorId(input) {
+    let id = input.trim();
+    if (id.startsWith("Actor.")) id = id.slice(6);
+    return id;
+  }
+
   async function addCrew() {
-    if (!newCrewId.trim()) return;
-    const resolved = game.actors.get(newCrewId.trim());
+    const id = cleanActorId(newCrewId);
+    if (!id) return;
+    const resolved = game.actors.get(id);
     if (!resolved) {
       ui.notifications.warn("Actor not found with that ID.");
       return;
     }
-    const updated = [...crew, { actorId: newCrewId.trim(), role: newCrewRole }];
+    const updated = [...crew, { actorId: id, role: newCrewRole }];
     await actor.update({ "system.crew": updated });
     newCrewId = "";
     newCrewRole = "crew";
