@@ -14,6 +14,7 @@ import { LimiterData } from "./models/items/LimiterData.mjs";
 import { DefectData } from "./models/items/DefectData.mjs";
 import { PossessionData } from "./models/items/PossessionData.mjs";
 import { SkillData } from "./models/items/SkillData.mjs";
+import { BESMTemplateData } from "./models/items/BESMTemplateData.mjs";
 import { registerSettings } from "./settings/registerSettings.mjs";
 import { registerFolderHooks } from "./hooks/folderHooks.mjs";
 import { BESM_STATUS_EFFECTS } from "./combat/statusEffects.mjs";
@@ -34,6 +35,7 @@ Hooks.on("init", () => {
   CONFIG.Item.dataModels.defect = DefectData;
   CONFIG.Item.dataModels.possession = PossessionData;
   CONFIG.Item.dataModels.skill = SkillData;
+  CONFIG.Item.dataModels.besm4eTemplate = BESMTemplateData;
 
   registerSettings();
   registerFolderHooks();
@@ -78,7 +80,7 @@ Hooks.on("init", () => {
   });
 
   foundry.documents.collections.Items.registerSheet("besm", BESMItemSheet, {
-    types: ["attribute", "defect", "enhancement", "limiter", "possession", "skill"],
+    types: ["attribute", "defect", "enhancement", "limiter", "possession", "skill", "besm4eTemplate"],
     makeDefault: true,
     label: "BESM4e.SheetItem",
   });
