@@ -10,25 +10,19 @@
   let newCrewId = $state("");
   let newCrewRole = $state("crew");
 
+  let availableActors = $derived(
+    game.actors
+      .filter(a => a.id !== actor.id && !crew.some(m => m.actorId === a.id))
+      .sort((a, b) => a.name.localeCompare(b.name))
+  );
+
   function resolveActor(actorId) {
     return game.actors.get(actorId);
   }
 
-  function cleanActorId(input) {
-    let id = input.trim();
-    if (id.startsWith("Actor.")) id = id.slice(6);
-    return id;
-  }
-
   async function addCrew() {
-    const id = cleanActorId(newCrewId);
-    if (!id) return;
-    const resolved = game.actors.get(id);
-    if (!resolved) {
-      ui.notifications.warn("Actor not found with that ID.");
-      return;
-    }
-    const updated = [...crew, { actorId: id, role: newCrewRole }];
+    if (!newCrewId) return;
+    const updated = [...crew, { actorId: newCrewId, role: newCrewRole }];
     await actor.update({ "system.crew": updated });
     newCrewId = "";
     newCrewRole = "crew";
@@ -95,11 +89,15 @@
     <div class="text-xs text-slate-500 uppercase tracking-wide mb-1">Add Crew Member</div>
     <div class="flex gap-2 items-end">
       <div class="flex-1">
-        <input
+        <select
           class="w-full bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
-          placeholder="Actor ID..."
           bind:value={newCrewId}
-        />
+        >
+          <option value="">— Select Actor —</option>
+          {#each availableActors as a}
+            <option value={a.id}>{a.name} ({a.type})</option>
+          {/each}
+        </select>
       </div>
       <select
         class="bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"

@@ -32,25 +32,21 @@
 
   let pilotIdInput = $state("");
 
+  let availablePilots = $derived(
+    showPilot
+      ? game.actors
+          .filter(a => a.id !== actor.id && a.type === "character")
+          .sort((a, b) => a.name.localeCompare(b.name))
+      : []
+  );
+
   function openPilotSheet() {
     if (pilotActor) pilotActor.sheet.render(true);
   }
 
-  function cleanActorId(input) {
-    let id = input.trim();
-    if (id.startsWith("Actor.")) id = id.slice(6);
-    return id;
-  }
-
   async function linkPilot() {
-    const id = cleanActorId(pilotIdInput);
-    if (!id) return;
-    const resolved = game.actors.get(id);
-    if (!resolved) {
-      ui.notifications.warn("Pilot actor not found.");
-      return;
-    }
-    await actor.update({ "system.pilotId": id });
+    if (!pilotIdInput) return;
+    await actor.update({ "system.pilotId": pilotIdInput });
     pilotIdInput = "";
   }
 
@@ -121,18 +117,20 @@
         </div>
       {:else}
         <div class="flex flex-col gap-1">
-          <span class="text-xs text-slate-400">{actor.system.pilotId ? "Pilot not found" : "No pilot linked"}</span>
-          <div class="flex gap-1">
-            <input
-              class="flex-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
-              placeholder="Actor ID..."
-              bind:value={pilotIdInput}
-            />
-            <button type="button"
-              class="px-1.5 py-0.5 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600"
-              onclick={linkPilot}
-            >Link</button>
-          </div>
+          <span class="text-xs text-slate-400">No pilot linked</span>
+          <select
+            class="w-full bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
+            bind:value={pilotIdInput}
+          >
+            <option value="">— Select Pilot —</option>
+            {#each availablePilots as p}
+              <option value={p.id}>{p.name}</option>
+            {/each}
+          </select>
+          <button type="button"
+            class="px-1.5 py-0.5 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600 self-start"
+            onclick={linkPilot}
+          >Link</button>
         </div>
       {/if}
     </div>
