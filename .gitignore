@@ -1,2 +1,9 @@
 node_modules/
 dist/
+
+# Compiled compendium packs (LevelDB) - regenerate with npm run build:packs
+packs/attributes/
+packs/defects/
+packs/enhancements/
+packs/limiters/
+packs/skills/

@@ -31,6 +31,48 @@
       "name": "mountogdengc"
     }
   ],
+  "packs": [
+    {
+      "label": "Attributes",
+      "type": "Item",
+      "name": "attributes",
+      "path": "packs/attributes",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Defects",
+      "type": "Item",
+      "name": "defects",
+      "path": "packs/defects",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Enhancements",
+      "type": "Item",
+      "name": "enhancements",
+      "path": "packs/enhancements",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Limiters",
+      "type": "Item",
+      "name": "limiters",
+      "path": "packs/limiters",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Skills",
+      "type": "Item",
+      "name": "skills",
+      "path": "packs/skills",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
   "socket": false,
   "url": "https://github.com/mountogdengc/besm.git"
 }
