@@ -23,6 +23,33 @@
   function rollStat(key) {
     performStatRoll(actor, key);
   }
+
+  let pilotActor = $derived(
+    showPilot && actor.system.pilotId
+      ? game.actors.get(actor.system.pilotId)
+      : null
+  );
+
+  let pilotIdInput = $state("");
+
+  function openPilotSheet() {
+    if (pilotActor) pilotActor.sheet.render(true);
+  }
+
+  async function linkPilot() {
+    if (!pilotIdInput.trim()) return;
+    const resolved = game.actors.get(pilotIdInput.trim());
+    if (!resolved) {
+      ui.notifications.warn("Pilot actor not found.");
+      return;
+    }
+    await actor.update({ "system.pilotId": pilotIdInput.trim() });
+    pilotIdInput = "";
+  }
+
+  async function unlinkPilot() {
+    await actor.update({ "system.pilotId": "" });
+  }
 </script>
 
 <div class="w-44 bg-slate-800 p-3 border-r border-slate-700 flex flex-col gap-3 overflow-y-auto">
@@ -71,7 +98,36 @@
   {#if showPilot}
     <div class="border-t border-slate-700 pt-2">
       <div class="text-xs text-slate-500 uppercase tracking-wide mb-1">Pilot</div>
-      <div class="text-xs text-slate-300">{actor.system.pilotId || "No pilot linked"}</div>
+      {#if pilotActor}
+        <div class="flex flex-col gap-1">
+          <span class="text-xs text-slate-200">{pilotActor.name}</span>
+          <div class="flex gap-1">
+            <button type="button"
+              class="px-1.5 py-0.5 bg-blue-700 text-blue-100 rounded border-0 cursor-pointer text-xs hover:bg-blue-600"
+              onclick={openPilotSheet}
+            >Open</button>
+            <button type="button"
+              class="px-1.5 py-0.5 bg-slate-700 text-slate-300 rounded border-0 cursor-pointer text-xs hover:bg-slate-600"
+              onclick={unlinkPilot}
+            >Unlink</button>
+          </div>
+        </div>
+      {:else}
+        <div class="flex flex-col gap-1">
+          <span class="text-xs text-slate-400">{actor.system.pilotId ? "Pilot not found" : "No pilot linked"}</span>
+          <div class="flex gap-1">
+            <input
+              class="flex-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
+              placeholder="Actor ID..."
+              bind:value={pilotIdInput}
+            />
+            <button type="button"
+              class="px-1.5 py-0.5 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600"
+              onclick={linkPilot}
+            >Link</button>
+          </div>
+        </div>
+      {/if}
     </div>
   {/if}
 
