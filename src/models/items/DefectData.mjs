@@ -3,6 +3,7 @@ export class DefectData extends foundry.abstract.TypeDataModel {
     const fields = foundry.data.fields;
     return {
       description: new fields.HTMLField(),
+      source: new fields.StringField({ initial: "BESM4e" }),
       cpGranted: new fields.NumberField({ integer: true, initial: 1 }),
       rankLevel: new fields.NumberField({ integer: true, initial: 1, min: 1 }),
       isUnique: new fields.BooleanField({ initial: false }),

@@ -5,6 +5,7 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
     const fields = foundry.data.fields;
     return {
       description: new fields.HTMLField(),
+      source: new fields.StringField({ initial: "BESM4e" }),
       baseCostPerLevel: new fields.NumberField({ integer: true, initial: 1 }),
       purchasedLevel: new fields.NumberField({ integer: true, initial: 1, min: 0 }),
       effectiveLevel: new fields.NumberField({ integer: true, initial: 1 }),

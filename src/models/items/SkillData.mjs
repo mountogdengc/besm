@@ -5,6 +5,7 @@ export class SkillData extends foundry.abstract.TypeDataModel {
     const fields = foundry.data.fields;
     return {
       description: new fields.HTMLField(),
+      source: new fields.StringField({ initial: "BESM4e" }),
       group: new fields.StringField({ initial: "" }),
       costClass: new fields.StringField({
         initial: "framework",
