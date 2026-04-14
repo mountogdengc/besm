@@ -409,12 +409,10 @@ function compilePacks() {
 
   for (const name of packNames) {
     const srcDir = join(PACKS_SOURCE, name);
-    const outDir = join(PACKS_OUT, name);
-    mkdirSync(outDir, { recursive: true });
 
     try {
       execSync(
-        `npx fvtt package pack --type System --id besm -n ${name} --in "${srcDir}" --out "${outDir}"`,
+        `npx fvtt package pack --type System --id besm -n ${name} --in "${srcDir}" --out "${PACKS_OUT}"`,
         { stdio: "inherit" }
       );
       console.log(`  -> ${name} compiled`);
