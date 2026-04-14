@@ -111,7 +111,7 @@
           <span class="{spec.isFree ? 'text-emerald-400' : 'text-amber-400'}">
             {spec.isFree ? 'free' : `${spec.spCost} SP`}
           </span>
-          <button class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
+          <button type="button"  class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
             onclick={() => removeSpecialisation(i)}>Remove</button>
         </div>
       {/each}

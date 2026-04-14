@@ -225,7 +225,7 @@
         <div class="flex items-center justify-between px-2 py-1 border-b border-slate-800 text-xs">
           <span class="text-sky-300">{enh.name}</span>
           <span class="text-slate-400">-{enh.levels} levels</span>
-          <button class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
+          <button type="button"  class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
             onclick={() => removeEnhancement(i)}>Remove</button>
         </div>
       {/each}
@@ -242,7 +242,7 @@
         <div class="flex items-center justify-between px-2 py-1 border-b border-slate-800 text-xs">
           <span class="text-violet-300">{lim.name}</span>
           <span class="text-slate-400">+{lim.levels} levels</span>
-          <button class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
+          <button type="button"  class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
             onclick={() => removeLimiter(i)}>Remove</button>
         </div>
       {/each}
@@ -259,14 +259,14 @@
           <span class="px-1.5 py-0.5 rounded {linkedActor.system.cpSpent <= cpBudget ? 'bg-emerald-900 text-emerald-300' : 'bg-red-900 text-red-300'}">
             {linkedActor.system.cpSpent} / {cpBudget} CP
           </span>
-          <button class="px-2 py-1 bg-blue-700 text-blue-100 rounded border-0 cursor-pointer text-xs hover:bg-blue-600"
+          <button type="button"  class="px-2 py-1 bg-blue-700 text-blue-100 rounded border-0 cursor-pointer text-xs hover:bg-blue-600"
             onclick={openLinkedSheet}>Open Sheet</button>
-          <button class="px-2 py-1 bg-slate-700 text-slate-300 rounded border-0 cursor-pointer text-xs hover:bg-slate-600"
+          <button type="button"  class="px-2 py-1 bg-slate-700 text-slate-300 rounded border-0 cursor-pointer text-xs hover:bg-slate-600"
             onclick={unlinkActor}>Unlink</button>
         </div>
       {:else}
         <div class="flex flex-col gap-2">
-          <button class="px-2 py-1 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600 self-start"
+          <button type="button"  class="px-2 py-1 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600 self-start"
             onclick={createLinkedActor}>Create Linked Actor</button>
           <div class="flex items-center gap-2">
             <input

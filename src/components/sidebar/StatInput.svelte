@@ -24,6 +24,7 @@
     <span class="text-xs text-slate-400 w-9">{label}</span>
     <div class="flex items-center gap-1">
       <button
+        type="button"
         class="w-5 h-5 bg-slate-700 border-0 text-slate-400 rounded text-xs cursor-pointer hover:bg-slate-600 disabled:opacity-30"
         onclick={decrement}
         disabled={mode === "zero"}
@@ -40,6 +41,7 @@
         />
       {/if}
       <button
+        type="button"
         class="w-5 h-5 bg-slate-700 border-0 text-slate-400 rounded text-xs cursor-pointer hover:bg-slate-600 disabled:opacity-30"
         onclick={increment}
         disabled={mode === "zero"}

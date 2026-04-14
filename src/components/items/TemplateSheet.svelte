@@ -120,7 +120,7 @@
           <span class="text-xs font-bold {entry.entryType === 'item' ? 'text-blue-400' : 'text-purple-400'}">
             {entry.entryType === "item" ? "Item" : "Template Ref"}
           </span>
-          <button class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
+          <button type="button"  class="text-slate-500 hover:text-red-400 bg-transparent border-0 cursor-pointer text-xs"
             onclick={() => removeEntry(i)}>Remove</button>
         </div>
 
@@ -140,7 +140,7 @@
             </select>
           </div>
           <textarea class="w-full bg-slate-800 border border-slate-700 rounded text-xs text-slate-200 p-1 mt-1 h-12 resize-y font-mono"
-            placeholder='{"baseCostPerLevel": 1, "purchasedLevel": 1}'
+            placeholder={`{"baseCostPerLevel": 1, "purchasedLevel": 1}`}
             value={JSON.stringify(entry.systemData ?? {}, null, 2)}
             onchange={(e) => updateEntrySystemData(i, e.target.value)}
           ></textarea>
@@ -160,9 +160,9 @@
     {/each}
 
     <div class="flex gap-2">
-      <button class="px-2 py-1 bg-blue-700 text-blue-100 rounded border-0 cursor-pointer text-xs hover:bg-blue-600"
+      <button type="button" class="px-2 py-1 bg-blue-700 text-blue-100 rounded border-0 cursor-pointer text-xs hover:bg-blue-600"
         onclick={addItemEntry}>Add Item Entry</button>
-      <button class="px-2 py-1 bg-purple-700 text-purple-100 rounded border-0 cursor-pointer text-xs hover:bg-purple-600"
+      <button type="button" class="px-2 py-1 bg-purple-700 text-purple-100 rounded border-0 cursor-pointer text-xs hover:bg-purple-600"
         onclick={addTemplateEntry}>Add Template Ref</button>
     </div>
   </div>
