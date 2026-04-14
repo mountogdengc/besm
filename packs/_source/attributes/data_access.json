@@ -1,0 +1,11 @@
+{
+  "_id": "269230b64c63f4c5",
+  "name": "Data Access",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Sense and interface with data systems around you, interpreting signals.</p>\n<ul><li><strong>Level 1:</strong> Access tech in 10 cm radius</li><li><strong>Level 2:</strong> Access tech in 1 m radius</li><li><strong>Level 3:</strong> Access tech in 10 m radius</li><li><strong>Level 4:</strong> Access tech in 100 m radius</li><li><strong>Level 5:</strong> Access tech in 1 km radius</li><li><strong>Level 6:</strong> Access tech in 10 km radius</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

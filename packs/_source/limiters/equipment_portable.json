@@ -1,0 +1,10 @@
+{
+  "_id": "4f54f536731049e3",
+  "name": "Equipment (Portable)",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Attribute requires specific external materials/machinery/accessories to function. Required Equipment is easily portable (smartphone, wagon, spell book).</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

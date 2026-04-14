@@ -1,0 +1,11 @@
+{
+  "_id": "040766fde825eec3",
+  "name": "Expertise",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character displays a dominant talent in certain selected situations and gains a minor or major edge (see BESM4, page 182) when making related dice rolls, depending on their Expertise Level.</p>\n<ul><li><strong>Level 1:</strong> Character gains a minor edge with: one type of Skill roll; attack rolls with one narrow category of weapon; defence rolls with one narrow guarding category; a specific identified Attribute; opposed rolls when defending against an Attribute’s use</li><li><strong>Level 2:</strong> As Level 1, but character gains a major edge instead</li><li><strong>Level 3:</strong> Character gains a minor edge with: rolls related to one Stat; one type of attack roll or defence roll; a small group of related Attributes; one or more types of rolls under one environmental condition</li><li><strong>Level 4:</strong> As Level 3, but character gains a major edge instead</li><li><strong>Level 5:</strong> Character gains a minor edge with: all Skill rolls; all types of attack rolls; all types of defence rolls; Dynamic Powers or Power Flux</li><li><strong>Level 6:</strong> As Level 5, but character gains a major edge instead</li><li><strong>Level 7:</strong> Character gains a minor edge with: all Stat rolls; all combat rolls</li><li><strong>Level 8:</strong> As Level 7, but character gains a major edge instead</li><li><strong>Level 9:</strong> Character gains a minor edge with: all rolls</li><li><strong>Level 10:</strong> As Level 9, but character gains a major edge instead</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "Multiverse"
+  }
+}

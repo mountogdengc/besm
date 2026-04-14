@@ -1,0 +1,10 @@
+{
+  "_id": "2e0d4573b4acde5c",
+  "name": "Hands",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Requires two hands or equivalents to use properly. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

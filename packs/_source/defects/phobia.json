@@ -1,0 +1,11 @@
+{
+  "_id": "8f876ee8db6fa7a9",
+  "name": "Phobia",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character has an irrational fear of a specific object, event, or person. It limits choices and behaviors when triggered.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

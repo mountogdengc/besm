@@ -1,0 +1,11 @@
+{
+  "_id": "1b773dc935afeba3",
+  "name": "Wealth",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants a disposable income and other liquid assets.</p>\n<ul><li><strong>Level 1:</strong> Financially stable ($300k)</li><li><strong>Level 2:</strong> Well off ($1M)</li><li><strong>Level 3:</strong> Moderately rich ($3M)</li><li><strong>Level 4:</strong> Very rich ($10M)</li><li><strong>Level 5:</strong> Extremely rich ($30M)</li><li><strong>Level 6:</strong> Wealthy ($100M)</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

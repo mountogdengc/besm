@@ -1,0 +1,10 @@
+{
+  "_id": "4eb0cd61db8d7b2d",
+  "name": "Blight",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>On-hit affliction that can escalate harm if not resisted. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

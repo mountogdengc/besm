@@ -1,0 +1,12 @@
+{
+  "_id": "2121467f9300361c",
+  "name": "Mechanics",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

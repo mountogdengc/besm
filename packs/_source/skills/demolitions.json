@@ -1,0 +1,12 @@
+{
+  "_id": "e4158429912f6674",
+  "name": "Demolitions",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

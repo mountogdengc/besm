@@ -1,0 +1,12 @@
+{
+  "_id": "852a336ef572e391",
+  "name": "Police Sciences",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

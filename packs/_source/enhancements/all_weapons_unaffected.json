@@ -1,0 +1,10 @@
+{
+  "_id": "9b53a66d8180691c",
+  "name": "All Weapons (Unaffected)",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Unaffected by source-related weapon effects regardless of refinements. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

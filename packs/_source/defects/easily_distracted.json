@@ -1,0 +1,11 @@
+{
+  "_id": "25517ff3100c32ad",
+  "name": "Easily Distracted",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is frequently distracted by specific triggers.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

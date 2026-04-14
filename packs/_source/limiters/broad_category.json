@@ -1,0 +1,10 @@
+{
+  "_id": "389407f9ca176754",
+  "name": "Broad Category",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Affects only a broad, defined class of targets or subjects. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

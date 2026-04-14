@@ -1,0 +1,10 @@
+{
+  "_id": "fc88f18d983488b4",
+  "name": "Multiple Illusions",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Sustain several illusions at once, sharing your focus. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

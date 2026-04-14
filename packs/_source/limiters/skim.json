@@ -1,0 +1,10 @@
+{
+  "_id": "45369ca2cb900ec6",
+  "name": "Skim",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Hovers skimming just above ground or water. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

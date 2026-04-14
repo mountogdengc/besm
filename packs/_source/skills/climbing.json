@@ -1,0 +1,12 @@
+{
+  "_id": "3f31ea1f7fe91c73",
+  "name": "Climbing",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

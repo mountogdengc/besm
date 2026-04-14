@@ -1,0 +1,12 @@
+{
+  "_id": "3c09f0f299d9b5cd",
+  "name": "Law",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

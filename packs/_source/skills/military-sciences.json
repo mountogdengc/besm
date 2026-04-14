@@ -1,0 +1,12 @@
+{
+  "_id": "3bf8ff4ed26ba24f",
+  "name": "Military Sciences",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

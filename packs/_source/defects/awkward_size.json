@@ -1,0 +1,11 @@
+{
+  "_id": "b059cba2583ede53",
+  "name": "Awkward Size",
+  "type": "defect",
+  "system": {
+    "description": "<p>The item is significantly larger than a human and harder to maneuver or conceal. Grants a bonus/penalty to ranged attacks depending on relative size.</p>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

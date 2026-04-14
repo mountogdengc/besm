@@ -1,0 +1,11 @@
+{
+  "_id": "757c73278367d4ee",
+  "name": "Superspeed",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to move at superspeeds.</p>\n<ul><li><strong>Level 1:</strong> Top speed is 100 kph</li><li><strong>Level 2:</strong> Top speed is 300 kph</li><li><strong>Level 3:</strong> Top speed is 1,000 kph</li><li><strong>Level 4:</strong> Top speed is 3,000 kph</li><li><strong>Level 5:</strong> Top speed is 10,000 kph</li><li><strong>Level 6:</strong> Top speed is 30,000 kph</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

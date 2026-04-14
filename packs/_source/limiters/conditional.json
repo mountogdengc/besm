@@ -1,0 +1,10 @@
+{
+  "_id": "e2caec254f1c139c",
+  "name": "Conditional",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Recovery depends on exposure to a specific source or condition. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

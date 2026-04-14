@@ -1,0 +1,11 @@
+{
+  "_id": "b963236c004aa2de",
+  "name": "Resilient",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Survive in hostile environments or conditions. Each level adds protection against one type.</p>\n<ul><li><strong>Level 1:</strong> Resilient to 1 environment or condition</li><li><strong>Level 2:</strong> Resilient to 2 environments or conditions</li><li><strong>Level 3:</strong> Resilient to 3 environments or conditions</li><li><strong>Level 4:</strong> Resilient to 4 environments or conditions</li><li><strong>Level 5:</strong> Resilient to 5 environments or conditions</li><li><strong>Level 6:</strong> Resilient to 6 environments or conditions</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "2242095c69222aae",
+  "name": "Item",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Items are devices that enhance a character in some way or that serve useful tool, vehicle, base, or weapon.</p>\n<ul><li><strong>Level 1:</strong> +1 bonus to appropriate Stat/Skill Group rolls</li><li><strong>Level 2:</strong> +2 bonus to appropriate Stat/Skill Group rolls</li><li><strong>Level 3:</strong> +3 bonus to appropriate Stat/Skill Group rolls</li><li><strong>Level 4:</strong> +4 bonus to appropriate Stat/Skill Group rolls</li><li><strong>Level 5:</strong> +5 bonus to appropriate Stat/Skill Group rolls</li><li><strong>Level 6:</strong> +6 bonus to appropriate Stat/Skill Group rolls</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "147f6a926a3681e9",
+  "name": "Impaired Manipulation",
+  "type": "defect",
+  "system": {
+    "description": "<p>The ability to manipulate objects with hands or other appendages is one of the major advantages that humans have over other species. If a character lacks these abilities, due to natural design or an unfortunate accident, they will be at a significant disadvantage.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 3,
+    "tier": "serious",
+    "source": "BESM4e"
+  }
+}

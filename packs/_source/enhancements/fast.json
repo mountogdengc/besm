@@ -1,0 +1,10 @@
+{
+  "_id": "8946247963d8a50e",
+  "name": "Fast",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Improves travel pace for sweeping, dynamic movement. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "5988faa312fb6608",
+  "name": "Dynamic Powers",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Broad narrative authority over a chosen domain; focus shifts with the story. Coordinate scope with your GM.</p>\n<ul><li><strong>Level 1:</strong> Minimal control over area</li><li><strong>Level 2:</strong> Minor control over area</li><li><strong>Level 3:</strong> Moderate control over area</li><li><strong>Level 4:</strong> Good control over area</li><li><strong>Level 5:</strong> Significant control over area</li><li><strong>Level 6:</strong> Major control over area</li></ul>",
+    "baseCostPerLevel": 10,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

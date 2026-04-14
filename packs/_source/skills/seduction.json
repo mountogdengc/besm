@@ -1,0 +1,12 @@
+{
+  "_id": "2e194f9890c586bc",
+  "name": "Seduction",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

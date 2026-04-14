@@ -1,0 +1,12 @@
+{
+  "_id": "b42778a976eddf9c",
+  "name": "Acrobatics",
+  "type": "skill",
+  "system": {
+    "description": "<p>Gymnastic movement, balance, aerial awareness, tumbling, parkour. Covers vaults, rolls, flips, and precise footwork.</p>",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

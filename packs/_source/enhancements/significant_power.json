@@ -1,0 +1,10 @@
+{
+  "_id": "7a3c4f1d4dbfc50e",
+  "name": "Significant Power",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Your connections reach farther within the setting than usual. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "0e9e8d59fd1d6e60",
+  "name": "Interrogation",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

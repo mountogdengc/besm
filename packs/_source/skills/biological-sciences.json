@@ -1,0 +1,12 @@
+{
+  "_id": "bf502600527a564d",
+  "name": "Biological Sciences",
+  "type": "skill",
+  "system": {
+    "description": "<p>Life sciences including anatomy, physiology, ecology, and related disciplines.</p>",
+    "linkedStat": "mind",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

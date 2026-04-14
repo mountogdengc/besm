@@ -1,0 +1,11 @@
+{
+  "_id": "a2854f5c36ae7d36",
+  "name": "Mimic",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character can temporarily mimic one Attribute or Stat of any single touched character for a duration of one minute or dramatic scene, though it only works on Attributes that derive their powers from one particular source (such or technology or supernatural ability; page 258).</p>\n<ul><li><strong>Level 1:</strong> Mimic 1 Attributes</li><li><strong>Level 2:</strong> Mimic 2 Attributes</li><li><strong>Level 3:</strong> Mimic 3 Attributes</li><li><strong>Level 4:</strong> Mimic 4 Attributes</li><li><strong>Level 5:</strong> Mimic 5 Attributes,</li><li><strong>Level 6:</strong> Mimic 6 Attributes,</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

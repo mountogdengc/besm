@@ -1,0 +1,11 @@
+{
+  "_id": "d2c04a981c937902",
+  "name": "Unique Attribute",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Fill in the blank.</p>\n<ul><li><strong>Level 1:</strong> Basic aptitude</li><li><strong>Level 2:</strong> Minor aptitude</li><li><strong>Level 3:</strong> Moderate aptitude</li><li><strong>Level 4:</strong> Significant aptitude</li><li><strong>Level 5:</strong> Major aptitude</li><li><strong>Level 6:</strong> Extreme aptitude</li></ul>",
+    "baseCostPerLevel": 0,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "75aee32444ea543c",
+  "name": "Metamorphosis",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows the character to transform themselves or others into a new species or form for a limited duration. This change replaces the subjectâ€™s current Race Template with a new one of equivalent Character Point value, determined by the level of this Attribute.</p>\n<ul><li><strong>Level 1:</strong> Race Template is created with up to +/- 5 Character Points</li><li><strong>Level 2:</strong> Race Template is created with up to +/- 10 Character Points</li><li><strong>Level 3:</strong> Race Template is created with up to +/- 15 Character Points</li><li><strong>Level 4:</strong> Race Template is created with up to +/- 20 Character Points</li><li><strong>Level 5:</strong> Race Template is created with up to +/- 25 Character Points</li><li><strong>Level 6:</strong> Race Template is created with up to +/- 30 Character Points</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "1e871b0c45c86ca4",
+  "name": "God of Cookery",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The new God of Cookery Attribute allows a character to perform over-the-top feats involving food and cooking equipment.</p>\n<ul><li><strong>Level 1:</strong> One chef technique</li><li><strong>Level 2:</strong> Two chef techniques</li><li><strong>Level 3:</strong> Three chef techniques</li><li><strong>Level 4:</strong> Four chef techniques</li><li><strong>Level 5:</strong> Five chef techniques</li><li><strong>Level 6:</strong> Six chef techniques</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "Uresia"
+  }
+}

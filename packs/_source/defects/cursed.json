@@ -1,0 +1,11 @@
+{
+  "_id": "fe4454ced8cf62ef",
+  "name": "Cursed",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character suffers from a supernatural or divine curse that hinders their life.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "f78423178af9c9da",
+  "name": "Involuntary Change",
+  "type": "defect",
+  "system": {
+    "description": "<p>Character changes form due to external triggers or stress. This applies to characters with the Alternate Form, Alternate Identity, or Merge attributes. The change is not under the character's control.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

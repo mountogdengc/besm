@@ -1,0 +1,11 @@
+{
+  "_id": "f22e0eee736b89f2",
+  "name": "Regeneration",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character regenerates Health or Energy each round. Must choose one focus when assigned.</p>\n<ul><li><strong>Level 1:</strong> Regenerates up to 5 HP or EP per round</li><li><strong>Level 2:</strong> Regenerates up to 10 HP or EP per round</li><li><strong>Level 3:</strong> Regenerates up to 15 HP or EP per round</li><li><strong>Level 4:</strong> Regenerates up to 20 HP or EP per round</li><li><strong>Level 5:</strong> Regenerates up to 25 HP or EP per round</li><li><strong>Level 6:</strong> Regenerates up to 30 HP or EP per round</li></ul>",
+    "baseCostPerLevel": 5,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "cacc5ae6c9f90156",
+  "name": "Few Projections",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Maintain a small set of simultaneous projections. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

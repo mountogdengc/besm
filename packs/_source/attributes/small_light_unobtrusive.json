@@ -1,0 +1,11 @@
+{
+  "_id": "e3b5360b057441e7",
+  "name": "Small, Light, and Unobtrusive",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character is small, light, and unobtrusive. They are easy to miss and can be easily hidden.</p>\n<ul><li><strong>Level 1:</strong> +1 to Stealth and related rolls</li><li><strong>Level 2:</strong> +2 to Stealth and related rolls</li><li><strong>Level 3:</strong> +3 to Stealth and related rolls</li><li><strong>Level 4:</strong> +4 to Stealth and related rolls</li><li><strong>Level 5:</strong> +5 to Stealth and related rolls</li><li><strong>Level 6:</strong> +6 to Stealth and related rolls</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

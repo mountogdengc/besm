@@ -1,0 +1,10 @@
+{
+  "_id": "8965477b816e0eb1",
+  "name": "Duration",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Extends how long an effect persists once invoked. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

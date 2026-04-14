@@ -1,0 +1,10 @@
+{
+  "_id": "31209d0b21c4acdc",
+  "name": "Specific Category",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Summons are restricted to one specific category (e.g., only wolves).</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

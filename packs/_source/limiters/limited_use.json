@@ -1,0 +1,10 @@
+{
+  "_id": "cd008c2608237e2f",
+  "name": "Limited Use",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Only a few uses before it needs a new day or scene. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

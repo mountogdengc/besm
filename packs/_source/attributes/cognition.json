@@ -1,0 +1,11 @@
+{
+  "_id": "3bda66781d21cfa6",
+  "name": "Cognition",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Glimpses beyond the now—insight into futures or echoes of the past. GM sets clarity.</p>\n<ul><li><strong>Level 1:</strong> See a few seconds ahead / 1 minute past</li><li><strong>Level 2:</strong> See 1 minute ahead / 1 hour past</li><li><strong>Level 3:</strong> See 10 minutes ahead / 1 day past</li><li><strong>Level 4:</strong> See 1 hour ahead / 1 week past</li><li><strong>Level 5:</strong> See 1 day ahead / 1 month past</li><li><strong>Level 6:</strong> See 1 week ahead / 1 year past</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

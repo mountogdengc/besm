@@ -1,0 +1,11 @@
+{
+  "_id": "c2f0d201ba6efbfa",
+  "name": "Obligated",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is controlled or indebted to an organization or individual. This obligation may stem from legal, technological, or psychological control.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

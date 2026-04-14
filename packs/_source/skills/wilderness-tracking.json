@@ -1,0 +1,12 @@
+{
+  "_id": "e01a9ea9143e71f3",
+  "name": "Wilderness Tracking",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

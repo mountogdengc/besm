@@ -1,0 +1,12 @@
+{
+  "_id": "5c105de2655d7c7d",
+  "name": "Area Knowledge",
+  "type": "skill",
+  "system": {
+    "description": "<p>Familiarity with the geography, culture, and key figures of a specific locale.</p>",
+    "linkedStat": "mind",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

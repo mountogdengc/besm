@@ -1,0 +1,10 @@
+{
+  "_id": "8c7aff8ba0670f54",
+  "name": "Environmental",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Only works within certain environments. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

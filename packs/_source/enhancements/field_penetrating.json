@@ -1,0 +1,10 @@
+{
+  "_id": "5a4e8d8fd519ef67",
+  "name": "Field-Penetrating",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Slip through or strike past certain protective fields. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

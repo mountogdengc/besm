@@ -1,0 +1,11 @@
+{
+  "_id": "8c3d11abfb02d701",
+  "name": "Melee Defence",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Adds +2 DCV per level when using a specific fighting technique.</p>\n<ul><li><strong>Level 1:</strong> Defence Combat Value increases by 2 when using a specific technique</li><li><strong>Level 2:</strong> Defence Combat Value increases by 4 when using a specific technique</li><li><strong>Level 3:</strong> Defence Combat Value increases by 6 when using a specific technique</li><li><strong>Level 4:</strong> Defence Combat Value increases by 8 when using a specific technique</li><li><strong>Level 5:</strong> Defence Combat Value increases by 10 when using a specific technique</li><li><strong>Level 6:</strong> Defence Combat Value increases by 12 when using a specific technique</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

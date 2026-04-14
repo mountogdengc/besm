@@ -1,0 +1,11 @@
+{
+  "_id": "75ffe398ab76f37f",
+  "name": "Lesser Unique Defect",
+  "type": "defect",
+  "system": {
+    "description": "<p>A minor unique defect that affects the character in a specific way. Each rank provides 1 CP refund.</p>\n<ul><li><strong>Rank 1:</strong> Minor unique defect with slight impact</li><li><strong>Rank 2:</strong> Minor unique defect with moderate impact</li><li><strong>Rank 3:</strong> Minor unique defect with significant impact</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

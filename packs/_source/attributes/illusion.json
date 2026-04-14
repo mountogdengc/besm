@@ -1,0 +1,11 @@
+{
+  "_id": "916b4ad762a242ed",
+  "name": "Illusion",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows the character to create mental hallucinations that appear real to targeted observers. Illusions can vary in complexity based on enhancements and require concentration to maintain. Each level increases the maximum size of the illusion.</p>\n<ul><li><strong>Level 1:</strong> Tiny-sized Illusions (10 cm)</li><li><strong>Level 2:</strong> Small-sized Illusions (1 m)</li><li><strong>Level 3:</strong> Moderate-sized Illusions (10 m)</li><li><strong>Level 4:</strong> Building-sized Illusions (100 m)</li><li><strong>Level 5:</strong> Neighbourhood-sized Illusions (1 km)</li><li><strong>Level 6:</strong> City-sized Illusions (10 km)</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

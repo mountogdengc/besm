@@ -1,0 +1,11 @@
+{
+  "_id": "2f2048ad12ddb4c5",
+  "name": "Tough",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Increases total Health Points.</p>\n<ul><li><strong>Level 1:</strong> +10 Health Points</li><li><strong>Level 2:</strong> +20 Health Points</li><li><strong>Level 3:</strong> +30 Health Points</li><li><strong>Level 4:</strong> +40 Health Points</li><li><strong>Level 5:</strong> +50 Health Points</li><li><strong>Level 6:</strong> +60 Health Points</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

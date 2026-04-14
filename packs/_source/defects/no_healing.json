@@ -1,0 +1,11 @@
+{
+  "_id": "638cb49d27f7e830",
+  "name": "No Healing",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character cannot recover Health Points by normal or magical healing methods; only specific conditions may restore HP.</p>\n<ul><li><strong>Rank 1:</strong> No healing from standard methods</li></ul>",
+    "cpGranted": 3,
+    "tier": "serious",
+    "source": "Extras"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "ce4d6461f5a9f74a",
+  "name": "Transfer",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to give attributes to a target.</p>\n<ul><li><strong>Level 1:</strong> Transfer 1 Attribute</li><li><strong>Level 2:</strong> Transfer 2 Attributes</li><li><strong>Level 3:</strong> Transfer 3 Attributes</li><li><strong>Level 4:</strong> Transfer Attributes up to Level 4</li><li><strong>Level 5:</strong> Transfer Attributes up to Level 5</li><li><strong>Level 6:</strong> Transfer Attributes up to Level 6</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "b417249d7677f9fa",
+  "name": "Serious Unique Defect",
+  "type": "defect",
+  "system": {
+    "description": "<p>A severe unique defect that affects the character in a critical way. Each rank provides 3 CP refund.</p>\n<ul><li><strong>Rank 1:</strong> Severe unique defect with significant impact</li><li><strong>Rank 2:</strong> Severe unique defect with severe impact</li><li><strong>Rank 3:</strong> Severe unique defect with critical impact</li></ul>",
+    "cpGranted": 3,
+    "tier": "serious",
+    "source": "BESM4e"
+  }
+}

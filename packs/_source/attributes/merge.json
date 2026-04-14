@@ -1,0 +1,11 @@
+{
+  "_id": "f7fc461636d0cd8a",
+  "name": "Merge",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows multiple items or characters to merge into a more powerful form.</p>\n<ul><li><strong>Level 1:</strong> Merged Item is created with up to 10 Points for each combining Item</li><li><strong>Level 2:</strong> Merged Item is created with 11-20 Points for each combining Item</li><li><strong>Level 3:</strong> Merged Item is created with 21-30 Points for each combining Item</li><li><strong>Level 4:</strong> Merged Item is created with 31-40 Points for each combining Item</li><li><strong>Level 5:</strong> Merged Item is created with 41-50 Points for each combining Item</li><li><strong>Level 6:</strong> Merged Item is created with 51-60 Points for each combining Item</li></ul>",
+    "baseCostPerLevel": 4,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

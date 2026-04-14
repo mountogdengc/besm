@@ -1,0 +1,11 @@
+{
+  "_id": "2613a5e96e5a8508",
+  "name": "Inept Attack",
+  "type": "defect",
+  "system": {
+    "description": "<p>Character is poor at offensive combat. They suffer reduced accuracy, either generally or in certain types of attacks (melee, ranged, etc.).</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

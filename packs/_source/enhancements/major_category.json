@@ -1,0 +1,10 @@
+{
+  "_id": "2140c5aa06122514",
+  "name": "Major Category",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Broadens Dynamic Powers to a sweeping, thematic major domain. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

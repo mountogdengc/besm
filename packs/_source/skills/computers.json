@@ -1,0 +1,12 @@
+{
+  "_id": "af0b02b2f31dcfde",
+  "name": "Computers",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "dfb726e6335035fb",
+  "name": "Poisons",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

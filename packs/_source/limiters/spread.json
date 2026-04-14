@@ -1,0 +1,10 @@
+{
+  "_id": "150596a47d7534e9",
+  "name": "Spread",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Needs open space to deploy and manoeuvre. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

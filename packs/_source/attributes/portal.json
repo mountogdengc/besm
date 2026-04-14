@@ -1,0 +1,11 @@
+{
+  "_id": "6e9dee2d952b37bb",
+  "name": "Portal",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Creates a one-way dimensional gate to another defined plane of existence or dimension.</p>\n<ul><li><strong>Level 1:</strong> Create a one-way Portal to 1 defined dimension</li><li><strong>Level 2:</strong> Create a one-way Portal to 2 defined dimensions</li><li><strong>Level 3:</strong> Create a one-way Portal to 3 defined dimensions</li><li><strong>Level 4:</strong> Create a one-way Portal to 4 defined dimensions</li><li><strong>Level 5:</strong> Create a one-way Portal to 5 defined dimensions</li><li><strong>Level 6:</strong> Create a one-way Portal to 6 defined dimensions</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

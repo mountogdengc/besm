@@ -1,0 +1,12 @@
+{
+  "_id": "192ac0a26b70d57b",
+  "name": "Forgery",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

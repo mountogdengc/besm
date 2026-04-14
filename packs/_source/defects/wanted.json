@@ -1,0 +1,11 @@
+{
+  "_id": "2614c20e5f1fd499",
+  "name": "Wanted",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is Wanted by the law, a criminal, or a powerful organization.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

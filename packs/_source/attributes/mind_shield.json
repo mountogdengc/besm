@@ -1,0 +1,11 @@
+{
+  "_id": "ad7f8413d9d3243a",
+  "name": "Mind Shield",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Protects against psychic intrusion and attacks with the Psychic Weapon Enhancement. Provides a roll bonus and mental armor.</p>\n<ul><li><strong>Level 1:</strong> +2 bonus and 5 mental armor</li><li><strong>Level 2:</strong> +4 bonus and 10 mental armor</li><li><strong>Level 3:</strong> +6 bonus and 15 mental armor</li><li><strong>Level 4:</strong> +8 bonus and 20 mental armor</li><li><strong>Level 5:</strong> +10 bonus and 25 mental armor</li><li><strong>Level 6:</strong> +12 bonus and 30 mental armor</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "9a18f96bee89a8ba",
+  "name": "Business",
+  "type": "skill",
+  "system": {
+    "description": "<p>Commerce, negotiation, accounting, and organizational operations.</p>",
+    "linkedStat": "mind",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

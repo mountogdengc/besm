@@ -1,0 +1,12 @@
+{
+  "_id": "076de37cec8ddc5c",
+  "name": "Swimming",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "45d8e64f77086abb",
+  "name": "Controlled Breathing",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

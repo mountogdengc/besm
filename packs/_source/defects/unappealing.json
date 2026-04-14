@@ -1,0 +1,11 @@
+{
+  "_id": "2bbd16458bf60631",
+  "name": "Unappealing",
+  "type": "defect",
+  "system": {
+    "description": "<p>An Unappealing character may find it difficult to blend into a crowd because their appearance is distinctive.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

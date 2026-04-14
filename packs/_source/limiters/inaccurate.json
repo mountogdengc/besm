@@ -1,0 +1,10 @@
+{
+  "_id": "821e36efcab753ef",
+  "name": "Inaccurate",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Notoriously imprecise or unwieldy in use. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

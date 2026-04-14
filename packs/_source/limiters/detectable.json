@@ -1,0 +1,10 @@
+{
+  "_id": "4af26289d54c1c57",
+  "name": "Detectable",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Obvious to observers via telltale signs. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Detectable using 1-2 methods.</li><li><strong>Level 2:</strong> Detectable using 3-5 methods.</li><li><strong>Level 3:</strong> Detectable using 6-10 methods.</li></ul>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

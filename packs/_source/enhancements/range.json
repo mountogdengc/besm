@@ -1,0 +1,10 @@
+{
+  "_id": "5ff2635caf8b5d88",
+  "name": "Range",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Projects your effect to distant points from you. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

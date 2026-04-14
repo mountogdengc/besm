@@ -1,0 +1,12 @@
+{
+  "_id": "3d21e9de47d0648c",
+  "name": "Performing Arts",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

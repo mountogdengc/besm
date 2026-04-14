@@ -1,0 +1,12 @@
+{
+  "_id": "205a4adef0514598",
+  "name": "Riding",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

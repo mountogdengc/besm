@@ -1,0 +1,12 @@
+{
+  "_id": "be0f31a383cee9f6",
+  "name": "Social Sciences",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

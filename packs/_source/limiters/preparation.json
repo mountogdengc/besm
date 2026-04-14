@@ -1,0 +1,10 @@
+{
+  "_id": "b774ab9777462aae",
+  "name": "Preparation",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Demands prep time or setup before use. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

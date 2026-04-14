@@ -1,0 +1,11 @@
+{
+  "_id": "186b2878c44ddc90",
+  "name": "Companion",
+  "type": "attribute",
+  "system": {
+    "description": "<p>A loyal ally built to complement your role and story—familiar, partner, or guardian.</p>\n<ul><li><strong>Level 1:</strong> 10 CP Companion</li><li><strong>Level 2:</strong> 11 - 20 CP Companion</li><li><strong>Level 3:</strong> 21 - 30 CP Companion</li><li><strong>Level 4:</strong> 31 - 40 CP Companion</li><li><strong>Level 5:</strong> 41 - 50 CP Companion</li><li><strong>Level 6:</strong> 51 - 60 CP Companion</li></ul>",
+    "baseCostPerLevel": 4,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

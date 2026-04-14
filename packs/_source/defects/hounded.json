@@ -1,0 +1,11 @@
+{
+  "_id": "cc8855301218ae57",
+  "name": "Hounded",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is constantly monitored or followed, making privacy difficult.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

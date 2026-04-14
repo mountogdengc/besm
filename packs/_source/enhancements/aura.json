@@ -1,0 +1,10 @@
+{
+  "_id": "66bab7de72f8bc45",
+  "name": "Aura",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Your power clings to you—mere contact can trigger its effects. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

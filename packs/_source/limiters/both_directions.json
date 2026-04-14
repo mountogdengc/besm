@@ -1,0 +1,10 @@
+{
+  "_id": "01969ae83ec3d32d",
+  "name": "Both Directions",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Blocks both ways; protection also seals your own attacks. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

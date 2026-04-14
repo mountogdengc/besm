@@ -1,0 +1,10 @@
+{
+  "_id": "f242442b4f6a9c53",
+  "name": "Both Ways",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Allows size changes in either direction for flexible scale play. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

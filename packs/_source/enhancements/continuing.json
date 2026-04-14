@@ -1,0 +1,10 @@
+{
+  "_id": "258a4c30ad74d9c0",
+  "name": "Continuing",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Lingering effects that persist beyond the initial strike. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

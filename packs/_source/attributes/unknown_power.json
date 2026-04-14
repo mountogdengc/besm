@@ -1,0 +1,11 @@
+{
+  "_id": "e4b1630ef9973caa",
+  "name": "Unknown Power",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants hidden abilities unknown to the character and player.</p>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

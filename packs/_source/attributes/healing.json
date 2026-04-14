@@ -1,0 +1,11 @@
+{
+  "_id": "6715ac586f8f61e6",
+  "name": "Healing",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows the character to heal physical injuries through touch, including some severe trauma.</p>\n<ul><li><strong>Level 1:</strong> Heals 5 Health Points</li><li><strong>Level 2:</strong> Heals 10 Health Points</li><li><strong>Level 3:</strong> Heals 15 Health Points</li><li><strong>Level 4:</strong> Heals 20 Health Points</li><li><strong>Level 5:</strong> Heals 25 Health Points</li><li><strong>Level 6:</strong> Heals 30 Health Points</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

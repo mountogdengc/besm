@@ -1,0 +1,11 @@
+{
+  "_id": "12f87a6c16e833e8",
+  "name": "Massive Damage",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Increases damage multiplier by striking at weaknesses.</p>\n<ul><li><strong>Level 1:</strong> Damage Multiplier increases by 1</li><li><strong>Level 2:</strong> Damage Multiplier increases by 2</li><li><strong>Level 3:</strong> Damage Multiplier increases by 3</li><li><strong>Level 4:</strong> Damage Multiplier increases by 4</li><li><strong>Level 5:</strong> Damage Multiplier increases by 5</li><li><strong>Level 6:</strong> Damage Multiplier increases by 6</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

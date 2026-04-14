@@ -1,0 +1,10 @@
+{
+  "_id": "a49d6b1fc36af14c",
+  "name": "Difficult to Stop",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>A return that resists interruption; stopping it is exceptionally difficult. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

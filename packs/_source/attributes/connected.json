@@ -1,0 +1,11 @@
+{
+  "_id": "e450c2960b7aad79",
+  "name": "Connected",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Institutional ties that open doors, grant access, or carry weight.</p>\n<ul><li><strong>Level 1:</strong> Associated (e.g. student rep, police officer)</li><li><strong>Level 2:</strong> Respected (e.g. sergeant, small biz owner)</li><li><strong>Level 3:</strong> Modest Authority (e.g. lieutenant, mayor)</li><li><strong>Level 4:</strong> Local Authority (e.g. captain, knight with land)</li><li><strong>Level 5:</strong> Regional Authority (e.g. colonel, baron)</li><li><strong>Level 6:</strong> Provincial Authority (e.g. senator, VP)</li><li><strong>Level 7:</strong> National Authority (e.g. king, cabinet official)</li><li><strong>Level 8:</strong> International Authority (e.g. president, pope)</li><li><strong>Level 9:</strong> Planetary Authority (e.g. world ruler)</li><li><strong>Level 10:</strong> Extraplanetary Authority (e.g. galactic emperor)</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "02ad936cd8335c8b",
+  "name": "Situational",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Functions only when certain conditions are met. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

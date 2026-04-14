@@ -1,0 +1,12 @@
+{
+  "_id": "caa72511ec48314c",
+  "name": "Disguise",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

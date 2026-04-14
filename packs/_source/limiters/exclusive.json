@@ -1,0 +1,10 @@
+{
+  "_id": "42a4924499a5e5da",
+  "name": "Exclusive",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Only affects a narrowly specified target set; others are unaffected. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

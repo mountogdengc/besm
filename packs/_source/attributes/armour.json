@@ -1,0 +1,11 @@
+{
+  "_id": "814f2230863d66df",
+  "name": "Armour",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Tangible protection against harm through gear, hide, or force. Represents steady damage mitigation. See official rules for coverage.</p>\n<ul><li><strong>Level 1:</strong> Armour Rating = 5</li><li><strong>Level 2:</strong> Armour Rating = 10</li><li><strong>Level 3:</strong> Armour Rating = 15</li><li><strong>Level 4:</strong> Armour Rating = 20</li><li><strong>Level 5:</strong> Armour Rating = 25</li><li><strong>Level 6:</strong> Armour Rating = 30</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

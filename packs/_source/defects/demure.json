@@ -1,0 +1,11 @@
+{
+  "_id": "88a3c45a30c180e4",
+  "name": "Demure",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is shy or overly modest, often hesitant to assert themselves in social situations.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "Extras"
+  }
+}

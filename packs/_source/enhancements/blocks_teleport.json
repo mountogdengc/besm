@@ -1,0 +1,10 @@
+{
+  "_id": "da6bcd7d759e566b",
+  "name": "Blocks Teleport",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Prevents teleportation into or out of the protected zone. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

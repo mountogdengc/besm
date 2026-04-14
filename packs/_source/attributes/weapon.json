@@ -1,0 +1,11 @@
+{
+  "_id": "a96b5336b3849980",
+  "name": "Weapon",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to deal damage through offensive means.</p>\n<ul><li><strong>Level -1:</strong> The attack doesn’t inflict regular damage</li><li><strong>Level 0:</strong> The Weapon’s Base Damage is 0 and thus the final damage is only equal to the character’s Attack Combat Value</li><li><strong>Level 1:</strong> The Weapon’s Base Damage is equal to 1 times the character’s Damage Multiplier</li><li><strong>Level 2:</strong> The Weapon’s Base Damage is equal to 2 times the character’s Damage Multiplier</li><li><strong>Level 3:</strong> The Weapon’s Base Damage is equal to 3 times the character’s Damage Multiplier</li><li><strong>Level 4:</strong> The Weapon’s Base Damage is equal to 4 times the character’s Damage Multiplier</li><li><strong>Level 5:</strong> The Weapon’s Base Damage is equal to 5 times the character’s Damage Multiplier</li><li><strong>Level 6:</strong> The Weapon’s Base Damage is equal to 6 times the character’s Damage Multiplier</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

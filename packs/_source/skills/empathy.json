@@ -1,0 +1,12 @@
+{
+  "_id": "6fdf3dc22c05039b",
+  "name": "Empathy",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

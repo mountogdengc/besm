@@ -1,0 +1,11 @@
+{
+  "_id": "267e97dcbf6c9873",
+  "name": "Immunity",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character is completely immune to attack damage and adverse effects from a particular weapon, element, or condition. Higher levels reflect broader or more impactful immunities.</p>\n<ul><li><strong>Level 1:</strong> Rare role in game (e.g., sacred wood weapons, specific nemesis)</li><li><strong>Level 2:</strong> Small role in game (e.g., silver weapons, specific group)</li><li><strong>Level 3:</strong> Moderate role in game (e.g., iron weapons, demons, night)</li><li><strong>Level 4:</strong> Large role in game (e.g., electricity, cold, weapon types)</li><li><strong>Level 5:</strong> Major role in game (e.g., fire/heat, broad weapon types)</li><li><strong>Level 6:</strong> Extreme role in game (e.g., gunfire, explosives, unarmed attacks)</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

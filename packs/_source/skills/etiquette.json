@@ -1,0 +1,12 @@
+{
+  "_id": "3b203f5658f193f9",
+  "name": "Etiquette",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

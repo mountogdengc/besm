@@ -1,0 +1,12 @@
+{
+  "_id": "1b0847773f6a3d4f",
+  "name": "Animal Training",
+  "type": "skill",
+  "system": {
+    "description": "<p>Conditioning and handling of animals, issuing commands, trust and care routines.</p>",
+    "linkedStat": "soul",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

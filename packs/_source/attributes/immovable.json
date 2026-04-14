@@ -1,0 +1,11 @@
+{
+  "_id": "e56514b8c813b802",
+  "name": "Immovable",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to reduce the knockback effect.</p>\n<ul><li><strong>Level 1:</strong> Reduces knockback</li><li><strong>Level 2:</strong> Further reduces knockback</li><li><strong>Level 3:</strong> Further reduces knockback</li><li><strong>Level 4:</strong> Further reduces knockback</li><li><strong>Level 5:</strong> Further reduces knockback</li><li><strong>Level 6:</strong> Further reduces knockback</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "Extras"
+  }
+}

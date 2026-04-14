@@ -1,0 +1,11 @@
+{
+  "_id": "a8d8bab37a3dd0ba",
+  "name": "Ranged Attack",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows the character to perform precise ranged attacks with a specific weapon class.</p>\n<ul><li><strong>Level 1:</strong> Level 1</li><li><strong>Level 2:</strong> Level 2</li><li><strong>Level 3:</strong> Level 3</li><li><strong>Level 4:</strong> Level 4</li><li><strong>Level 5:</strong> Level 5</li><li><strong>Level 6:</strong> Level 6</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "8f0836f6a6916146",
+  "name": "Regenerating",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Recovers lost potency over short intervals. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

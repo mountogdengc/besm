@@ -1,0 +1,10 @@
+{
+  "_id": "99bfc2d2120914c5",
+  "name": "Ammo",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Limited carried ammunition; once spent, you’re done until resupplied. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

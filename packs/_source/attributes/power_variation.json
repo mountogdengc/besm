@@ -1,0 +1,11 @@
+{
+  "_id": "878349cf39c747ef",
+  "name": "Power Variation",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows redistribution of CPs between a fixed set of Attributes. Ideal for characters with adjustable power sets or shifting forms.</p>\n<ul><li><strong>Level 1:</strong> Reassign Character Points between 2 Attributes each minute</li><li><strong>Level 2:</strong> Reassign Character Points between 3 Attributes each minute</li><li><strong>Level 3:</strong> Reassign Character Points between 4 Attributes each minute</li><li><strong>Level 4:</strong> Reassign Character Points between 5 Attributes each minute</li><li><strong>Level 5:</strong> Reassign Character Points between 6 Attributes each minute</li><li><strong>Level 6:</strong> Reassign Character Points between 7 Attributes each minute</li></ul>",
+    "baseCostPerLevel": 4,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

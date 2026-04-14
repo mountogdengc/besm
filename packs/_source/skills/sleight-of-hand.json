@@ -1,0 +1,12 @@
+{
+  "_id": "98028ee4e579ac23",
+  "name": "Sleight of Hand",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

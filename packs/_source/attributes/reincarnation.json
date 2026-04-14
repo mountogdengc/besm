@@ -1,0 +1,11 @@
+{
+  "_id": "1323dcc2bd3ba1af",
+  "name": "Reincarnation",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Character returns after death if remnants are preserved. Revival time decreases with level.</p>\n<ul><li><strong>Level 1:</strong> Reincarnates in 1 month</li><li><strong>Level 2:</strong> Reincarnates in 1 week</li><li><strong>Level 3:</strong> Reincarnates in 1 day</li><li><strong>Level 4:</strong> Reincarnates in 12 hours</li><li><strong>Level 5:</strong> Reincarnates in 1 hour</li><li><strong>Level 6:</strong> Reincarnates in 1 minute</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

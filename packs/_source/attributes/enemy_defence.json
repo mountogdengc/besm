@@ -1,0 +1,11 @@
+{
+  "_id": "349c54aac407acca",
+  "name": "Enemy Defence",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Defensive preparation keyed to a known adversary’s methods.</p>\n<ul><li><strong>Level 1:</strong> +2 DCV vs. chosen enemy</li><li><strong>Level 2:</strong> +4 DCV vs. chosen enemy</li><li><strong>Level 3:</strong> +6 DCV vs. chosen enemy</li><li><strong>Level 4:</strong> +8 DCV vs. chosen enemy</li><li><strong>Level 5:</strong> +10 DCV vs. chosen enemy</li><li><strong>Level 6:</strong> +12 DCV vs. chosen enemy</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

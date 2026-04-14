@@ -1,0 +1,11 @@
+{
+  "_id": "3ee4d52ed3e10fd5",
+  "name": "Ranged Defence",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Boosts Defence Combat Value when avoiding ranged attacks under a specific condition, such on foot or piloting a vehicle.</p>\n<ul><li><strong>Level 1:</strong> +2 DCV against ranged attacks under a specific condition</li><li><strong>Level 2:</strong> +4 DCV against ranged attacks under a specific condition</li><li><strong>Level 3:</strong> +6 DCV against ranged attacks under a specific condition</li><li><strong>Level 4:</strong> +8 DCV against ranged attacks under a specific condition</li><li><strong>Level 5:</strong> +10 DCV against ranged attacks under a specific condition</li><li><strong>Level 6:</strong> +12 DCV against ranged attacks under a specific condition</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "376f2e63f1e052b6",
+  "name": "Summon Creatures",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to summon and command creatures.</p>\n<ul><li><strong>Level 1:</strong> Summon up to 1 animal</li><li><strong>Level 2:</strong> Summon up to 2 animals</li><li><strong>Level 3:</strong> Summon up to 4 animals</li><li><strong>Level 4:</strong> Summon up to 8 animals</li><li><strong>Level 5:</strong> Summon up to 16 animals</li><li><strong>Level 6:</strong> Summon up to 32 animals</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

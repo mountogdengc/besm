@@ -1,0 +1,12 @@
+{
+  "_id": "dc5f47b9a2d00e21",
+  "name": "Physical Sciences",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

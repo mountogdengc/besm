@@ -1,0 +1,12 @@
+{
+  "_id": "654e8a437d5acdad",
+  "name": "Artisan",
+  "type": "skill",
+  "system": {
+    "description": "<p>Crafting physical goods with skill and precision using tools and materials.</p>",
+    "linkedStat": "mind",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

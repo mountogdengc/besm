@@ -1,0 +1,11 @@
+{
+  "_id": "9b40dbe71f46040b",
+  "name": "Flight",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows the character to fly through an atmosphere using any method such, magic, or anti-gravity.</p>\n<ul><li><strong>Level 1:</strong> Fly at speeds up to 10 kph</li><li><strong>Level 2:</strong> Fly at speeds up to 30 kph</li><li><strong>Level 3:</strong> Fly at speeds up to 100 kph</li><li><strong>Level 4:</strong> Fly at speeds up to 300 kph</li><li><strong>Level 5:</strong> Fly at speeds up to 1,000 kph</li><li><strong>Level 6:</strong> Fly at speeds up to 3,000 kph</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "90dde05e1d2972cd",
+  "name": "Special Requirement",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character has a Special Requirement that must be fulfilled in order for them to continue to function normally.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 3,
+    "tier": "serious",
+    "source": "BESM4e"
+  }
+}

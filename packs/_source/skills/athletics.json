@@ -1,0 +1,12 @@
+{
+  "_id": "be09b6771d28cd49",
+  "name": "Athletics",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

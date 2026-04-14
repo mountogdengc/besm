@@ -1,0 +1,11 @@
+{
+  "_id": "911c4376276a8613",
+  "name": "Enemy Attack",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Focused training that exploits a particular foe’s habits and tells.</p>\n<ul><li><strong>Level 1:</strong> +2 ACV vs. chosen enemy</li><li><strong>Level 2:</strong> +4 ACV vs. chosen enemy</li><li><strong>Level 3:</strong> +6 ACV vs. chosen enemy</li><li><strong>Level 4:</strong> +8 ACV vs. chosen enemy</li><li><strong>Level 5:</strong> +10 ACV vs. chosen enemy</li><li><strong>Level 6:</strong> +12 ACV vs. chosen enemy</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

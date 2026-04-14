@@ -1,0 +1,12 @@
+{
+  "_id": "e3634b9366bfd0be",
+  "name": "Naturopathy",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

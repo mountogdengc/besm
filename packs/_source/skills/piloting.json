@@ -1,0 +1,12 @@
+{
+  "_id": "509b59e33a89684b",
+  "name": "Piloting",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

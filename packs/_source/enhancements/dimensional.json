@@ -1,0 +1,10 @@
+{
+  "_id": "ec88dcb5e0c77d97",
+  "name": "Dimensional",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Call creatures from other realms rather than local fauna. Source: BESM4e.</p>",
+    "levels": 2,
+    "source": "BESM4e"
+  }
+}

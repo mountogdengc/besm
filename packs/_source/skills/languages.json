@@ -1,0 +1,12 @@
+{
+  "_id": "56da159fbaedac9c",
+  "name": "Languages",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

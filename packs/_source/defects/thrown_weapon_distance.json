@@ -1,0 +1,11 @@
+{
+  "_id": "3a8a1fe8bc5ffa74",
+  "name": "Unique Defect: Thrown Weapon Distance",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character's thrown weapons have a decreased range.</p>\n<ul><li><strong>Rank 1:</strong> ÷2 thrown weapon range</li><li><strong>Rank 2:</strong> ÷4 thrown weapon range</li><li><strong>Rank 3:</strong> ÷8 thrown weapon range</li><li><strong>Rank 4:</strong> ÷16 thrown weapon range</li><li><strong>Rank 5:</strong> ÷32 thrown weapon range</li><li><strong>Rank 6:</strong> ÷64 thrown weapon range</li><li><strong>Rank 7:</strong> ÷128 thrown weapon range</li><li><strong>Rank 8:</strong> ÷256 thrown weapon range</li><li><strong>Rank 9:</strong> ÷512 thrown weapon range</li><li><strong>Rank 10:</strong> ÷1024 thrown weapon range</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

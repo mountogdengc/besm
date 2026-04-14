@@ -1,0 +1,11 @@
+{
+  "_id": "b81ba21cd8a0cf23",
+  "name": "Magnet",
+  "type": "defect",
+  "system": {
+    "description": "<p>Character attracts obsessive or amorous attention from others. This is not due to charisma, but some unseen fate or aura. Attention is usually unwanted and problematic.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

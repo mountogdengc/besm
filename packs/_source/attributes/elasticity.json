@@ -1,0 +1,11 @@
+{
+  "_id": "e67f20c855cd1796",
+  "name": "Elasticity",
+  "type": "attribute",
+  "system": {
+    "description": "<p>The character can stretch or contort their limbs and/or body to a superhuman degree. This is most appropriate for giant robots with telescoping arms, sinuous demons or aliens, and rubbery creatures. While stretched, the character receives a minor edge on unarmed attack rolls.</p>\n<ul><li><strong>Level 1:</strong> Can stretch their body up to 10 cm</li><li><strong>Level 2:</strong> Can stretch their body up to 30 cm</li><li><strong>Level 3:</strong> Can stretch their body up to 1 m</li><li><strong>Level 4:</strong> Can stretch their body up to 3 m</li><li><strong>Level 5:</strong> Can stretch their body up to 10 m</li><li><strong>Level 6:</strong> Can stretch their body up to 30 m</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "7ecfb1758c33d618",
+  "name": "Medical",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

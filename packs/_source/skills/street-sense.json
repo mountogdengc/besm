@@ -1,0 +1,12 @@
+{
+  "_id": "9676848dea8edd4b",
+  "name": "Street Sense",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

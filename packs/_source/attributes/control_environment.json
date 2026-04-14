@@ -1,0 +1,11 @@
+{
+  "_id": "254ec51c36128485",
+  "name": "Control Environment",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Subtle influence over ambient conditions for mood, concealment, or advantage.</p>\n<ul><li><strong>Level 1:</strong> Influence over one environment</li><li><strong>Level 2:</strong> Influence over two environments</li><li><strong>Level 3:</strong> Influence over three environments</li><li><strong>Level 4:</strong> Influence over four environments</li><li><strong>Level 5:</strong> Influence over five environments</li><li><strong>Level 6:</strong> Influence over six environments</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

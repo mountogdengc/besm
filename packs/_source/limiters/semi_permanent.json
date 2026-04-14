@@ -1,0 +1,10 @@
+{
+  "_id": "e4f9502ae38ba858",
+  "name": "Semi-Permanent",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Lasts a long while but eventually fades. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

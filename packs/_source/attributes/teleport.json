@@ -1,0 +1,11 @@
+{
+  "_id": "af121117e713bfa6",
+  "name": "Teleport",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the ability to instantly travel from one place to another.</p>\n<ul><li><strong>Level 1:</strong> Teleport up to 10 meters</li><li><strong>Level 2:</strong> Teleport up to 100 meters</li><li><strong>Level 3:</strong> Teleport up to 1 kilometer</li><li><strong>Level 4:</strong> Teleport up to 10 kilometers</li><li><strong>Level 5:</strong> Teleport up to 100 kilometers</li><li><strong>Level 6:</strong> Teleport up to 1,000 kilometers</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

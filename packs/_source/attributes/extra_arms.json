@@ -1,0 +1,11 @@
+{
+  "_id": "3e2cc95ffe00f664",
+  "name": "Extra Arms",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Additional manipulators that enhance handling and presence, not extra turns.</p>\n<ul><li><strong>Level 1:</strong> 1 extra arm</li><li><strong>Level 2:</strong> 2 extra arms</li><li><strong>Level 3:</strong> 3 - 5 extra arms</li><li><strong>Level 4:</strong> 6 - 10 extra arms</li><li><strong>Level 5:</strong> 11 - 25 extra arms</li><li><strong>Level 6:</strong> 26 - 50 extra arms</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

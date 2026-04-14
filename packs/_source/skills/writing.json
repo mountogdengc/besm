@@ -1,0 +1,12 @@
+{
+  "_id": "732ebf5373e340de",
+  "name": "Writing",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

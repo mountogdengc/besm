@@ -1,0 +1,12 @@
+{
+  "_id": "6e90b138a103be62",
+  "name": "Engineering",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

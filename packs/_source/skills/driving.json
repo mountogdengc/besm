@@ -1,0 +1,12 @@
+{
+  "_id": "0823687c4f4b2768",
+  "name": "Driving",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

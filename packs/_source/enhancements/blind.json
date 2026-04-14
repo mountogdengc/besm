@@ -1,0 +1,10 @@
+{
+  "_id": "b186f225e1ce3997",
+  "name": "Blind",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Teleport without a clear line of sight to the destination; arrive at a known or sensed point. Source: Extras.</p>",
+    "levels": 1,
+    "source": "Extras"
+  }
+}

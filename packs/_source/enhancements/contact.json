@@ -1,0 +1,10 @@
+{
+  "_id": "4b33d50da54627b3",
+  "name": "Contact",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Delivers effects through touch or exposure rather than direct impact. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

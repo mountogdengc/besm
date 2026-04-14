@@ -1,0 +1,11 @@
+{
+  "_id": "ef24b7166c153804",
+  "name": "Exorcism",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Drive out malign influences through will, ritual, or faith.</p>\n<ul><li><strong>Level 1:</strong> +2 to Exorcism checks</li><li><strong>Level 2:</strong> +4 to Exorcism checks</li><li><strong>Level 3:</strong> +6 to Exorcism checks</li><li><strong>Level 4:</strong> +8 to Exorcism checks</li><li><strong>Level 5:</strong> +10 to Exorcism checks</li><li><strong>Level 6:</strong> +12 to Exorcism checks</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

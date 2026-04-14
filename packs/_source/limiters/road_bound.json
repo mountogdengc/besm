@@ -1,0 +1,10 @@
+{
+  "_id": "12b28dd2c1290cd4",
+  "name": "Road-Bound",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Shines on smooth roads; struggles off‑road. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

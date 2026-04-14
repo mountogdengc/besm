@@ -1,0 +1,11 @@
+{
+  "_id": "cf7468ea1c5b53b5",
+  "name": "Change State",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Shift into liquid, gas, incorporeal, or energy for dramatic movement and access.</p>\n<ul><li><strong>Level 1:</strong> Liquid state, short duration</li><li><strong>Level 2:</strong> Liquid state, long duration</li><li><strong>Level 3:</strong> Gaseous state, short duration</li><li><strong>Level 4:</strong> Gaseous state, long duration</li><li><strong>Level 5:</strong> Incorporeal state, short duration</li><li><strong>Level 6:</strong> Incorporeal state, long duration</li><li><strong>Level 7:</strong> Energy state, short duration</li><li><strong>Level 8:</strong> Energy state, long duration</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

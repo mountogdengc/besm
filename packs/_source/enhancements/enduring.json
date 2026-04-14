@@ -1,0 +1,10 @@
+{
+  "_id": "efdcab1a724beadf",
+  "name": "Enduring",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Sustains invoked effects beyond the instant, maintaining access for a scene. Source: Ikaris.</p>",
+    "levels": 1,
+    "source": "Ikaris"
+  }
+}

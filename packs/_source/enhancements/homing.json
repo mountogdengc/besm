@@ -1,0 +1,10 @@
+{
+  "_id": "bc3c9dea99800794",
+  "name": "Homing",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Attacks that curve back toward their mark if they stray. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

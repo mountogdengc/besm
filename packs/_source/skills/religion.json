@@ -1,0 +1,12 @@
+{
+  "_id": "4ebc50f0aa7d4153",
+  "name": "Religion",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

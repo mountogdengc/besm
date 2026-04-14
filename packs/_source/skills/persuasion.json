@@ -1,0 +1,12 @@
+{
+  "_id": "a22e0927b9581a00",
+  "name": "Persuasion",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

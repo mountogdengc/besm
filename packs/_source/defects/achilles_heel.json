@@ -1,0 +1,11 @@
+{
+  "_id": "7d8ad962ec48fd8b",
+  "name": "Achilles Heel",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character loses twice Health Points from a particular attack form (e.g., silver for werewolves).</p>\n<ul><li><strong>Rank 1:</strong> Rare attack form</li><li><strong>Rank 2:</strong> Uncommon attack form</li><li><strong>Rank 3:</strong> Common attack form</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "2f6d1a476c88b23a",
+  "name": "Bane",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character is harmed by exposure to a substance or material. Contact damage varies based on exposure and rarity.</p>\n<ul><li><strong>Rank 1:</strong> The Bane causes the character minor damage: 10 damage per round of exposure.</li><li><strong>Rank 2:</strong> The Bane causes the character moderate damage: 20 damage per round of exposure.</li><li><strong>Rank 3:</strong> The Bane causes the character major damage: 30 damage per round of exposure.</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "7b71042b4e3c2c4d",
+  "name": "Navigation",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

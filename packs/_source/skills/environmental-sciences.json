@@ -1,0 +1,12 @@
+{
+  "_id": "68b326460135876f",
+  "name": "Environmental Sciences",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

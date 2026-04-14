@@ -1,0 +1,11 @@
+{
+  "_id": "e28b1a4626631f48",
+  "name": "Nemesis",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character has someone in their life that actively interferes with their goals. This may be a professional, personal, or romantic rival. The Nemesis is persistent and disruptive, though not necessarily a mortal enemy.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

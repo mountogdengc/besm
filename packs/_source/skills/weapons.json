@@ -1,0 +1,12 @@
+{
+  "_id": "fcbe9954cb1dd144",
+  "name": "Weapons",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

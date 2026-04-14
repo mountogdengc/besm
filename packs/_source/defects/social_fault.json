@@ -1,0 +1,11 @@
+{
+  "_id": "8a0a68bd98f07c17",
+  "name": "Social Fault",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character exhibits a Social Fault that produces hardship for either the character or their companions and allies (or both).</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

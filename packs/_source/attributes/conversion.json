@@ -1,0 +1,11 @@
+{
+  "_id": "9b77a09817e3e675",
+  "name": "Conversion",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Draw power from pain, momentarily fueling greater feats when struck.</p>\n<ul><li><strong>Level 1:</strong> 1 temporary CP per 10 damage</li><li><strong>Level 2:</strong> 2 temporary CP per 10 damage</li><li><strong>Level 3:</strong> 3 temporary CP per 10 damage</li><li><strong>Level 4:</strong> 4 temporary CP per 10 damage</li><li><strong>Level 5:</strong> 5 temporary CP per 10 damage</li><li><strong>Level 6:</strong> 6 temporary CP per 10 damage</li></ul>",
+    "baseCostPerLevel": 3,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

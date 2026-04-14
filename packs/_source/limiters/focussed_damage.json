@@ -1,0 +1,10 @@
+{
+  "_id": "c8ef4633e388bfd6",
+  "name": "Focussed Damage",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Extra harm applies only with a specific attack style or method. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

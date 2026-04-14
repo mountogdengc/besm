@@ -1,0 +1,11 @@
+{
+  "_id": "4bb9beaeb983bf2e",
+  "name": "Physical Impairment",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character has a debilitating condition such missing limb, chronic illness, or recurring injury that impedes their daily function.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "cpGranted": 3,
+    "tier": "serious",
+    "source": "BESM4e"
+  }
+}

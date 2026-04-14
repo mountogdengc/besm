@@ -1,0 +1,10 @@
+{
+  "_id": "073a39635d8ae5ca",
+  "name": "Flexible",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>A whiplike or extendable attack that enables tricky maneuvers. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

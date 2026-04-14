@@ -1,0 +1,12 @@
+{
+  "_id": "90587d4310fdf2e1",
+  "name": "Civilization",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

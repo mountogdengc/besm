@@ -1,0 +1,11 @@
+{
+  "_id": "410656ebfb83eaa8",
+  "name": "Jumping",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows a character to jump great distances and land without injury.</p>\n<ul><li><strong>Level 1:</strong> Jump up to 3 times normal distance</li><li><strong>Level 2:</strong> Jump up to 10 times normal distance</li><li><strong>Level 3:</strong> Jump up to 30 times normal distance</li><li><strong>Level 4:</strong> Jump up to 100 times normal distance</li><li><strong>Level 5:</strong> Jump up to 300 times normal distance</li><li><strong>Level 6:</strong> Jump up to 1,000 times normal distance</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

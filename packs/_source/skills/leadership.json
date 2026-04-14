@@ -1,0 +1,12 @@
+{
+  "_id": "b32a77d78ba315e2",
+  "name": "Leadership",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

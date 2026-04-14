@@ -1,0 +1,11 @@
+{
+  "_id": "0ce6fc88d4479b14",
+  "name": "Greater Unique Defect",
+  "type": "defect",
+  "system": {
+    "description": "<p>A significant unique defect that affects the character in a major way. Each rank provides 2 CP refund.</p>\n<ul><li><strong>Rank 1:</strong> Major unique defect with moderate impact</li><li><strong>Rank 2:</strong> Major unique defect with significant impact</li><li><strong>Rank 3:</strong> Major unique defect with severe impact</li></ul>",
+    "cpGranted": 2,
+    "tier": "greater",
+    "source": "BESM4e"
+  }
+}

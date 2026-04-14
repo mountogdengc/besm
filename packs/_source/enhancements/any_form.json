@@ -1,0 +1,10 @@
+{
+  "_id": "24c516380b9a7688",
+  "name": "Any Form",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Transform subjects into virtually any suitable form within the setting’s logic. Source: BESM4e.</p>",
+    "levels": 2,
+    "source": "BESM4e"
+  }
+}

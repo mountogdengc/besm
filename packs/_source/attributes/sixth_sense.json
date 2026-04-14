@@ -1,0 +1,11 @@
+{
+  "_id": "f993922e9b217abb",
+  "name": "Sixth Sense",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Allows character to sense phenomena others cannot, such, magic, danger.</p>\n<ul><li><strong>Level 1:</strong> Sense 1 type of phenomenon</li><li><strong>Level 2:</strong> Sense 2 types of phenomena</li><li><strong>Level 3:</strong> Sense 3 types of phenomena</li><li><strong>Level 4:</strong> Sense 4 types of phenomena</li><li><strong>Level 5:</strong> Sense 5 types of phenomena</li><li><strong>Level 6:</strong> Sense 6 types of phenomena</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

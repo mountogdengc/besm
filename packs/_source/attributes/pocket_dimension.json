@@ -1,0 +1,11 @@
+{
+  "_id": "ff04878e63cc2070",
+  "name": "Pocket Dimension",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants the user control over a small extra-dimensional space for storage, habitation, or narrative purposes. Typically requires Dimension Walk or Portal unless granted via an accessible item.</p>\n<ul><li><strong>Level 1:</strong> Tiny dimension (10 cm radius)</li><li><strong>Level 2:</strong> Small dimension (1 m radius)</li><li><strong>Level 3:</strong> Moderately sized dimension (10 m radius)</li><li><strong>Level 4:</strong> Building-sized dimension (100 m radius)</li><li><strong>Level 5:</strong> Neighbourhood-sized dimension (1 km radius)</li><li><strong>Level 6:</strong> City-sized dimension (10 km radius)</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

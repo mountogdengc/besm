@@ -1,0 +1,12 @@
+{
+  "_id": "7a1dcd09c7181dd5",
+  "name": "Survival",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

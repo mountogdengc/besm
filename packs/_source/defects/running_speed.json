@@ -1,0 +1,11 @@
+{
+  "_id": "d7f6a1733d879662",
+  "name": "Running Speed",
+  "type": "defect",
+  "system": {
+    "description": "<p>The character's running speed is reduced.</p>\n<ul><li><strong>Rank 1:</strong> ÷2 running speed</li><li><strong>Rank 2:</strong> ÷4 running speed</li><li><strong>Rank 3:</strong> ÷8 running speed</li><li><strong>Rank 4:</strong> ÷16 running speed</li><li><strong>Rank 5:</strong> ÷32 running speed</li><li><strong>Rank 6:</strong> ÷64 running speed</li><li><strong>Rank 7:</strong> ÷128 running speed</li><li><strong>Rank 8:</strong> ÷256 running speed</li><li><strong>Rank 9:</strong> ÷512 running speed</li><li><strong>Rank 10:</strong> ÷1024 running speed</li></ul>",
+    "cpGranted": 1,
+    "tier": "lesser",
+    "source": "BESM4e"
+  }
+}

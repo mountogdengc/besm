@@ -1,0 +1,11 @@
+{
+  "_id": "e1dab65829b15214",
+  "name": "Skills",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants skill points to spend on a specific skill set.</p>\n<ul><li><strong>Level 1:</strong> 1 skill pick</li><li><strong>Level 2:</strong> 2 skill picks</li><li><strong>Level 3:</strong> 3 skill picks</li><li><strong>Level 4:</strong> 4 skill picks</li><li><strong>Level 5:</strong> 5 skill picks</li><li><strong>Level 6:</strong> 6 skill picks</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

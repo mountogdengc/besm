@@ -1,0 +1,10 @@
+{
+  "_id": "f89a6ebda9082b28",
+  "name": "Glide",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Airborne only with height or momentum; you ride currents, not launch. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

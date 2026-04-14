@@ -1,0 +1,10 @@
+{
+  "_id": "586ec7460d280692",
+  "name": "Emphasised",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Tuned to an uncommon threat; less effective against everything else. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

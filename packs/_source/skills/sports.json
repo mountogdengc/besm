@@ -1,0 +1,12 @@
+{
+  "_id": "5cc2159cfd03285e",
+  "name": "Sports",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

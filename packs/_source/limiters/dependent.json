@@ -1,0 +1,10 @@
+{
+  "_id": "f7a21309e9b9ebab",
+  "name": "Dependent",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Relies on other abilities being active or succeeding. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Dependent Attribute does not take effect until one other Attribute is activated</li><li><strong>Level 2:</strong> Dependent Attribute does not take effect until two other Attributes are activated</li><li><strong>Level 3:</strong> Dependent Attribute does not take effect until three other Attributes are activated</li></ul>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

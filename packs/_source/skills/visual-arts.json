@@ -1,0 +1,12 @@
+{
+  "_id": "1ce684d571020947",
+  "name": "Visual Arts",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

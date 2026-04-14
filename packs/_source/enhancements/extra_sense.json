@@ -1,0 +1,10 @@
+{
+  "_id": "955a146a7904f862",
+  "name": "Extra Sense",
+  "type": "enhancement",
+  "system": {
+    "description": "<p>Adds an additional sensory layer such, scent, touch, or taste. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

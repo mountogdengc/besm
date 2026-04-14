@@ -1,0 +1,11 @@
+{
+  "_id": "b6da2bf4c9f679b7",
+  "name": "Skill Group - Field",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Grants training or talent in a broad range of field skills.</p>\n<ul><li><strong>Level 1:</strong> Developing - Gaining proficiency through regular application</li><li><strong>Level 2:</strong> Trained - Moderate training and practice</li><li><strong>Level 3:</strong> Expert - Significant training and practice</li><li><strong>Level 4:</strong> Veteran - Extensive training and practice</li><li><strong>Level 5:</strong> Master - Exhaustive training and practice</li><li><strong>Level 6:</strong> Grand Master - Unparalleled ability and knowledge</li></ul>",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

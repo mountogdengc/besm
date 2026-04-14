@@ -1,0 +1,12 @@
+{
+  "_id": "c2cfd1d9e0f68768",
+  "name": "Listening",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

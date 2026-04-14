@@ -1,0 +1,10 @@
+{
+  "_id": "db5b4e951123d5ca",
+  "name": "Imbue",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Grant this ability to others for a short time. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Imbue 4-5 people</li><li><strong>Level 2:</strong> Imbue 2-3 people</li><li><strong>Level 3:</strong> Imbue 1 person</li></ul>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

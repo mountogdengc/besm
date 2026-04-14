@@ -1,0 +1,11 @@
+{
+  "_id": "6b0a518d52e58b4f",
+  "name": "Defence Mastery",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Honed instincts and technique that keep you safe regardless of style.</p>\n<ul><li><strong>Level 1:</strong> +1 to Defence CV</li><li><strong>Level 2:</strong> +2 to Defence CV</li><li><strong>Level 3:</strong> +3 to Defence CV</li><li><strong>Level 4:</strong> +4 to Defence CV</li><li><strong>Level 5:</strong> +5 to Defence CV</li><li><strong>Level 6:</strong> +6 to Defence CV</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

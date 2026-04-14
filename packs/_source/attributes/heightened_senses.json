@@ -1,0 +1,11 @@
+{
+  "_id": "301cec486fdc0e56",
+  "name": "Heightened Senses",
+  "type": "attribute",
+  "system": {
+    "description": "<p>Enhances one or more of the character's physical senses to superhuman levels.</p>\n<ul><li><strong>Level 1:</strong> One enhanced sense</li><li><strong>Level 2:</strong> Two enhanced senses</li><li><strong>Level 3:</strong> Three enhanced senses</li><li><strong>Level 4:</strong> Four enhanced senses</li><li><strong>Level 5:</strong> Five enhanced senses</li></ul>",
+    "baseCostPerLevel": 1,
+    "purchasedLevel": 1,
+    "source": "BESM4e"
+  }
+}

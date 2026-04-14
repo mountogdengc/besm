@@ -1,0 +1,10 @@
+{
+  "_id": "3beee8c68b7b3aa4",
+  "name": "Consumable",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Consumes a focus or component on each use. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Focus is easy to replace</li><li><strong>Level 2:</strong> Focus is hard to replace</li><li><strong>Level 3:</strong> Focus is very difficult to replace</li></ul>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

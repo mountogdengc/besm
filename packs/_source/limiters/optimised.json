@@ -1,0 +1,10 @@
+{
+  "_id": "7b76f6e7c620da5e",
+  "name": "Optimised",
+  "type": "limiter",
+  "system": {
+    "description": "<p>Optimised against a common threat; performance is skewed toward a chosen focus. Source: BESM4e.</p>",
+    "levels": 1,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "434d2e3efc7920f7",
+  "name": "Occult",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

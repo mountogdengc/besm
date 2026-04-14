@@ -1,0 +1,12 @@
+{
+  "_id": "b6e733d0bb262afe",
+  "name": "Architecture",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

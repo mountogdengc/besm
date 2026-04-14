@@ -1,0 +1,12 @@
+{
+  "_id": "58c0f1e9afa0cd81",
+  "name": "Art",
+  "type": "skill",
+  "system": {
+    "description": "",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "3960b6dd1a1a4373",
+  "name": "Burglary",
+  "type": "skill",
+  "system": {
+    "description": "<p>Breaking and entering, bypassing locks and alarms, stealthy intrusion.</p>",
+    "linkedStat": "body",
+    "costClass": "framework",
+    "rank": 0,
+    "source": "BESM4e"
+  }
+}
