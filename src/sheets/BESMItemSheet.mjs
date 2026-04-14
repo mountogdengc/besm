@@ -5,6 +5,7 @@ import EnhancementSheet from "../components/items/EnhancementSheet.svelte";
 import LimiterSheet from "../components/items/LimiterSheet.svelte";
 import PossessionSheet from "../components/items/PossessionSheet.svelte";
 import SkillSheet from "../components/items/SkillSheet.svelte";
+import TemplateSheet from "../components/items/TemplateSheet.svelte";
 
 const COMPONENT_MAP = {
   attribute: AttributeSheet,
@@ -13,6 +14,7 @@ const COMPONENT_MAP = {
   limiter: LimiterSheet,
   possession: PossessionSheet,
   skill: SkillSheet,
+  besm4eTemplate: TemplateSheet,
 };
 
 export class BESMItemSheet extends foundry.applications.api.DocumentSheetV2 {
