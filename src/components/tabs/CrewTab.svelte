@@ -87,31 +87,31 @@
   <!-- Add Crew -->
   <div class="border-t border-slate-700 pt-2 mt-2">
     <div class="text-xs text-slate-500 uppercase tracking-wide mb-1">Add Crew Member</div>
-    <div class="flex gap-2 items-end">
-      <div class="flex-1">
-        <select
-          class="w-full bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
-          bind:value={newCrewId}
-        >
-          <option value="">— Select Actor —</option>
-          {#each availableActors as a}
-            <option value={a.id}>{a.name} ({a.type})</option>
-          {/each}
-        </select>
-      </div>
+    <div class="flex flex-col gap-1">
       <select
-        class="bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
-        bind:value={newCrewRole}
+        class="w-full bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
+        bind:value={newCrewId}
       >
-        <option value="crew">Crew</option>
-        <option value="pilot">Pilot</option>
-        <option value="gunner">Gunner</option>
-        <option value="passenger">Passenger</option>
+        <option value="">— Select Actor —</option>
+        {#each availableActors as a}
+          <option value={a.id}>{a.name} ({a.type})</option>
+        {/each}
       </select>
-      <button type="button"
-        class="px-2 py-1 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600"
-        onclick={addCrew}
-      >Add</button>
+      <div class="flex gap-2">
+        <select
+          class="flex-1 bg-slate-800 border border-slate-700 rounded text-xs text-slate-100 p-1"
+          bind:value={newCrewRole}
+        >
+          <option value="crew">Crew</option>
+          <option value="pilot">Pilot</option>
+          <option value="gunner">Gunner</option>
+          <option value="passenger">Passenger</option>
+        </select>
+        <button type="button"
+          class="px-2 py-1 bg-emerald-700 text-emerald-100 rounded border-0 cursor-pointer text-xs hover:bg-emerald-600"
+          onclick={addCrew}
+        >Add</button>
+      </div>
     </div>
   </div>
 </div>
