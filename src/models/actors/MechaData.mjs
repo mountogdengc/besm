@@ -91,7 +91,33 @@ export class MechaData extends foundry.abstract.TypeDataModel {
     const mv = resolveStatValue(this.stats.mind);
     const sv = resolveStatValue(this.stats.soul);
 
-    this.derived.baseCv = computeBaseCv(bv, mv, sv);
+    // Pilot stat fusion — if a pilot is linked, combine stats for CV
+    let cvBody = bv;
+    let cvMind = mv;
+    let cvSoul = sv;
+
+    try {
+      if (this.pilotId) {
+        const pilot = game.actors.get(this.pilotId);
+        if (pilot) {
+          const pilotBody = pilot.system.stats.body.mode !== "missing" ? pilot.system.stats.body.value : null;
+          const pilotMind = pilot.system.stats.mind.mode !== "missing" ? pilot.system.stats.mind.value : null;
+          const pilotSoul = pilot.system.stats.soul.mode !== "missing" ? pilot.system.stats.soul.value : null;
+
+          // Store pilot bonus for display
+          this.pilotBonus.body = pilotBody ?? 0;
+          this.pilotBonus.mind = pilotMind ?? 0;
+          this.pilotBonus.soul = pilotSoul ?? 0;
+
+          // Fuse: mecha Body + pilot stats for CV
+          cvBody = (bv ?? 0) + (pilotBody ?? 0);
+          cvMind = pilotMind;
+          cvSoul = pilotSoul;
+        }
+      }
+    } catch { /* game not ready during init */ }
+
+    this.derived.baseCv = computeBaseCv(cvBody, cvMind, cvSoul);
 
     const attackMastery = items.find(i => i.type === "attribute" && i.name === "Attack Mastery");
     this.derived.acv = this.derived.baseCv + (attackMastery?.system.effectiveLevel ?? 0);
