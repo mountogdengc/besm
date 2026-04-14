@@ -6,7 +6,8 @@
   import BiographyTab from "../tabs/BiographyTab.svelte";
 
   let { document: actorDocument } = $props();
-  let actor = $state(actorDocument);
+  let version = $state(0);
+  let actor = $derived.by(() => { version; return actorDocument; });
   let activeTab = $state("attributes");
 
   const tabs = [
@@ -17,9 +18,30 @@
 
   $effect(() => {
     const hookId = Hooks.on("updateActor", (updatedActor) => {
-      if (updatedActor.id === actor.id) actor = updatedActor;
+      if (updatedActor.id === actorDocument.id) version++;
     });
     return () => Hooks.off("updateActor", hookId);
+  });
+
+  $effect(() => {
+    const hookId = Hooks.on("createItem", (item) => {
+      if (item.parent?.id === actorDocument.id) version++;
+    });
+    return () => Hooks.off("createItem", hookId);
+  });
+
+  $effect(() => {
+    const hookId = Hooks.on("updateItem", (item) => {
+      if (item.parent?.id === actorDocument.id) version++;
+    });
+    return () => Hooks.off("updateItem", hookId);
+  });
+
+  $effect(() => {
+    const hookId = Hooks.on("deleteItem", (item) => {
+      if (item.parent?.id === actorDocument.id) version++;
+    });
+    return () => Hooks.off("deleteItem", hookId);
   });
 </script>
 
