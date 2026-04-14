@@ -6,5 +6,6 @@
     "description": "<p>Shortens how long an effect persists. Source: Multiverse.</p>\n<ul><li><strong>Level 0:</strong> Remains in effect Attribute description indicates (which is usually one minute or dramatic scene)</li><li><strong>Level 1:</strong> Remains in effect for 30 seconds (or only part of a dramatic scene)</li><li><strong>Level 2:</strong> Remains in effect for 5 rounds</li><li><strong>Level 3:</strong> Remains in effect for 2 rounds</li><li><strong>Level 4:</strong> Remains in effect for 1 round</li><li><strong>Level 5:</strong> Remains in effect for 1-2 seconds</li><li><strong>Level 6:</strong> The effect is instantaneous or has no significant duration</li></ul>",
     "levels": 1,
     "source": "Multiverse"
-  }
+  },
+  "_key": "!items!d3fa2fb76ec89149"
 }

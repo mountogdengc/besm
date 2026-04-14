@@ -6,5 +6,6 @@
     "description": "<p>Takes effect later, leaving a window to intervene. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Delay of a few minutes before it takes full effect</li><li><strong>Level 2:</strong> Delay of a few hours before it takes full effect</li><li><strong>Level 3:</strong> Delay of a few days before it takes full effect</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!5bb3f3229ea9976e"
 }

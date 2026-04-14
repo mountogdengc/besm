@@ -6,5 +6,6 @@
     "description": "<p>Consumes personal reserves either during use or afterward. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Attributes with immediate effects burn 10 Energy Points for each use (or attempted use); ongoing Attributes burn 10 Energy Point each minute of use</li><li><strong>Level 2:</strong> Attributes with immediate effects burn 20 Energy Points for each use (or attempted use); ongoing Attributes burn 5 Energy Point each round of use</li><li><strong>Level 3:</strong> Attributes with immediate effects burn 30 Energy Points for each use (or attempted use); ongoing Attributes burn 20 Energy Point each round of use</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!1605bc6df351e924"
 }

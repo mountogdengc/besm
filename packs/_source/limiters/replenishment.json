@@ -6,5 +6,6 @@
     "description": "<p>Defines how quickly Mana returns to the character. Source: Ikaris.</p>\n<ul><li><strong>Level 1:</strong> Mana replenishes at a rate of 1/minute</li><li><strong>Level 2:</strong> Mana replenishes at a rate of 1/5 minutes</li><li><strong>Level 3:</strong> Mana replenishes at a rate of 5/hour</li><li><strong>Level 4:</strong> Mana replenishes at a rate of 10/day</li><li><strong>Level 5:</strong> Mana replenishes at a rate of 1/day</li><li><strong>Level 6:</strong> Mana replenishes at a rate of 1/week</li></ul>",
     "levels": 1,
     "source": "Ikaris"
-  }
+  },
+  "_key": "!items!83f11cef8f9435e3"
 }

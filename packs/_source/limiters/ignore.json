@@ -6,5 +6,6 @@
     "description": "<p>Ignores a chosen aspect (substance, color, or condition). Source: Multiverse.</p>\n<ul><li><strong>Level 1:</strong> The substance, colour, or condition plays a rare role in the game. Examples include marble stone, a specific shade of yellow, paranoia, pentagrams, etc.</li><li><strong>Level 2:</strong> The substance, colour, or condition plays a uncommon role in the game. Examples include wood, teal, jealousy, numbers divisible by 10, etc.</li><li><strong>Level 3:</strong> The substance, colour, or condition plays a common role in the game. Examples include metal, blue, fear, circles, etc.</li></ul>",
     "levels": 1,
     "source": "Multiverse"
-  }
+  },
+  "_key": "!items!ea8819a92115ed69"
 }

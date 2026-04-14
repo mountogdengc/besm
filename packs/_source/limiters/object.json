@@ -6,5 +6,6 @@
     "description": "<p>Bound to a particular item you must carry. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> The Item’s Attribute still provides moderate benefit to the character.</li><li><strong>Level 2:</strong> The Item’s Attribute still provides slight benefit to the character.</li><li><strong>Level 3:</strong> The Item’s Attribute hardly provides any benefit to the character.</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!4edbc2d6d030ae60"
 }

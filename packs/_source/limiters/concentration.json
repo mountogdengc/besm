@@ -6,5 +6,6 @@
     "description": "<p>Requires steady focus; interruptions end the effect. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Requires slight Concentration. The character can still perform other general actions but cannot perform any combat-related actions or use other Attributes that also require Concentration.</li><li><strong>Level 2:</strong> Requires intense Concentration. The character can move at slow speeds and talk with others while using the Attribute but cannot perform any complex actions (including combat) or use any other Attribute.</li><li><strong>Level 3:</strong> Requires full Concentration. The character cannot do anything else while using the Attribute and must remain still to devote their full attention to the Attribute.</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!f730a49875945e8b"
 }

@@ -6,5 +6,6 @@
     "description": "<p>Needs dedicated helpers or support to function. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> A single assistant is required for the Attribute to function</li><li><strong>Level 2:</strong> A small group of assistants (2-10) is required for the Attribute to function</li><li><strong>Level 3:</strong> A large group of assistants (11-100) is required for the Attribute to function</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!b5adc87b9e45a1d2"
 }

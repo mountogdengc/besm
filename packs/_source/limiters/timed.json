@@ -6,5 +6,6 @@
     "description": "<p>Ongoing or permanent effects end after a set duration. Source: Multiverse.</p>\n<ul><li><strong>Level 1:</strong> Attribute remains in effect for up to one hour</li><li><strong>Level 2:</strong> Attribute remains in effect for up to one minute or dramatic scene</li><li><strong>Level 3:</strong> Attribute remains in effect for up to five rounds</li></ul>",
     "levels": 1,
     "source": "Multiverse"
-  }
+  },
+  "_key": "!items!4462c017985d527c"
 }

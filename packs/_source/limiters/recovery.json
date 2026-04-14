@@ -6,5 +6,6 @@
     "description": "<p>Requires a cool-down period after use before working again. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> For every 1 minute the character uses the Attribute, the Recovery time is 1 minute before the Attribute functions again. The Attribute can be used for a maximum of 12 hours.</li><li><strong>Level 2:</strong> For every 1 minute the character uses the Attribute, the Recovery time is 10 minutes before the Attribute functions again. The Attribute can be used for a maximum of 4 hours.</li><li><strong>Level 3:</strong> For every 1 minute the character uses the Attribute, the Recovery time is 1 hour before the Attribute functions again. The Attribute can be used for a maximum of 1 hour.</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!03030e460c0b59b9"
 }

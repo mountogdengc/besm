@@ -6,5 +6,6 @@
     "description": "<p>Once changed, returning requires special means or time. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> It takes several hours of work or special circumstances to enable the character to transform back to an earlier form</li><li><strong>Level 2:</strong> As above, but the process also requires expensive or rare replacement components, ingredients, or prerequisites</li><li><strong>Level 3:</strong> As above, but the process takes several days</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!ea13376a071d5c16"
 }

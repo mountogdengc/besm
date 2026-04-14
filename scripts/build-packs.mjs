@@ -112,6 +112,8 @@ function evalTsArray(filePath, arrayName, stubs = {}) {
 function writePackEntry(packName, key, doc) {
   const dir = join(PACKS_SOURCE, packName);
   mkdirSync(dir, { recursive: true });
+  // fvtt CLI requires _key field in format "!items!<_id>" to pack into LevelDB
+  doc._key = `!items!${doc._id}`;
   const filePath = join(dir, `${key}.json`);
   writeFileSync(filePath, JSON.stringify(doc, null, 2) + "\n", "utf-8");
 }

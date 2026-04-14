@@ -6,5 +6,6 @@
     "description": "<p>Capped reach or area; it never exceeds a set bound. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> The character’s Attribute is at Level 2 and always functions at its Maximum effectiveness</li><li><strong>Level 2:</strong> The character’s Attribute is at Level 3 or 4 and always functions at its Maximum effectiveness</li><li><strong>Level 3:</strong> The character’s Attribute is at Level 5+ and always functions at its Maximum effectiveness</li></ul>",
     "levels": 1,
     "source": "BESM4e"
-  }
+  },
+  "_key": "!items!89139a095be51014"
 }
