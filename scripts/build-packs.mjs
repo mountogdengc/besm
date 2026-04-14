@@ -414,7 +414,7 @@ function compilePacks() {
 
     try {
       execSync(
-        `npx fvtt package pack --type Item --in "${srcDir}" --out "${outDir}"`,
+        `npx fvtt package pack --type System --id besm -n ${name} --in "${srcDir}" --out "${outDir}"`,
         { stdio: "inherit" }
       );
       console.log(`  -> ${name} compiled`);
