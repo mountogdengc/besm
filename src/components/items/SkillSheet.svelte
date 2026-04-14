@@ -1,17 +1,18 @@
 <script>
   let { document: itemDocument } = $props();
-  let item = $state(itemDocument);
+  let version = $state(0);
+  let item = $derived.by(() => { version; return itemDocument; });
   let newSpecName = $state("");
 
   $effect(() => {
     const hookId = Hooks.on("updateItem", (updatedItem) => {
-      if (updatedItem.id === item.id) item = updatedItem;
+      if (updatedItem.id === itemDocument.id) version++;
     });
     return () => Hooks.off("updateItem", hookId);
   });
 
   function update(path, value) {
-    item.update({ [path]: value });
+    itemDocument.update({ [path]: value });
   }
 
   let specialisations = $derived(item.system.specialisations ?? []);
@@ -21,7 +22,7 @@
     const specs = [...specialisations];
     const isFree = specs.length === 0;
     specs.push({ name: newSpecName.trim(), isFree, spCost: isFree ? 0 : 1 });
-    item.update({ "system.specialisations": specs });
+    itemDocument.update({ "system.specialisations": specs });
     newSpecName = "";
   }
 
@@ -31,7 +32,7 @@
     if (specs.length > 0 && !specs.some(s => s.isFree)) {
       specs[0] = { ...specs[0], isFree: true, spCost: 0 };
     }
-    item.update({ "system.specialisations": specs });
+    itemDocument.update({ "system.specialisations": specs });
   }
 </script>
 
@@ -40,7 +41,7 @@
   <input
     class="text-lg font-bold bg-transparent border border-transparent hover:border-slate-600 focus:border-blue-500 text-slate-100 w-full p-1 rounded"
     value={item.name}
-    onchange={(e) => item.update({ name: e.target.value })}
+    onchange={(e) => itemDocument.update({ name: e.target.value })}
   />
 
   <!-- Core Fields -->

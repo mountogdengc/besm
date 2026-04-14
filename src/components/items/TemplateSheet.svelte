@@ -1,19 +1,22 @@
 <script>
   let { document: itemDocument } = $props();
-  let item = $state(itemDocument);
+  let version = $state(0);
+
+  // item is always the live document reference — version forces re-reads
+  let item = $derived.by(() => { version; return itemDocument; });
 
   $effect(() => {
     const hookId = Hooks.on("updateItem", (updatedItem) => {
-      if (updatedItem.id === item.id) item = updatedItem;
+      if (updatedItem.id === itemDocument.id) version++;
     });
     return () => Hooks.off("updateItem", hookId);
   });
 
   function update(path, value) {
-    item.update({ [path]: value });
+    itemDocument.update({ [path]: value });
   }
 
-  let entries = $derived(item.system.entries ?? []);
+  let entries = $derived.by(() => { version; return itemDocument.system.entries ?? []; });
 
   function addItemEntry() {
     const newEntries = [...entries, {
@@ -22,7 +25,7 @@
       itemType: "attribute",
       systemData: { baseCostPerLevel: 1, purchasedLevel: 1 },
     }];
-    item.update({ "system.entries": newEntries });
+    itemDocument.update({ "system.entries": newEntries });
   }
 
   function addTemplateEntry() {
@@ -31,12 +34,12 @@
       templateId: "",
       templateName: "Nested Template",
     }];
-    item.update({ "system.entries": newEntries });
+    itemDocument.update({ "system.entries": newEntries });
   }
 
   function removeEntry(index) {
     const newEntries = entries.filter((_, i) => i !== index);
-    item.update({ "system.entries": newEntries });
+    itemDocument.update({ "system.entries": newEntries });
   }
 
   function updateEntry(index, field, value) {
@@ -44,7 +47,7 @@
       if (i !== index) return e;
       return { ...e, [field]: value };
     });
-    item.update({ "system.entries": newEntries });
+    itemDocument.update({ "system.entries": newEntries });
   }
 
   function updateEntrySystemData(index, value) {
@@ -54,7 +57,7 @@
         if (i !== index) return e;
         return { ...e, systemData: parsed };
       });
-      item.update({ "system.entries": newEntries });
+      itemDocument.update({ "system.entries": newEntries });
     } catch {
       ui.notifications.warn("Invalid JSON for system data.");
     }
@@ -66,7 +69,7 @@
   <input
     class="text-lg font-bold bg-transparent border border-transparent hover:border-slate-600 focus:border-blue-500 text-slate-100 w-full p-1 rounded"
     value={item.name}
-    onchange={(e) => item.update({ name: e.target.value })}
+    onchange={(e) => itemDocument.update({ name: e.target.value })}
   />
 
   <!-- Core Fields -->

@@ -1,16 +1,17 @@
 <script>
   let { document: itemDocument } = $props();
-  let item = $state(itemDocument);
+  let version = $state(0);
+  let item = $derived.by(() => { version; return itemDocument; });
 
   $effect(() => {
     const hookId = Hooks.on("updateItem", (updatedItem) => {
-      if (updatedItem.id === item.id) item = updatedItem;
+      if (updatedItem.id === itemDocument.id) version++;
     });
     return () => Hooks.off("updateItem", hookId);
   });
 
   function update(path, value) {
-    item.update({ [path]: value });
+    itemDocument.update({ [path]: value });
   }
 </script>
 
@@ -18,7 +19,7 @@
   <input
     class="text-lg font-bold bg-transparent border border-transparent hover:border-slate-600 focus:border-blue-500 text-slate-100 w-full p-1 rounded"
     value={item.name}
-    onchange={(e) => item.update({ name: e.target.value })}
+    onchange={(e) => itemDocument.update({ name: e.target.value })}
   />
 
   <div class="grid grid-cols-2 gap-2">

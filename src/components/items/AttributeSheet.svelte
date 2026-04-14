@@ -1,26 +1,27 @@
 <script>
   let { document: itemDocument } = $props();
-  let item = $state(itemDocument);
+  let version = $state(0);
+  let item = $derived.by(() => { version; return itemDocument; });
 
   $effect(() => {
     const hookId = Hooks.on("updateItem", (updatedItem) => {
-      if (updatedItem.id === item.id) item = updatedItem;
+      if (updatedItem.id === itemDocument.id) version++;
     });
     return () => Hooks.off("updateItem", hookId);
   });
 
   function update(path, value) {
-    item.update({ [path]: value });
+    itemDocument.update({ [path]: value });
   }
 
   function removeEnhancement(index) {
     const updated = item.system.enhancements.filter((_, i) => i !== index);
-    item.update({ "system.enhancements": updated });
+    itemDocument.update({ "system.enhancements": updated });
   }
 
   function removeLimiter(index) {
     const updated = item.system.limiters.filter((_, i) => i !== index);
-    item.update({ "system.limiters": updated });
+    itemDocument.update({ "system.limiters": updated });
   }
 
   let isLinkable = $derived(
@@ -44,12 +45,12 @@
       folder: parent.folder || undefined,
     });
     if (newActor) {
-      await item.update({ "system.linkedActorId": newActor.id });
+      await itemDocument.update({ "system.linkedActorId": newActor.id });
     }
   }
 
   async function unlinkActor() {
-    await item.update({ "system.linkedActorId": "" });
+    await itemDocument.update({ "system.linkedActorId": "" });
   }
 
   function openLinkedSheet() {
@@ -62,7 +63,7 @@
   <input
     class="text-lg font-bold bg-transparent border border-transparent hover:border-slate-600 focus:border-blue-500 text-slate-100 w-full p-1 rounded"
     value={item.name}
-    onchange={(e) => item.update({ name: e.target.value })}
+    onchange={(e) => itemDocument.update({ name: e.target.value })}
   />
 
   <!-- Core Fields -->
