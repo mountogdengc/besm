@@ -3,7 +3,7 @@
   "name": "Quick Change",
   "type": "enhancement",
   "system": {
-    "description": "<p>Shift states almost instantly, even mid-conflict. Source: BESM4e.</p>",
+    "description": "Shift states almost instantly, even mid-conflict. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

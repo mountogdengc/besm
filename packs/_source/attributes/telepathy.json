@@ -3,7 +3,7 @@
   "name": "Telepathy",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to read minds and transmit thoughts both passively and aggressively.</p>\n<ul><li><strong>Level 1:</strong> Sense strong surface thoughts; transmit basic feelings</li><li><strong>Level 2:</strong> Read ordinary surface thoughts; send words/images; converse with other telepaths</li><li><strong>Level 3:</strong> Share sensory input or read thoughts from a group (up to 10); speak to group or send strong image</li><li><strong>Level 4:</strong> Invade mind to extract memories (opposed roll); instinctive touch reading; speak to small group</li><li><strong>Level 5:</strong> Read surface thoughts of anyone nearby; probe repressed memories; speak to crowd (25)</li><li><strong>Level 6:</strong> Automatically read thoughts and sensory input from touch; alter memories; speak to throng (50)</li></ul>",
+    "description": "Grants the ability to read minds and transmit thoughts both passively and aggressively.\nLevel 1: Sense strong surface thoughts; transmit basic feelings\nLevel 2: Read ordinary surface thoughts; send words/images; converse with other telepaths\nLevel 3: Share sensory input or read thoughts from a group (up to 10); speak to group or send strong image\nLevel 4: Invade mind to extract memories (opposed roll); instinctive touch reading; speak to small group\nLevel 5: Read surface thoughts of anyone nearby; probe repressed memories; speak to crowd (25)\nLevel 6: Automatically read thoughts and sensory input from touch; alter memories; speak to throng (50)",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

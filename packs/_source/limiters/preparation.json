@@ -3,7 +3,7 @@
   "name": "Preparation",
   "type": "limiter",
   "system": {
-    "description": "<p>Demands prep time or setup before use. Source: BESM4e.</p>",
+    "description": "Demands prep time or setup before use. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

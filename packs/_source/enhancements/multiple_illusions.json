@@ -3,7 +3,7 @@
   "name": "Multiple Illusions",
   "type": "enhancement",
   "system": {
-    "description": "<p>Sustain several illusions at once, sharing your focus. Source: BESM4e.</p>",
+    "description": "Sustain several illusions at once, sharing your focus. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

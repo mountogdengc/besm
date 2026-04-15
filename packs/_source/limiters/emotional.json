@@ -3,7 +3,7 @@
   "name": "Emotional",
   "type": "limiter",
   "system": {
-    "description": "<p>Manifests only under strong emotional triggers or stakes. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Use requires significant Emotional investment.</li><li><strong>Level 2:</strong> Use requires strong Emotional investment.</li><li><strong>Level 3:</strong> Use requires extreme Emotional investment.</li></ul>",
+    "description": "Manifests only under strong emotional triggers or stakes. Source: BESM4e.\nLevel 1: Use requires significant Emotional investment.\nLevel 2: Use requires strong Emotional investment.\nLevel 3: Use requires extreme Emotional investment.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Combat Technique",
   "type": "attribute",
   "system": {
-    "description": "<p>Signature tactics that express your combat style and flair. Choose distinctive maneuvers.</p>\n<ul><li><strong>Level 1:</strong> One combat technique</li><li><strong>Level 2:</strong> Two combat techniques</li><li><strong>Level 3:</strong> Three combat techniques</li><li><strong>Level 4:</strong> Four combat techniques</li><li><strong>Level 5:</strong> Five combat techniques</li><li><strong>Level 6:</strong> Six combat techniques</li></ul>",
+    "description": "Signature tactics that express your combat style and flair. Choose distinctive maneuvers.\nLevel 1: One combat technique\nLevel 2: Two combat techniques\nLevel 3: Three combat techniques\nLevel 4: Four combat techniques\nLevel 5: Five combat techniques\nLevel 6: Six combat techniques",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Unique Attribute",
   "type": "attribute",
   "system": {
-    "description": "<p>Fill in the blank.</p>\n<ul><li><strong>Level 1:</strong> Basic aptitude</li><li><strong>Level 2:</strong> Minor aptitude</li><li><strong>Level 3:</strong> Moderate aptitude</li><li><strong>Level 4:</strong> Significant aptitude</li><li><strong>Level 5:</strong> Major aptitude</li><li><strong>Level 6:</strong> Extreme aptitude</li></ul>",
+    "description": "Fill in the blank.\nLevel 1: Basic aptitude\nLevel 2: Minor aptitude\nLevel 3: Moderate aptitude\nLevel 4: Significant aptitude\nLevel 5: Major aptitude\nLevel 6: Extreme aptitude",
     "baseCostPerLevel": 0,
     "purchasedLevel": 1,
     "source": "BESM4e"

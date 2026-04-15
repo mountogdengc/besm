@@ -3,7 +3,7 @@
   "name": "Both Directions",
   "type": "limiter",
   "system": {
-    "description": "<p>Blocks both ways; protection also seals your own attacks. Source: BESM4e.</p>",
+    "description": "Blocks both ways; protection also seals your own attacks. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

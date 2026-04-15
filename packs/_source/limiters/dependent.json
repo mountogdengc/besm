@@ -3,7 +3,7 @@
   "name": "Dependent",
   "type": "limiter",
   "system": {
-    "description": "<p>Relies on other abilities being active or succeeding. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Dependent Attribute does not take effect until one other Attribute is activated</li><li><strong>Level 2:</strong> Dependent Attribute does not take effect until two other Attributes are activated</li><li><strong>Level 3:</strong> Dependent Attribute does not take effect until three other Attributes are activated</li></ul>",
+    "description": "Relies on other abilities being active or succeeding. Source: BESM4e.\nLevel 1: Dependent Attribute does not take effect until one other Attribute is activated\nLevel 2: Dependent Attribute does not take effect until two other Attributes are activated\nLevel 3: Dependent Attribute does not take effect until three other Attributes are activated",
     "levels": 1,
     "source": "BESM4e"
   },

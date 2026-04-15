@@ -3,7 +3,7 @@
   "name": "Business",
   "type": "skill",
   "system": {
-    "description": "<p>Commerce, negotiation, accounting, and organizational operations.</p>",
+    "description": "Commerce, negotiation, accounting, and organizational operations.",
     "linkedStat": "mind",
     "costClass": "framework",
     "rank": 0,

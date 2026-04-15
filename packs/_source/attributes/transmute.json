@@ -3,7 +3,7 @@
   "name": "Transmute",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to turn one up to medium-sized or a set of connected non-living objects into another.</p>\n<ul><li><strong>Level 1:</strong> Transmute object up to 1 kg</li><li><strong>Level 2:</strong> Transmute object up to 10 kg</li><li><strong>Level 3:</strong> Transmute object up to 100 kg</li><li><strong>Level 4:</strong> Transmute objects worth up to 20 CP</li><li><strong>Level 5:</strong> Transmute objects worth up to 25 CP</li><li><strong>Level 6:</strong> Transmute objects worth up to 30 CP</li></ul>",
+    "description": "Grants the ability to turn one up to medium-sized or a set of connected non-living objects into another.\nLevel 1: Transmute object up to 1 kg\nLevel 2: Transmute object up to 10 kg\nLevel 3: Transmute object up to 100 kg\nLevel 4: Transmute objects worth up to 20 CP\nLevel 5: Transmute objects worth up to 25 CP\nLevel 6: Transmute objects worth up to 30 CP",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

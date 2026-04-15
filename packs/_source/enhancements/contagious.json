@@ -3,7 +3,7 @@
   "name": "Contagious",
   "type": "enhancement",
   "system": {
-    "description": "<p>Effects can spread from victim to others through interaction. Source: BESM4e.</p>",
+    "description": "Effects can spread from victim to others through interaction. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

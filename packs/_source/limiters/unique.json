@@ -3,7 +3,7 @@
   "name": "Unique",
   "type": "limiter",
   "system": {
-    "description": "<p>A bespoke restriction negotiated with the GM. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Unique Limitation imposes minor restrictions on the Attribute</li><li><strong>Level 2:</strong> Unique Limitation imposes moderate restrictions on the Attribute</li><li><strong>Level 3:</strong> Unique Limitation imposes major restrictions on the Attribute</li></ul>",
+    "description": "A bespoke restriction negotiated with the GM. Source: BESM4e.\nLevel 1: Unique Limitation imposes minor restrictions on the Attribute\nLevel 2: Unique Limitation imposes moderate restrictions on the Attribute\nLevel 3: Unique Limitation imposes major restrictions on the Attribute",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Great Power",
   "type": "enhancement",
   "system": {
-    "description": "<p>Your connections wield major, far-reaching influence. Source: BESM4e.</p>",
+    "description": "Your connections wield major, far-reaching influence. Source: BESM4e.",
     "levels": 2,
     "source": "BESM4e"
   },

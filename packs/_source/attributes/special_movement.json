@@ -3,7 +3,7 @@
   "name": "Special Movement",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants additional extra-ordinary movement techniques.</p>\n<ul><li><strong>Level 1:</strong> 1 Special Movement ability</li><li><strong>Level 2:</strong> 2 Special Movement abilities</li><li><strong>Level 3:</strong> 3 Special Movement abilities</li><li><strong>Level 4:</strong> 4 Special Movement abilities</li><li><strong>Level 5:</strong> 5 Special Movement abilities</li><li><strong>Level 6:</strong> 6 Special Movement abilities</li></ul>",
+    "description": "Grants additional extra-ordinary movement techniques.\nLevel 1: 1 Special Movement ability\nLevel 2: 2 Special Movement abilities\nLevel 3: 3 Special Movement abilities\nLevel 4: 4 Special Movement abilities\nLevel 5: 5 Special Movement abilities\nLevel 6: 6 Special Movement abilities",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Field-Penetrating",
   "type": "enhancement",
   "system": {
-    "description": "<p>Slip through or strike past certain protective fields. Source: BESM4e.</p>",
+    "description": "Slip through or strike past certain protective fields. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

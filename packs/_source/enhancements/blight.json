@@ -3,7 +3,7 @@
   "name": "Blight",
   "type": "enhancement",
   "system": {
-    "description": "<p>On-hit affliction that can escalate harm if not resisted. Source: BESM4e.</p>",
+    "description": "On-hit affliction that can escalate harm if not resisted. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

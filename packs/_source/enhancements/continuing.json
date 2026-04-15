@@ -3,7 +3,7 @@
   "name": "Continuing",
   "type": "enhancement",
   "system": {
-    "description": "<p>Lingering effects that persist beyond the initial strike. Source: BESM4e.</p>",
+    "description": "Lingering effects that persist beyond the initial strike. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

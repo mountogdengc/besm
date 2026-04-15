@@ -3,7 +3,7 @@
   "name": "Equipment",
   "type": "limiter",
   "system": {
-    "description": "<p>Requires specific gear to operate. Source: BESM4e.</p>",
+    "description": "Requires specific gear to operate. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

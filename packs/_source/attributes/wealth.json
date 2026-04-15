@@ -3,7 +3,7 @@
   "name": "Wealth",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants a disposable income and other liquid assets.</p>\n<ul><li><strong>Level 1:</strong> Financially stable ($300k)</li><li><strong>Level 2:</strong> Well off ($1M)</li><li><strong>Level 3:</strong> Moderately rich ($3M)</li><li><strong>Level 4:</strong> Very rich ($10M)</li><li><strong>Level 5:</strong> Extremely rich ($30M)</li><li><strong>Level 6:</strong> Wealthy ($100M)</li></ul>",
+    "description": "Grants a disposable income and other liquid assets.\nLevel 1: Financially stable ($300k)\nLevel 2: Well off ($1M)\nLevel 3: Moderately rich ($3M)\nLevel 4: Very rich ($10M)\nLevel 5: Extremely rich ($30M)\nLevel 6: Wealthy ($100M)",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

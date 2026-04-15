@@ -3,7 +3,7 @@
   "name": "Spaceflight",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to fly at high speeds beyond an atmosphere.</p>\n<ul><li><strong>Level 1:</strong> Primitive near-planetary travel (up to 10,000 kph); days to moon, years to nearby planets</li><li><strong>Level 2:</strong> Slow interplanetary travel (up to 100,000 kph); hours to moon, month to nearby planets</li><li><strong>Level 3:</strong> Average interplanetary travel; days between nearby planets</li><li><strong>Level 4:</strong> Fast interplanetary travel; hours between nearby planets</li><li><strong>Level 5:</strong> Extrasolar travel; minutes between planets, years between nearby stars</li><li><strong>Level 6:</strong> Slow FTL travel; weeks between star systems</li></ul>",
+    "description": "Grants the ability to fly at high speeds beyond an atmosphere.\nLevel 1: Primitive near-planetary travel (up to 10,000 kph); days to moon, years to nearby planets\nLevel 2: Slow interplanetary travel (up to 100,000 kph); hours to moon, month to nearby planets\nLevel 3: Average interplanetary travel; days between nearby planets\nLevel 4: Fast interplanetary travel; hours between nearby planets\nLevel 5: Extrasolar travel; minutes between planets, years between nearby stars\nLevel 6: Slow FTL travel; weeks between star systems",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

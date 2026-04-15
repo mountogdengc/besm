@@ -3,7 +3,7 @@
   "name": "Alt-Munition",
   "type": "limiter",
   "system": {
-    "description": "<p>Alternate ammunition profile for special purposes, typically on Items. Source: BESM4e.</p>",
+    "description": "Alternate ammunition profile for special purposes, typically on Items. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

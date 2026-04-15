@@ -3,7 +3,7 @@
   "name": "Nonadjacent",
   "type": "limiter",
   "system": {
-    "description": "<p>Undetectable does not work on adjacent targets; only affects those not right next to the character. Source: Multiverse.</p>",
+    "description": "Undetectable does not work on adjacent targets; only affects those not right next to the character. Source: Multiverse.",
     "levels": 1,
     "source": "Multiverse"
   },

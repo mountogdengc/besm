@@ -3,7 +3,7 @@
   "name": "Heightened Awareness",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants a bonus on rolls to notice nearby hidden objects or ambushes.</p>\n<ul><li><strong>Level 1:</strong> +2 Stat roll awareness bonus</li><li><strong>Level 2:</strong> +4 Stat roll awareness bonus</li><li><strong>Level 3:</strong> +6 Stat roll awareness bonus</li><li><strong>Level 4:</strong> +8 Stat roll awareness bonus</li><li><strong>Level 5:</strong> +10 Stat roll awareness bonus</li><li><strong>Level 6:</strong> +12 Stat roll awareness bonus</li></ul>",
+    "description": "Grants a bonus on rolls to notice nearby hidden objects or ambushes.\nLevel 1: +2 Stat roll awareness bonus\nLevel 2: +4 Stat roll awareness bonus\nLevel 3: +6 Stat roll awareness bonus\nLevel 4: +8 Stat roll awareness bonus\nLevel 5: +10 Stat roll awareness bonus\nLevel 6: +12 Stat roll awareness bonus",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

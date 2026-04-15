@@ -3,7 +3,7 @@
   "name": "Environmental",
   "type": "limiter",
   "system": {
-    "description": "<p>Only works within certain environments. Source: BESM4e.</p>",
+    "description": "Only works within certain environments. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Unappealing",
   "type": "defect",
   "system": {
-    "description": "<p>An Unappealing character may find it difficult to blend into a crowd because their appearance is distinctive.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "description": "An Unappealing character may find it difficult to blend into a crowd because their appearance is distinctive.\nRank 1: Slight consequences\nRank 2: Moderate consequences\nRank 3: Severe consequences",
     "cpGranted": 1,
     "tier": "lesser",
     "source": "BESM4e"

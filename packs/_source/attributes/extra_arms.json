@@ -3,7 +3,7 @@
   "name": "Extra Arms",
   "type": "attribute",
   "system": {
-    "description": "<p>Additional manipulators that enhance handling and presence, not extra turns.</p>\n<ul><li><strong>Level 1:</strong> 1 extra arm</li><li><strong>Level 2:</strong> 2 extra arms</li><li><strong>Level 3:</strong> 3 - 5 extra arms</li><li><strong>Level 4:</strong> 6 - 10 extra arms</li><li><strong>Level 5:</strong> 11 - 25 extra arms</li><li><strong>Level 6:</strong> 26 - 50 extra arms</li></ul>",
+    "description": "Additional manipulators that enhance handling and presence, not extra turns.\nLevel 1: 1 extra arm\nLevel 2: 2 extra arms\nLevel 3: 3 - 5 extra arms\nLevel 4: 6 - 10 extra arms\nLevel 5: 11 - 25 extra arms\nLevel 6: 26 - 50 extra arms",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

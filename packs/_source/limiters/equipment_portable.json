@@ -3,7 +3,7 @@
   "name": "Equipment (Portable)",
   "type": "limiter",
   "system": {
-    "description": "<p>Attribute requires specific external materials/machinery/accessories to function. Required Equipment is easily portable (smartphone, wagon, spell book).</p>",
+    "description": "Attribute requires specific external materials/machinery/accessories to function. Required Equipment is easily portable (smartphone, wagon, spell book).",
     "levels": 1,
     "source": "BESM4e"
   },

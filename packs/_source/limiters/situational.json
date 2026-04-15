@@ -3,7 +3,7 @@
   "name": "Situational",
   "type": "limiter",
   "system": {
-    "description": "<p>Functions only when certain conditions are met. Source: BESM4e.</p>",
+    "description": "Functions only when certain conditions are met. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

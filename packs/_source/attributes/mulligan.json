@@ -3,7 +3,7 @@
   "name": "Mulligan",
   "type": "attribute",
   "system": {
-    "description": "<p>Allows a character to reroll all dice for an action. You may choose from any result (original or rerolled).</p>\n<ul><li><strong>Level 1:</strong> 2 rerolls per session</li><li><strong>Level 2:</strong> 4 rerolls per session</li><li><strong>Level 3:</strong> 6 rerolls per session</li><li><strong>Level 4:</strong> 8 rerolls per session</li><li><strong>Level 5:</strong> 10 rerolls per session</li><li><strong>Level 6:</strong> 12 rerolls per session</li></ul>",
+    "description": "Allows a character to reroll all dice for an action. You may choose from any result (original or rerolled).\nLevel 1: 2 rerolls per session\nLevel 2: 4 rerolls per session\nLevel 3: 6 rerolls per session\nLevel 4: 8 rerolls per session\nLevel 5: 10 rerolls per session\nLevel 6: 12 rerolls per session",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

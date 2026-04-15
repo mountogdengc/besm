@@ -3,7 +3,7 @@
   "name": "Augmented",
   "type": "attribute",
   "system": {
-    "description": "<p>A stat bolstered by external means—bio, tech, or mystical—without redefining who you are.</p>\n<ul><li><strong>Level 1:</strong> +1 to selected stat</li><li><strong>Level 2:</strong> +2 to selected stat</li><li><strong>Level 3:</strong> +3 to selected stat</li><li><strong>Level 4:</strong> +4 to selected stat</li><li><strong>Level 5:</strong> +5 to selected stat</li><li><strong>Level 6:</strong> +6 to selected stat</li></ul>",
+    "description": "A stat bolstered by external means—bio, tech, or mystical—without redefining who you are.\nLevel 1: +1 to selected stat\nLevel 2: +2 to selected stat\nLevel 3: +3 to selected stat\nLevel 4: +4 to selected stat\nLevel 5: +5 to selected stat\nLevel 6: +6 to selected stat",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

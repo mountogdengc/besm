@@ -3,7 +3,7 @@
   "name": "Superstrength",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to lift and maneouevre things with strength beyond normal.</p>\n<ul><li><strong>Level 1:</strong> Lift up to 250 kg (e.g., motorcycle)</li><li><strong>Level 2:</strong> Lift up to 500 kg (e.g., horse)</li><li><strong>Level 3:</strong> Lift up to 1 tonne (e.g., small car)</li><li><strong>Level 4:</strong> Lift up to 2 tonnes (e.g., truck)</li><li><strong>Level 5:</strong> Lift up to 5 tonnes (e.g., elephant)</li><li><strong>Level 6:</strong> Lift up to 10 tonnes (e.g., yacht)</li></ul>",
+    "description": "Grants the ability to lift and maneouevre things with strength beyond normal.\nLevel 1: Lift up to 250 kg (e.g., motorcycle)\nLevel 2: Lift up to 500 kg (e.g., horse)\nLevel 3: Lift up to 1 tonne (e.g., small car)\nLevel 4: Lift up to 2 tonnes (e.g., truck)\nLevel 5: Lift up to 5 tonnes (e.g., elephant)\nLevel 6: Lift up to 10 tonnes (e.g., yacht)",
     "baseCostPerLevel": 4,
     "purchasedLevel": 1,
     "source": "BESM4e"

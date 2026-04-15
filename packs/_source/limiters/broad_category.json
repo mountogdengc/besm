@@ -3,7 +3,7 @@
   "name": "Broad Category",
   "type": "limiter",
   "system": {
-    "description": "<p>Affects only a broad, defined class of targets or subjects. Source: BESM4e.</p>",
+    "description": "Affects only a broad, defined class of targets or subjects. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

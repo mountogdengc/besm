@@ -3,7 +3,7 @@
   "name": "Water Speed",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to swim on and underwater at high speeds.</p>\n<ul><li><strong>Level 1:</strong> Swim at up to 10 kph</li><li><strong>Level 2:</strong> Swim at up to 30 kph</li><li><strong>Level 3:</strong> Swim at up to 100 kph</li><li><strong>Level 4:</strong> Swim at up to 300 kph</li><li><strong>Level 5:</strong> Swim at up to 1,000 kph</li><li><strong>Level 6:</strong> Swim at up to 3,000 kph</li></ul>",
+    "description": "Grants the ability to swim on and underwater at high speeds.\nLevel 1: Swim at up to 10 kph\nLevel 2: Swim at up to 30 kph\nLevel 3: Swim at up to 100 kph\nLevel 4: Swim at up to 300 kph\nLevel 5: Swim at up to 1,000 kph\nLevel 6: Swim at up to 3,000 kph",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

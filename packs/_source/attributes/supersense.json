@@ -3,7 +3,7 @@
   "name": "Supersense",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to sense something beyond normal capabilities.</p>\n<ul><li><strong>Level 1:</strong> 10 m range</li><li><strong>Level 2:</strong> 100 m range</li><li><strong>Level 3:</strong> 1 km range</li><li><strong>Level 4:</strong> 10 km range</li><li><strong>Level 5:</strong> 100 km range</li><li><strong>Level 6:</strong> 1,000 km range</li></ul>",
+    "description": "Grants the ability to sense something beyond normal capabilities.\nLevel 1: 10 m range\nLevel 2: 100 m range\nLevel 3: 1 km range\nLevel 4: 10 km range\nLevel 5: 100 km range\nLevel 6: 1,000 km range",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

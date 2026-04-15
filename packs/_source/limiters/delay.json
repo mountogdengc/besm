@@ -3,7 +3,7 @@
   "name": "Delay",
   "type": "limiter",
   "system": {
-    "description": "<p>Takes effect later, leaving a window to intervene. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Delay of a few minutes before it takes full effect</li><li><strong>Level 2:</strong> Delay of a few hours before it takes full effect</li><li><strong>Level 3:</strong> Delay of a few days before it takes full effect</li></ul>",
+    "description": "Takes effect later, leaving a window to intervene. Source: BESM4e.\nLevel 1: Delay of a few minutes before it takes full effect\nLevel 2: Delay of a few hours before it takes full effect\nLevel 3: Delay of a few days before it takes full effect",
     "levels": 1,
     "source": "BESM4e"
   },

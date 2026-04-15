@@ -3,7 +3,7 @@
   "name": "Projection",
   "type": "attribute",
   "system": {
-    "description": "<p>Creates visible or audible images detectable by all, not just mentally targeted illusions. Useful for distraction, deception, or communication.</p>\n<ul><li><strong>Level 1:</strong> Tiny projection (10 cm radius)</li><li><strong>Level 2:</strong> Small projection (1 m radius)</li><li><strong>Level 3:</strong> Moderately sized projection (10 m radius)</li><li><strong>Level 4:</strong> Building-size projection (100 m radius)</li><li><strong>Level 5:</strong> Neighbourhood-sized projection (1 km radius)</li><li><strong>Level 6:</strong> City-sized projection (10 km radius)</li></ul>",
+    "description": "Creates visible or audible images detectable by all, not just mentally targeted illusions. Useful for distraction, deception, or communication.\nLevel 1: Tiny projection (10 cm radius)\nLevel 2: Small projection (1 m radius)\nLevel 3: Moderately sized projection (10 m radius)\nLevel 4: Building-size projection (100 m radius)\nLevel 5: Neighbourhood-sized projection (1 km radius)\nLevel 6: City-sized projection (10 km radius)",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

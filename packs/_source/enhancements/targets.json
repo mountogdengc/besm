@@ -3,7 +3,7 @@
   "name": "Targets",
   "type": "enhancement",
   "system": {
-    "description": "<p>Affects multiple beings or objects at once. Source: BESM4e.</p>",
+    "description": "Affects multiple beings or objects at once. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

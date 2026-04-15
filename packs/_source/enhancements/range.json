@@ -3,7 +3,7 @@
   "name": "Range",
   "type": "enhancement",
   "system": {
-    "description": "<p>Projects your effect to distant points from you. Source: BESM4e.</p>",
+    "description": "Projects your effect to distant points from you. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

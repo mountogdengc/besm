@@ -3,7 +3,7 @@
   "name": "Nullify",
   "type": "attribute",
   "system": {
-    "description": "<p>Temporarily nullify Attributes based on their source (e.g., magic, tech). Requires touch and a successful attack action.</p>\n<ul><li><strong>Level 1:</strong> Nullify 1 Level of an Attribute</li><li><strong>Level 2:</strong> Nullify 2 Levels</li><li><strong>Level 3:</strong> Nullify 3 Levels</li><li><strong>Level 4:</strong> Nullify 4 Levels</li><li><strong>Level 5:</strong> Nullify 5 Levels</li><li><strong>Level 6:</strong> Nullify 6 Levels</li></ul>",
+    "description": "Temporarily nullify Attributes based on their source (e.g., magic, tech). Requires touch and a successful attack action.\nLevel 1: Nullify 1 Level of an Attribute\nLevel 2: Nullify 2 Levels\nLevel 3: Nullify 3 Levels\nLevel 4: Nullify 4 Levels\nLevel 5: Nullify 5 Levels\nLevel 6: Nullify 6 Levels",
     "baseCostPerLevel": 5,
     "purchasedLevel": 1,
     "source": "BESM4e"

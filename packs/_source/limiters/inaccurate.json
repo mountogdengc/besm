@@ -3,7 +3,7 @@
   "name": "Inaccurate",
   "type": "limiter",
   "system": {
-    "description": "<p>Notoriously imprecise or unwieldy in use. Source: BESM4e.</p>",
+    "description": "Notoriously imprecise or unwieldy in use. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

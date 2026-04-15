@@ -3,7 +3,7 @@
   "name": "Unaffected",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to impose a penalty to a target’s offensive attribute roll.</p>\n<ul><li><strong>Level 1:</strong> Minor penalty</li><li><strong>Level 2:</strong> Moderate penalty</li><li><strong>Level 3:</strong> Significant penalty</li><li><strong>Level 4:</strong> -8 penalty to attacker using the specific Attribute</li><li><strong>Level 5:</strong> -10 penalty to attacker using the specific Attribute</li><li><strong>Level 6:</strong> -12 penalty to attacker using the specific Attribute</li></ul>",
+    "description": "Grants the ability to impose a penalty to a target’s offensive attribute roll.\nLevel 1: Minor penalty\nLevel 2: Moderate penalty\nLevel 3: Significant penalty\nLevel 4: -8 penalty to attacker using the specific Attribute\nLevel 5: -10 penalty to attacker using the specific Attribute\nLevel 6: -12 penalty to attacker using the specific Attribute",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

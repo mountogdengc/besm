@@ -3,7 +3,7 @@
   "name": "Capacity",
   "type": "attribute",
   "system": {
-    "description": "<p>Room within or aboard for passengers or cargo, common for vehicles and massive beings.</p>\n<ul><li><strong>Level 1:</strong> 1 person / 200 kg</li><li><strong>Level 2:</strong> 2 people / 500 kg</li><li><strong>Level 3:</strong> 5 people / 1 tonne</li><li><strong>Level 4:</strong> 10 people / 2 tonnes</li><li><strong>Level 5:</strong> 25 people / 5 tonnes</li><li><strong>Level 6:</strong> 50 people / 10 tonnes</li><li><strong>Level 7:</strong> 100 people / 25 tonnes</li><li><strong>Level 8:</strong> 250 people / 50 tonnes</li><li><strong>Level 9:</strong> 500 people / 100 tonnes</li><li><strong>Level 10:</strong> 1,000 people / 200 tonnes</li><li><strong>Level 11:</strong> Double capacity of previous level</li></ul>",
+    "description": "Room within or aboard for passengers or cargo, common for vehicles and massive beings.\nLevel 1: 1 person / 200 kg\nLevel 2: 2 people / 500 kg\nLevel 3: 5 people / 1 tonne\nLevel 4: 10 people / 2 tonnes\nLevel 5: 25 people / 5 tonnes\nLevel 6: 50 people / 10 tonnes\nLevel 7: 100 people / 25 tonnes\nLevel 8: 250 people / 50 tonnes\nLevel 9: 500 people / 100 tonnes\nLevel 10: 1,000 people / 200 tonnes\nLevel 11: Double capacity of previous level",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Consumable",
   "type": "limiter",
   "system": {
-    "description": "<p>Consumes a focus or component on each use. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Focus is easy to replace</li><li><strong>Level 2:</strong> Focus is hard to replace</li><li><strong>Level 3:</strong> Focus is very difficult to replace</li></ul>",
+    "description": "Consumes a focus or component on each use. Source: BESM4e.\nLevel 1: Focus is easy to replace\nLevel 2: Focus is hard to replace\nLevel 3: Focus is very difficult to replace",
     "levels": 1,
     "source": "BESM4e"
   },

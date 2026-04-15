@@ -3,7 +3,7 @@
   "name": "Primal Category",
   "type": "enhancement",
   "system": {
-    "description": "<p>Elevates Dynamic Powers to a fundamental cosmic domain. Source: BESM4e.</p>",
+    "description": "Elevates Dynamic Powers to a fundamental cosmic domain. Source: BESM4e.",
     "levels": 2,
     "source": "BESM4e"
   },

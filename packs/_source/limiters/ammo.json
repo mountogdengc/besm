@@ -3,7 +3,7 @@
   "name": "Ammo",
   "type": "limiter",
   "system": {
-    "description": "<p>Limited carried ammunition; once spent, you’re done until resupplied. Source: BESM4e.</p>",
+    "description": "Limited carried ammunition; once spent, you’re done until resupplied. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

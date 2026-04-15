@@ -3,7 +3,7 @@
   "name": "Unknown Power",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants hidden abilities unknown to the character and player.</p>",
+    "description": "Grants hidden abilities unknown to the character and player.",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

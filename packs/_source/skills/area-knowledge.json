@@ -3,7 +3,7 @@
   "name": "Area Knowledge",
   "type": "skill",
   "system": {
-    "description": "<p>Familiarity with the geography, culture, and key figures of a specific locale.</p>",
+    "description": "Familiarity with the geography, culture, and key figures of a specific locale.",
     "linkedStat": "mind",
     "costClass": "framework",
     "rank": 0,

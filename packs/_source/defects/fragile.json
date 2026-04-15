@@ -3,7 +3,7 @@
   "name": "Fragile",
   "type": "defect",
   "system": {
-    "description": "<p>The character has fewer Health Points than expected for their stats.</p>\n<ul><li><strong>Rank 1:</strong> HP reduced by 10%</li><li><strong>Rank 2:</strong> HP reduced by 20%</li><li><strong>Rank 3:</strong> HP reduced by 30%</li></ul>",
+    "description": "The character has fewer Health Points than expected for their stats.\nRank 1: HP reduced by 10%\nRank 2: HP reduced by 20%\nRank 3: HP reduced by 30%",
     "cpGranted": 1,
     "tier": "lesser",
     "source": "BESM4e"

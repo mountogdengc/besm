@@ -3,7 +3,7 @@
   "name": "Conditional Ownership",
   "type": "defect",
   "system": {
-    "description": "<p>The Companion or Item actually belongs to an organization, and its use is restricted or conditional.</p>\n<ul><li><strong>Rank 1:</strong> Mild conditions are imposed on the object's ownership and usage</li><li><strong>Rank 2:</strong> Strict conditions are imposed on the object's ownership and usage</li><li><strong>Rank 3:</strong> Severe conditions are imposed on the object's ownership and usage</li></ul>",
+    "description": "The Companion or Item actually belongs to an organization, and its use is restricted or conditional.\nRank 1: Mild conditions are imposed on the object's ownership and usage\nRank 2: Strict conditions are imposed on the object's ownership and usage\nRank 3: Severe conditions are imposed on the object's ownership and usage",
     "cpGranted": 1,
     "tier": "lesser",
     "source": "BESM4e"

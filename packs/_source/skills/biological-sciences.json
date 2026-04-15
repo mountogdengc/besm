@@ -3,7 +3,7 @@
   "name": "Biological Sciences",
   "type": "skill",
   "system": {
-    "description": "<p>Life sciences including anatomy, physiology, ecology, and related disciplines.</p>",
+    "description": "Life sciences including anatomy, physiology, ecology, and related disciplines.",
     "linkedStat": "mind",
     "costClass": "framework",
     "rank": 0,

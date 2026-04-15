@@ -3,7 +3,7 @@
   "name": "Flare",
   "type": "enhancement",
   "system": {
-    "description": "<p>Overloads a sense, such light or deafening sound. Source: BESM4e.</p>",
+    "description": "Overloads a sense, such light or deafening sound. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

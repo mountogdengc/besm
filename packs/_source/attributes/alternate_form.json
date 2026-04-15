@@ -3,7 +3,7 @@
   "name": "Alternate Form",
   "type": "attribute",
   "system": {
-    "description": "<p>Adopt a distinct form that reflects a different suite of traits. Serves story and theme; coordinate details with your GM.</p>\n<ul><li><strong>Level 1:</strong> 5 CP for alternate form</li><li><strong>Level 2:</strong> 6-10 CP for alternate form</li><li><strong>Level 3:</strong> 11-15 CP for alternate form</li><li><strong>Level 4:</strong> 16-20 CP for alternate form</li><li><strong>Level 5:</strong> 21-25 CP for alternate form</li><li><strong>Level 6:</strong> 26-30 CP for alternate form</li></ul>",
+    "description": "Adopt a distinct form that reflects a different suite of traits. Serves story and theme; coordinate details with your GM.\nLevel 1: 5 CP for alternate form\nLevel 2: 6-10 CP for alternate form\nLevel 3: 11-15 CP for alternate form\nLevel 4: 16-20 CP for alternate form\nLevel 5: 21-25 CP for alternate form\nLevel 6: 26-30 CP for alternate form",
     "baseCostPerLevel": 4,
     "purchasedLevel": 1,
     "source": "BESM4e"

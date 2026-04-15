@@ -3,7 +3,7 @@
   "name": "Gap",
   "type": "limiter",
   "system": {
-    "description": "<p>Has vulnerable openings that clever foes can exploit. Source: BESM4e.</p>",
+    "description": "Has vulnerable openings that clever foes can exploit. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

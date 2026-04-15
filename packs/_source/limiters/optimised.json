@@ -3,7 +3,7 @@
   "name": "Optimised",
   "type": "limiter",
   "system": {
-    "description": "<p>Optimised against a common threat; performance is skewed toward a chosen focus. Source: BESM4e.</p>",
+    "description": "Optimised against a common threat; performance is skewed toward a chosen focus. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Burglary",
   "type": "skill",
   "system": {
-    "description": "<p>Breaking and entering, bypassing locks and alarms, stealthy intrusion.</p>",
+    "description": "Breaking and entering, bypassing locks and alarms, stealthy intrusion.",
     "linkedStat": "body",
     "costClass": "framework",
     "rank": 0,

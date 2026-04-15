@@ -3,7 +3,7 @@
   "name": "Power Flux",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the user a pool of Flux Points to dynamically assign to thematic Attributes once per minute or dramatic scene. Attributes must be aligned to a user-defined concept.</p>\n<ul><li><strong>Level 1:</strong> Reassign up to 5 Flux Points each minute</li><li><strong>Level 2:</strong> Reassign up to 10 Flux Points each minute</li><li><strong>Level 3:</strong> Reassign up to 15 Flux Points each minute</li><li><strong>Level 4:</strong> Reassign up to 20 Flux Points each minute</li><li><strong>Level 5:</strong> Reassign up to 25 Flux Points each minute</li><li><strong>Level 6:</strong> Reassign up to 30 Flux Points each minute</li></ul>",
+    "description": "Grants the user a pool of Flux Points to dynamically assign to thematic Attributes once per minute or dramatic scene. Attributes must be aligned to a user-defined concept.\nLevel 1: Reassign up to 5 Flux Points each minute\nLevel 2: Reassign up to 10 Flux Points each minute\nLevel 3: Reassign up to 15 Flux Points each minute\nLevel 4: Reassign up to 20 Flux Points each minute\nLevel 5: Reassign up to 25 Flux Points each minute\nLevel 6: Reassign up to 30 Flux Points each minute",
     "baseCostPerLevel": 10,
     "purchasedLevel": 1,
     "source": "BESM4e"

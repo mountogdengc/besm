@@ -3,7 +3,7 @@
   "name": "Multiform",
   "type": "enhancement",
   "system": {
-    "description": "<p>Switch subjects among several related, GM-approved forms. Source: BESM4e.</p>",
+    "description": "Switch subjects among several related, GM-approved forms. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

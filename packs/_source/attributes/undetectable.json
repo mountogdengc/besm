@@ -3,7 +3,7 @@
   "name": "Undetectable",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to hide from a particular sense or detection technique.</p>\n<ul><li><strong>Level 1:</strong> Hide from one minor sense</li><li><strong>Level 2:</strong> Hide from one common sense</li><li><strong>Level 3:</strong> Hide from multiple senses</li><li><strong>Level 4:</strong> Undetectable to 4 senses or techniques</li><li><strong>Level 5:</strong> Undetectable to 5 senses or techniques</li><li><strong>Level 6:</strong> Undetectable to 6 senses or techniques</li></ul>",
+    "description": "Grants the ability to hide from a particular sense or detection technique.\nLevel 1: Hide from one minor sense\nLevel 2: Hide from one common sense\nLevel 3: Hide from multiple senses\nLevel 4: Undetectable to 4 senses or techniques\nLevel 5: Undetectable to 5 senses or techniques\nLevel 6: Undetectable to 6 senses or techniques",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

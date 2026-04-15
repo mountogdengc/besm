@@ -3,7 +3,7 @@
   "name": "Special Requirement",
   "type": "defect",
   "system": {
-    "description": "<p>The character has a Special Requirement that must be fulfilled in order for them to continue to function normally.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "description": "The character has a Special Requirement that must be fulfilled in order for them to continue to function normally.\nRank 1: Slight consequences\nRank 2: Moderate consequences\nRank 3: Severe consequences",
     "cpGranted": 3,
     "tier": "serious",
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Extra Sense",
   "type": "enhancement",
   "system": {
-    "description": "<p>Adds an additional sensory layer such, scent, touch, or taste. Source: BESM4e.</p>",
+    "description": "Adds an additional sensory layer such, scent, touch, or taste. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

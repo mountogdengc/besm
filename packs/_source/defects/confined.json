@@ -3,7 +3,7 @@
   "name": "Confined",
   "type": "defect",
   "system": {
-    "description": "<p>The character is restricted to a specific physical area and cannot leave it.</p>\n<ul><li><strong>Rank 1:</strong> Confined to a large area (100 km radius), such single kingdom, country, or large city</li><li><strong>Rank 2:</strong> Confined to a moderate area (1 km radius), such small town or large, multi-structure complex</li><li><strong>Rank 3:</strong> Confined to a small area (100 m radius), such tiny village or single building</li></ul>",
+    "description": "The character is restricted to a specific physical area and cannot leave it.\nRank 1: Confined to a large area (100 km radius), such single kingdom, country, or large city\nRank 2: Confined to a moderate area (1 km radius), such small town or large, multi-structure complex\nRank 3: Confined to a small area (100 m radius), such tiny village or single building",
     "cpGranted": 3,
     "tier": "greater",
     "source": "BESM4e"

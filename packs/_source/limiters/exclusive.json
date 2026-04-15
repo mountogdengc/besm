@@ -3,7 +3,7 @@
   "name": "Exclusive",
   "type": "limiter",
   "system": {
-    "description": "<p>Only affects a narrowly specified target set; others are unaffected. Source: BESM4e.</p>",
+    "description": "Only affects a narrowly specified target set; others are unaffected. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

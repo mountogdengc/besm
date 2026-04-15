@@ -3,7 +3,7 @@
   "name": "Localised",
   "type": "limiter",
   "system": {
-    "description": "<p>Only affects a specific body part or section. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Affects a large part of the body (torso, both legs or arms, etc.)</li><li><strong>Level 2:</strong> Affects a small part of the body (one leg or arm, abdomen, chest, head, etc.)</li><li><strong>Level 3:</strong> Affects a tiny part of the body (one hand or foot, face, groin, knee, etc.)</li></ul>",
+    "description": "Only affects a specific body part or section. Source: BESM4e.\nLevel 1: Affects a large part of the body (torso, both legs or arms, etc.)\nLevel 2: Affects a small part of the body (one leg or arm, abdomen, chest, head, etc.)\nLevel 3: Affects a tiny part of the body (one hand or foot, face, groin, knee, etc.)",
     "levels": 1,
     "source": "BESM4e"
   },

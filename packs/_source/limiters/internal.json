@@ -3,7 +3,7 @@
   "name": "Internal",
   "type": "limiter",
   "system": {
-    "description": "<p>Only functions within a specific place or enclosure. Source: BESM4e.</p>",
+    "description": "Only functions within a specific place or enclosure. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

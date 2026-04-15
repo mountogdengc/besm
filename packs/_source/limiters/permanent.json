@@ -3,7 +3,7 @@
   "name": "Permanent",
   "type": "limiter",
   "system": {
-    "description": "<p>Always on and cannot be switched off; brings ongoing drawbacks. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Permanent Attribute is a slight inconvenience</li><li><strong>Level 2:</strong> Permanent Attribute is a minor inconvenience</li><li><strong>Level 3:</strong> Permanent Attribute is a moderate inconvenience</li></ul>",
+    "description": "Always on and cannot be switched off; brings ongoing drawbacks. Source: BESM4e.\nLevel 1: Permanent Attribute is a slight inconvenience\nLevel 2: Permanent Attribute is a minor inconvenience\nLevel 3: Permanent Attribute is a moderate inconvenience",
     "levels": 1,
     "source": "BESM4e"
   },

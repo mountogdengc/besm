@@ -3,7 +3,7 @@
   "name": "Blind Fury",
   "type": "defect",
   "system": {
-    "description": "<p>Under certain triggers, the character enters an uncontrollable rage, attacking anyone nearby until calmed.</p>\n<ul><li><strong>Rank 1:</strong> Initiating the Blind Fury is difficult; reverting to a normal emotional state is easy</li><li><strong>Rank 2:</strong> Initiating the Blind Fury and reverting to a normal emotional state are both moderately difficult</li><li><strong>Rank 3:</strong> Initiating the Blind Fury is easy; reverting to a normal emotional state is difficult</li></ul>",
+    "description": "Under certain triggers, the character enters an uncontrollable rage, attacking anyone nearby until calmed.\nRank 1: Initiating the Blind Fury is difficult; reverting to a normal emotional state is easy\nRank 2: Initiating the Blind Fury and reverting to a normal emotional state are both moderately difficult\nRank 3: Initiating the Blind Fury is easy; reverting to a normal emotional state is difficult",
     "cpGranted": 2,
     "tier": "greater",
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Alternate Identity",
   "type": "attribute",
   "system": {
-    "description": "<p>Maintain separate personas for roleplay and access, without changing your core abilities.</p>\n<ul><li><strong>Level 1:</strong> One alternate identity</li><li><strong>Level 2:</strong> Two alternate identities</li><li><strong>Level 3:</strong> Three alternate identities</li><li><strong>Level 4:</strong> Four alternate identities</li><li><strong>Level 5:</strong> Five alternate identities</li><li><strong>Level 6:</strong> Six alternate identities</li></ul>",
+    "description": "Maintain separate personas for roleplay and access, without changing your core abilities.\nLevel 1: One alternate identity\nLevel 2: Two alternate identities\nLevel 3: Three alternate identities\nLevel 4: Four alternate identities\nLevel 5: Five alternate identities\nLevel 6: Six alternate identities",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

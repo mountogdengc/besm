@@ -3,7 +3,7 @@
   "name": "Enduring",
   "type": "enhancement",
   "system": {
-    "description": "<p>Sustains invoked effects beyond the instant, maintaining access for a scene. Source: Ikaris.</p>",
+    "description": "Sustains invoked effects beyond the instant, maintaining access for a scene. Source: Ikaris.",
     "levels": 1,
     "source": "Ikaris"
   },

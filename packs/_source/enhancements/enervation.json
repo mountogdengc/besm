@@ -3,7 +3,7 @@
   "name": "Enervation",
   "type": "enhancement",
   "system": {
-    "description": "<p>Wears down personal reserves, leaving targets fatigued. Source: BESM4e.</p>",
+    "description": "Wears down personal reserves, leaving targets fatigued. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

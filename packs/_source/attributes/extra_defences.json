@@ -3,7 +3,7 @@
   "name": "Extra Defences",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants additional defensive actions each round.</p>\n<ul><li><strong>Level 1:</strong> +1 defensive action per round</li><li><strong>Level 2:</strong> +2 defensive actions per round</li><li><strong>Level 3:</strong> +3 defensive actions per round</li><li><strong>Level 4:</strong> +4 defensive actions per round</li><li><strong>Level 5:</strong> +5 defensive actions per round</li><li><strong>Level 6:</strong> +6 defensive actions per round</li></ul>",
+    "description": "Grants additional defensive actions each round.\nLevel 1: +1 defensive action per round\nLevel 2: +2 defensive actions per round\nLevel 3: +3 defensive actions per round\nLevel 4: +4 defensive actions per round\nLevel 5: +5 defensive actions per round\nLevel 6: +6 defensive actions per round",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "Extras"

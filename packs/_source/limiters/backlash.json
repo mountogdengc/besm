@@ -3,7 +3,7 @@
   "name": "Backlash",
   "type": "limiter",
   "system": {
-    "description": "<p>Failures kick back with unwanted side effects. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> The Backlash occurs if the character fails their roll by an extreme margin (6 or more)</li><li><strong>Level 2:</strong> The Backlash occurs if the character fails their roll by a significant margin (3 or more)</li><li><strong>Level 3:</strong> The Backlash occurs if the character fails their roll</li></ul>",
+    "description": "Failures kick back with unwanted side effects. Source: BESM4e.\nLevel 1: The Backlash occurs if the character fails their roll by an extreme margin (6 or more)\nLevel 2: The Backlash occurs if the character fails their roll by a significant margin (3 or more)\nLevel 3: The Backlash occurs if the character fails their roll",
     "levels": 1,
     "source": "BESM4e"
   },

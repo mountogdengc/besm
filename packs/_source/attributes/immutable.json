@@ -3,7 +3,7 @@
   "name": "Immutable",
   "type": "attribute",
   "system": {
-    "description": "<p>Protects the character from transformation, displacement, or nullification effects. Grants a bonus to resist certain abilities and includes minor armor protection against insidious attacks.</p>\n<ul><li><strong>Level 1:</strong> +2 Stat roll bonus when resisting effects</li><li><strong>Level 2:</strong> +4 Stat roll bonus when resisting effects</li><li><strong>Level 3:</strong> +6 Stat roll bonus when resisting effects</li><li><strong>Level 4:</strong> +8 Stat roll bonus when resisting effects</li><li><strong>Level 5:</strong> +10 Stat roll bonus when resisting effects</li><li><strong>Level 6:</strong> +12 Stat roll bonus when resisting effects</li></ul>",
+    "description": "Protects the character from transformation, displacement, or nullification effects. Grants a bonus to resist certain abilities and includes minor armor protection against insidious attacks.\nLevel 1: +2 Stat roll bonus when resisting effects\nLevel 2: +4 Stat roll bonus when resisting effects\nLevel 3: +6 Stat roll bonus when resisting effects\nLevel 4: +8 Stat roll bonus when resisting effects\nLevel 5: +10 Stat roll bonus when resisting effects\nLevel 6: +12 Stat roll bonus when resisting effects",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Size Change",
   "type": "attribute",
   "system": {
-    "description": "<p>The character can temporarily grow or shrink in size. Choose increase or decrease at creation unless the 'Both Ways' enhancement is taken.</p>\n<ul><li><strong>Level 1:</strong> Change up to 1 Size Rank</li><li><strong>Level 2:</strong> Change up to 2 Size Ranks</li><li><strong>Level 3:</strong> Change up to 3 Size Ranks</li><li><strong>Level 4:</strong> Change up to 4 Size Ranks</li><li><strong>Level 5:</strong> Change up to 5 Size Ranks</li><li><strong>Level 6:</strong> Change up to 6 Size Ranks</li></ul>",
+    "description": "The character can temporarily grow or shrink in size. Choose increase or decrease at creation unless the 'Both Ways' enhancement is taken.\nLevel 1: Change up to 1 Size Rank\nLevel 2: Change up to 2 Size Ranks\nLevel 3: Change up to 3 Size Ranks\nLevel 4: Change up to 4 Size Ranks\nLevel 5: Change up to 5 Size Ranks\nLevel 6: Change up to 6 Size Ranks",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

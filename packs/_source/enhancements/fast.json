@@ -3,7 +3,7 @@
   "name": "Fast",
   "type": "enhancement",
   "system": {
-    "description": "<p>Improves travel pace for sweeping, dynamic movement. Source: BESM4e.</p>",
+    "description": "Improves travel pace for sweeping, dynamic movement. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

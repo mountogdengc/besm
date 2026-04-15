@@ -3,7 +3,7 @@
   "name": "Telekinesis",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to lift and maneouevre things remotely with one’s mind.</p>\n<ul><li><strong>Level 1:</strong> Lift/Move up to 1 kg</li><li><strong>Level 2:</strong> Lift/Move up to 5 kg</li><li><strong>Level 3:</strong> Lift/Move up to 10 kg</li><li><strong>Level 4:</strong> Lift/Move up to 50 kg</li><li><strong>Level 5:</strong> Lift/Move up to 100 kg</li><li><strong>Level 6:</strong> Lift/Move up to 500 kg</li></ul>",
+    "description": "Grants the ability to lift and maneouevre things remotely with one’s mind.\nLevel 1: Lift/Move up to 1 kg\nLevel 2: Lift/Move up to 5 kg\nLevel 3: Lift/Move up to 10 kg\nLevel 4: Lift/Move up to 50 kg\nLevel 5: Lift/Move up to 100 kg\nLevel 6: Lift/Move up to 500 kg",
     "baseCostPerLevel": 4,
     "purchasedLevel": 1,
     "source": "BESM4e"

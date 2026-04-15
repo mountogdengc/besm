@@ -3,7 +3,7 @@
   "name": "Narrow Category",
   "type": "limiter",
   "system": {
-    "description": "<p>Summons are restricted to a narrow subset within a broader type (e.g., only corvids among birds).</p>",
+    "description": "Summons are restricted to a narrow subset within a broader type (e.g., only corvids among birds).",
     "levels": 1,
     "source": "BESM4e"
   },

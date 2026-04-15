@@ -3,7 +3,7 @@
   "name": "Activation",
   "type": "limiter",
   "system": {
-    "description": "<p>Requires focused preparation to ready the power; you pause to activate it. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> Spend one round preparing the Attribute before it is used</li><li><strong>Level 2:</strong> Spend one minute preparing the Attribute before it is used</li><li><strong>Level 3:</strong> Spend one hour preparing the Attribute before it is used</li></ul>",
+    "description": "Requires focused preparation to ready the power; you pause to activate it. Source: BESM4e.\nLevel 1: Spend one round preparing the Attribute before it is used\nLevel 2: Spend one minute preparing the Attribute before it is used\nLevel 3: Spend one hour preparing the Attribute before it is used",
     "levels": 1,
     "source": "BESM4e"
   },

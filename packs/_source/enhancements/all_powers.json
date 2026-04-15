@@ -3,7 +3,7 @@
   "name": "All Powers",
   "type": "enhancement",
   "system": {
-    "description": "<p>Briefly echo a wide spectrum of another’s capabilities, reflecting their theme. Source: BESM4e.</p>",
+    "description": "Briefly echo a wide spectrum of another’s capabilities, reflecting their theme. Source: BESM4e.",
     "levels": 2,
     "source": "BESM4e"
   },

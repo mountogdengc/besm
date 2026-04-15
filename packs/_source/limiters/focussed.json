@@ -3,7 +3,7 @@
   "name": "Focussed",
   "type": "limiter",
   "system": {
-    "description": "<p>Only manipulates a single chosen substance or element. Source: BESM4e.</p>",
+    "description": "Only manipulates a single chosen substance or element. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

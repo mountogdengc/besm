@@ -3,7 +3,7 @@
   "name": "Object",
   "type": "limiter",
   "system": {
-    "description": "<p>Bound to a particular item you must carry. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> The Item’s Attribute still provides moderate benefit to the character.</li><li><strong>Level 2:</strong> The Item’s Attribute still provides slight benefit to the character.</li><li><strong>Level 3:</strong> The Item’s Attribute hardly provides any benefit to the character.</li></ul>",
+    "description": "Bound to a particular item you must carry. Source: BESM4e.\nLevel 1: The Item’s Attribute still provides moderate benefit to the character.\nLevel 2: The Item’s Attribute still provides slight benefit to the character.\nLevel 3: The Item’s Attribute hardly provides any benefit to the character.",
     "levels": 1,
     "source": "BESM4e"
   },

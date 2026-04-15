@@ -3,7 +3,7 @@
   "name": "Melee Attack",
   "type": "attribute",
   "system": {
-    "description": "<p>Adds +2 ACV per level when using a specific fighting technique.</p>\n<ul><li><strong>Level 1:</strong> Attack Combat Value increases by 2 when using a specific fighting technique</li><li><strong>Level 2:</strong> Attack Combat Value increases by 4 when using a specific fighting technique</li><li><strong>Level 3:</strong> Attack Combat Value increases by 6 when using a specific fighting technique</li><li><strong>Level 4:</strong> Attack Combat Value increases by 8 when using a specific fighting technique</li><li><strong>Level 5:</strong> Attack Combat Value increases by 10 when using a specific fighting technique</li><li><strong>Level 6:</strong> Attack Combat Value increases by 12 when using a specific fighting technique</li></ul>",
+    "description": "Adds +2 ACV per level when using a specific fighting technique.\nLevel 1: Attack Combat Value increases by 2 when using a specific fighting technique\nLevel 2: Attack Combat Value increases by 4 when using a specific fighting technique\nLevel 3: Attack Combat Value increases by 6 when using a specific fighting technique\nLevel 4: Attack Combat Value increases by 8 when using a specific fighting technique\nLevel 5: Attack Combat Value increases by 10 when using a specific fighting technique\nLevel 6: Attack Combat Value increases by 12 when using a specific fighting technique",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

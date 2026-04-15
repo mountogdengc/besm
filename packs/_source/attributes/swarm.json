@@ -3,7 +3,7 @@
   "name": "Swarm",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to separate into many individual, smaller creatures.</p>\n<ul><li><strong>Level 1:</strong> Swarm = HP total × 1</li><li><strong>Level 2:</strong> Swarm = HP total × 2</li><li><strong>Level 3:</strong> Swarm = HP total × 3</li><li><strong>Level 4:</strong> Swarm = HP total × 4</li><li><strong>Level 5:</strong> Swarm = HP total × 5</li><li><strong>Level 6:</strong> Swarm = HP total × 6</li></ul>",
+    "description": "Grants the ability to separate into many individual, smaller creatures.\nLevel 1: Swarm = HP total × 1\nLevel 2: Swarm = HP total × 2\nLevel 3: Swarm = HP total × 3\nLevel 4: Swarm = HP total × 4\nLevel 5: Swarm = HP total × 5\nLevel 6: Swarm = HP total × 6",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

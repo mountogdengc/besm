@@ -3,7 +3,7 @@
   "name": "All Attributes (Unaffected)",
   "type": "enhancement",
   "system": {
-    "description": "<p>Unaffected by a wide family of source-related abilities, shrugging them off wholesale. Source: BESM4e.</p>",
+    "description": "Unaffected by a wide family of source-related abilities, shrugging them off wholesale. Source: BESM4e.",
     "levels": 3,
     "source": "BESM4e"
   },

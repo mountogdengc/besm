@@ -3,7 +3,7 @@
   "name": "Spread",
   "type": "limiter",
   "system": {
-    "description": "<p>Needs open space to deploy and manoeuvre. Source: BESM4e.</p>",
+    "description": "Needs open space to deploy and manoeuvre. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

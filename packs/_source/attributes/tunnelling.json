@@ -3,7 +3,7 @@
   "name": "Tunnelling",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to burrow into dirt and stone-like ground.</p>\n<ul><li><strong>Level 1:</strong> Tunnel up to 10 metres per hour</li><li><strong>Level 2:</strong> Tunnel up to 30 metres per hour</li><li><strong>Level 3:</strong> Tunnel up to 100 metres per hour</li><li><strong>Level 4:</strong> Tunnel up to 300 metres per hour</li><li><strong>Level 5:</strong> Tunnel up to 1 kph</li><li><strong>Level 6:</strong> Tunnel up to 3 kph</li></ul>",
+    "description": "Grants the ability to burrow into dirt and stone-like ground.\nLevel 1: Tunnel up to 10 metres per hour\nLevel 2: Tunnel up to 30 metres per hour\nLevel 3: Tunnel up to 100 metres per hour\nLevel 4: Tunnel up to 300 metres per hour\nLevel 5: Tunnel up to 1 kph\nLevel 6: Tunnel up to 3 kph",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

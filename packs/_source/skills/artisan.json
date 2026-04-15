@@ -3,7 +3,7 @@
   "name": "Artisan",
   "type": "skill",
   "system": {
-    "description": "<p>Crafting physical goods with skill and precision using tools and materials.</p>",
+    "description": "Crafting physical goods with skill and precision using tools and materials.",
     "linkedStat": "mind",
     "costClass": "framework",
     "rank": 0,

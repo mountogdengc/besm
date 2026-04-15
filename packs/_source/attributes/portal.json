@@ -3,7 +3,7 @@
   "name": "Portal",
   "type": "attribute",
   "system": {
-    "description": "<p>Creates a one-way dimensional gate to another defined plane of existence or dimension.</p>\n<ul><li><strong>Level 1:</strong> Create a one-way Portal to 1 defined dimension</li><li><strong>Level 2:</strong> Create a one-way Portal to 2 defined dimensions</li><li><strong>Level 3:</strong> Create a one-way Portal to 3 defined dimensions</li><li><strong>Level 4:</strong> Create a one-way Portal to 4 defined dimensions</li><li><strong>Level 5:</strong> Create a one-way Portal to 5 defined dimensions</li><li><strong>Level 6:</strong> Create a one-way Portal to 6 defined dimensions</li></ul>",
+    "description": "Creates a one-way dimensional gate to another defined plane of existence or dimension.\nLevel 1: Create a one-way Portal to 1 defined dimension\nLevel 2: Create a one-way Portal to 2 defined dimensions\nLevel 3: Create a one-way Portal to 3 defined dimensions\nLevel 4: Create a one-way Portal to 4 defined dimensions\nLevel 5: Create a one-way Portal to 5 defined dimensions\nLevel 6: Create a one-way Portal to 6 defined dimensions",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

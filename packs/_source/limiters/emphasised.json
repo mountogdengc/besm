@@ -3,7 +3,7 @@
   "name": "Emphasised",
   "type": "limiter",
   "system": {
-    "description": "<p>Tuned to an uncommon threat; less effective against everything else. Source: BESM4e.</p>",
+    "description": "Tuned to an uncommon threat; less effective against everything else. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

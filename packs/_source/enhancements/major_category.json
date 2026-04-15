@@ -3,7 +3,7 @@
   "name": "Major Category",
   "type": "enhancement",
   "system": {
-    "description": "<p>Broadens Dynamic Powers to a sweeping, thematic major domain. Source: BESM4e.</p>",
+    "description": "Broadens Dynamic Powers to a sweeping, thematic major domain. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

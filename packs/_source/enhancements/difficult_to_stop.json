@@ -3,7 +3,7 @@
   "name": "Difficult to Stop",
   "type": "enhancement",
   "system": {
-    "description": "<p>A return that resists interruption; stopping it is exceptionally difficult. Source: BESM4e.</p>",
+    "description": "A return that resists interruption; stopping it is exceptionally difficult. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

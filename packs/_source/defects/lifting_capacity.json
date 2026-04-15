@@ -3,7 +3,7 @@
   "name": "Unique Defect: Lifting Capacity",
   "type": "defect",
   "system": {
-    "description": "<p>The character's lifting capacity is reduced.</p>\n<ul><li><strong>Rank 1:</strong> ÷5 lifting capacity</li><li><strong>Rank 2:</strong> ÷25 lifting capacity</li><li><strong>Rank 3:</strong> ÷100 lifting capacity</li><li><strong>Rank 4:</strong> ÷500 lifting capacity</li><li><strong>Rank 5:</strong> ÷2,500 lifting capacity</li><li><strong>Rank 6:</strong> ÷10,000 lifting capacity</li><li><strong>Rank 7:</strong> ÷50,000 lifting capacity</li><li><strong>Rank 8:</strong> ÷250,000 lifting capacity</li><li><strong>Rank 9:</strong> ÷1,000,000 lifting capacity</li><li><strong>Rank 10:</strong> ÷5,000,000 lifting capacity</li></ul>",
+    "description": "The character's lifting capacity is reduced.\nRank 1: ÷5 lifting capacity\nRank 2: ÷25 lifting capacity\nRank 3: ÷100 lifting capacity\nRank 4: ÷500 lifting capacity\nRank 5: ÷2,500 lifting capacity\nRank 6: ÷10,000 lifting capacity\nRank 7: ÷50,000 lifting capacity\nRank 8: ÷250,000 lifting capacity\nRank 9: ÷1,000,000 lifting capacity\nRank 10: ÷5,000,000 lifting capacity",
     "cpGranted": 6,
     "tier": "serious",
     "source": "BESM4e"

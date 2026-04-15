@@ -3,7 +3,7 @@
   "name": "Extra Actions",
   "type": "attribute",
   "system": {
-    "description": "<p>Act with exceptional tempo or parallel processing, enabling rapid sequences.</p>\n<ul><li><strong>Level 1:</strong> +1 action per round</li><li><strong>Level 2:</strong> +2 actions per round</li><li><strong>Level 3:</strong> +3 actions per round</li><li><strong>Level 4:</strong> +4 actions per round</li><li><strong>Level 5:</strong> +5 actions per round</li><li><strong>Level 6:</strong> +6 actions per round</li></ul>",
+    "description": "Act with exceptional tempo or parallel processing, enabling rapid sequences.\nLevel 1: +1 action per round\nLevel 2: +2 actions per round\nLevel 3: +3 actions per round\nLevel 4: +4 actions per round\nLevel 5: +5 actions per round\nLevel 6: +6 actions per round",
     "baseCostPerLevel": 4,
     "purchasedLevel": 1,
     "source": "BESM4e"

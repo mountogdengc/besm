@@ -3,7 +3,7 @@
   "name": "Maintain",
   "type": "limiter",
   "system": {
-    "description": "<p>Requires forward speed and friendly surfaces to stay aloft. Source: BESM4e.</p>",
+    "description": "Requires forward speed and friendly surfaces to stay aloft. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

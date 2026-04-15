@@ -3,7 +3,7 @@
   "name": "Dimension Walk",
   "type": "attribute",
   "system": {
-    "description": "<p>Step between nearby realities with thematic resonance to your concept.</p>\n<ul><li><strong>Level 1:</strong> Insignificant changes</li><li><strong>Level 2:</strong> Specific changes</li><li><strong>Level 3:</strong> Minor changes</li><li><strong>Level 4:</strong> Moderate changes</li><li><strong>Level 5:</strong> Significant changes</li><li><strong>Level 6:</strong> Major changes</li></ul>",
+    "description": "Step between nearby realities with thematic resonance to your concept.\nLevel 1: Insignificant changes\nLevel 2: Specific changes\nLevel 3: Minor changes\nLevel 4: Moderate changes\nLevel 5: Significant changes\nLevel 6: Major changes",
     "baseCostPerLevel": 5,
     "purchasedLevel": 1,
     "source": "BESM4e"

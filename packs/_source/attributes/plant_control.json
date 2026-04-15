@@ -3,7 +3,7 @@
   "name": "Plant Control",
   "type": "attribute",
   "system": {
-    "description": "<p>Control plant growth and movement in a given area. Plants return to normal after the effect ends.</p>\n<ul><li><strong>Level 1:</strong> 10 cm radius; plants grow x3</li><li><strong>Level 2:</strong> 1 m radius; plants grow x10</li><li><strong>Level 3:</strong> 10 m radius; plants grow x30</li><li><strong>Level 4:</strong> 100 m radius; plants grow x100</li><li><strong>Level 5:</strong> 1 km radius; plants grow x300</li><li><strong>Level 6:</strong> 10 km radius; plants grow x1000</li></ul>",
+    "description": "Control plant growth and movement in a given area. Plants return to normal after the effect ends.\nLevel 1: 10 cm radius; plants grow x3\nLevel 2: 1 m radius; plants grow x10\nLevel 3: 10 m radius; plants grow x30\nLevel 4: 100 m radius; plants grow x100\nLevel 5: 1 km radius; plants grow x300\nLevel 6: 10 km radius; plants grow x1000",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

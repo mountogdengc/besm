@@ -3,7 +3,7 @@
   "name": "Homing",
   "type": "enhancement",
   "system": {
-    "description": "<p>Attacks that curve back toward their mark if they stray. Source: BESM4e.</p>",
+    "description": "Attacks that curve back toward their mark if they stray. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Extra Damage from all Attacks",
   "type": "defect",
   "system": {
-    "description": "<p>The character takes extra damage from all attacks.</p>\n<ul><li><strong>Rank 1:</strong> Suffers 10 Extra Damage from all Attacks</li><li><strong>Rank 2:</strong> Suffers 20 Extra Damage from all Attacks</li><li><strong>Rank 3:</strong> Suffers 30 Extra Damage from all Attacks</li><li><strong>Rank 4:</strong> Suffers 40 Extra Damage from all Attacks</li><li><strong>Rank 5:</strong> Suffers 50 Extra Damage from all Attacks</li><li><strong>Rank 6:</strong> Suffers 60 Extra Damage from all Attacks</li><li><strong>Rank 7:</strong> Suffers 70 Extra Damage from all Attacks</li><li><strong>Rank 8:</strong> Suffers 80 Extra Damage from all Attacks</li><li><strong>Rank 9:</strong> Suffers 90 Extra Damage from all Attacks</li><li><strong>Rank 10:</strong> Suffers 100 Extra Damage from all Attacks</li></ul>",
+    "description": "The character takes extra damage from all attacks.\nRank 1: Suffers 10 Extra Damage from all Attacks\nRank 2: Suffers 20 Extra Damage from all Attacks\nRank 3: Suffers 30 Extra Damage from all Attacks\nRank 4: Suffers 40 Extra Damage from all Attacks\nRank 5: Suffers 50 Extra Damage from all Attacks\nRank 6: Suffers 60 Extra Damage from all Attacks\nRank 7: Suffers 70 Extra Damage from all Attacks\nRank 8: Suffers 80 Extra Damage from all Attacks\nRank 9: Suffers 90 Extra Damage from all Attacks\nRank 10: Suffers 100 Extra Damage from all Attacks",
     "cpGranted": 4,
     "tier": "serious",
     "source": "BESM4e"

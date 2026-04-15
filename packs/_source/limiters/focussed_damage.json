@@ -3,7 +3,7 @@
   "name": "Focussed Damage",
   "type": "limiter",
   "system": {
-    "description": "<p>Extra harm applies only with a specific attack style or method. Source: BESM4e.</p>",
+    "description": "Extra harm applies only with a specific attack style or method. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

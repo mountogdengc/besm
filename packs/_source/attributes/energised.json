@@ -3,7 +3,7 @@
   "name": "Energised",
   "type": "attribute",
   "system": {
-    "description": "<p>A deeper energy reserve that sustains your abilities or endurance.</p>\n<ul><li><strong>Level 1:</strong> +10 EP</li><li><strong>Level 2:</strong> +20 EP</li><li><strong>Level 3:</strong> +30 EP</li><li><strong>Level 4:</strong> +40 EP</li><li><strong>Level 5:</strong> +50 EP</li><li><strong>Level 6:</strong> +60 EP</li></ul>",
+    "description": "A deeper energy reserve that sustains your abilities or endurance.\nLevel 1: +10 EP\nLevel 2: +20 EP\nLevel 3: +30 EP\nLevel 4: +40 EP\nLevel 5: +50 EP\nLevel 6: +60 EP",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

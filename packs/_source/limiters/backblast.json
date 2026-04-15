@@ -3,7 +3,7 @@
   "name": "Backblast",
   "type": "limiter",
   "system": {
-    "description": "<p>Dangerous exhaust or rebound can harm those behind you — sometimes even you. Source: BESM4e.</p>",
+    "description": "Dangerous exhaust or rebound can harm those behind you — sometimes even you. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

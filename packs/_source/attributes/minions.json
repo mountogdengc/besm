@@ -3,7 +3,7 @@
   "name": "Minions",
   "type": "attribute",
   "system": {
-    "description": "<p>Character commands loyal followers. Each minion can be created with up to 1/5 of the character's total points.</p>\n<ul><li><strong>Level 1:</strong> Up to 5 Minions</li><li><strong>Level 2:</strong> 6-10 Minions</li><li><strong>Level 3:</strong> 11-25 Minions</li><li><strong>Level 4:</strong> 26-50 Minions</li><li><strong>Level 5:</strong> 51-100 Minions</li><li><strong>Level 6:</strong> 101-200 Minions</li></ul>",
+    "description": "Character commands loyal followers. Each minion can be created with up to 1/5 of the character's total points.\nLevel 1: Up to 5 Minions\nLevel 2: 6-10 Minions\nLevel 3: 11-25 Minions\nLevel 4: 26-50 Minions\nLevel 5: 51-100 Minions\nLevel 6: 101-200 Minions",
     "baseCostPerLevel": 2,
     "purchasedLevel": 1,
     "source": "BESM4e"

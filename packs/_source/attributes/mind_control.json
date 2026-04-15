@@ -3,7 +3,7 @@
   "name": "Mind Control",
   "type": "attribute",
   "system": {
-    "description": "<p>Mentally dominate a target through touch. Unwilling targets resist with an opposed Mind roll. Duration is typically one minute or a dramatic scene.</p>\n<ul><li><strong>Level 1:</strong> Basic commands like 'turn around'</li><li><strong>Level 2:</strong> Simple commands like 'go make me a sandwich'</li><li><strong>Level 3:</strong> Complex commands like 'use a fake ID to smuggle an item'</li><li><strong>Level 4:</strong> Can issue aggressive commands (e.g., attacking)</li><li><strong>Level 5:</strong> Can erase brief memories</li><li><strong>Level 6:</strong> Can erase or alter complex memories</li></ul>",
+    "description": "Mentally dominate a target through touch. Unwilling targets resist with an opposed Mind roll. Duration is typically one minute or a dramatic scene.\nLevel 1: Basic commands like 'turn around'\nLevel 2: Simple commands like 'go make me a sandwich'\nLevel 3: Complex commands like 'use a fake ID to smuggle an item'\nLevel 4: Can issue aggressive commands (e.g., attacking)\nLevel 5: Can erase brief memories\nLevel 6: Can erase or alter complex memories",
     "baseCostPerLevel": 5,
     "purchasedLevel": 1,
     "source": "BESM4e"

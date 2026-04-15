@@ -3,7 +3,7 @@
   "name": "Blocks Incorporeal",
   "type": "enhancement",
   "system": {
-    "description": "<p>Prevents phased or energy-state beings from slipping through. Source: BESM4e.</p>",
+    "description": "Prevents phased or energy-state beings from slipping through. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

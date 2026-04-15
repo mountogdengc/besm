@@ -3,7 +3,7 @@
   "name": "Significant Power",
   "type": "enhancement",
   "system": {
-    "description": "<p>Your connections reach farther within the setting than usual. Source: BESM4e.</p>",
+    "description": "Your connections reach farther within the setting than usual. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

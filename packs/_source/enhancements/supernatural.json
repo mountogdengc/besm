@@ -3,7 +3,7 @@
   "name": "Supernatural",
   "type": "enhancement",
   "system": {
-    "description": "<p>Extends Summon Creatures beyond natural animals to include supernatural, magical, or otherworldly beings of the same general theme.</p>",
+    "description": "Extends Summon Creatures beyond natural animals to include supernatural, magical, or otherworldly beings of the same general theme.",
     "levels": 1,
     "source": "BESM4e"
   },

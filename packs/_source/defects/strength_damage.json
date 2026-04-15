@@ -3,7 +3,7 @@
   "name": "Unique Defect: Strength Damage",
   "type": "defect",
   "system": {
-    "description": "<p>The character's damage from Strength attacks is reduced.</p>\n<ul><li><strong>Rank 1:</strong> -10 Strength Damage</li><li><strong>Rank 2:</strong> -20 Strength Damage</li><li><strong>Rank 3:</strong> -30 Strength Damage</li><li><strong>Rank 4:</strong> -40 Strength Damage</li><li><strong>Rank 5:</strong> -50 Strength Damage</li><li><strong>Rank 6:</strong> -60 Strength Damage</li><li><strong>Rank 7:</strong> -70 Strength Damage</li><li><strong>Rank 8:</strong> -80 Strength Damage</li><li><strong>Rank 9:</strong> -90 Strength Damage</li><li><strong>Rank 10:</strong> -100 Strength Damage</li></ul>",
+    "description": "The character's damage from Strength attacks is reduced.\nRank 1: -10 Strength Damage\nRank 2: -20 Strength Damage\nRank 3: -30 Strength Damage\nRank 4: -40 Strength Damage\nRank 5: -50 Strength Damage\nRank 6: -60 Strength Damage\nRank 7: -70 Strength Damage\nRank 8: -80 Strength Damage\nRank 9: -90 Strength Damage\nRank 10: -100 Strength Damage",
     "cpGranted": 2,
     "tier": "serious",
     "source": "BESM4e"

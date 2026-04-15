@@ -3,7 +3,7 @@
   "name": "Attack Mastery",
   "type": "attribute",
   "system": {
-    "description": "<p>Refined offensive training that sharpens your strikes across styles and weapons.</p>\n<ul><li><strong>Level 1:</strong> +1 ACV</li><li><strong>Level 2:</strong> +2 ACV</li><li><strong>Level 3:</strong> +3 ACV</li><li><strong>Level 4:</strong> +4 ACV</li><li><strong>Level 5:</strong> +5 ACV</li><li><strong>Level 6:</strong> +6 ACV</li></ul>",
+    "description": "Refined offensive training that sharpens your strikes across styles and weapons.\nLevel 1: +1 ACV\nLevel 2: +2 ACV\nLevel 3: +3 ACV\nLevel 4: +4 ACV\nLevel 5: +5 ACV\nLevel 6: +6 ACV",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

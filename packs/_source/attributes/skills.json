@@ -3,7 +3,7 @@
   "name": "Skills",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants skill points to spend on a specific skill set.</p>\n<ul><li><strong>Level 1:</strong> 1 skill pick</li><li><strong>Level 2:</strong> 2 skill picks</li><li><strong>Level 3:</strong> 3 skill picks</li><li><strong>Level 4:</strong> 4 skill picks</li><li><strong>Level 5:</strong> 5 skill picks</li><li><strong>Level 6:</strong> 6 skill picks</li></ul>",
+    "description": "Grants skill points to spend on a specific skill set.\nLevel 1: 1 skill pick\nLevel 2: 2 skill picks\nLevel 3: 3 skill picks\nLevel 4: 4 skill picks\nLevel 5: 5 skill picks\nLevel 6: 6 skill picks",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

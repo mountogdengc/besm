@@ -3,7 +3,7 @@
   "name": "Absorption",
   "type": "attribute",
   "system": {
-    "description": "<p>Turn incoming physical harm into staying power, drawing strength from impact. Primarily resists conventional blows. See official rules for limits and interactions.</p>\n<ul><li><strong>Level 1:</strong> Absorbs 5 damage</li><li><strong>Level 2:</strong> Absorbs 10 damage</li><li><strong>Level 3:</strong> Absorbs 15 damage</li><li><strong>Level 4:</strong> Absorbs 20 damage</li><li><strong>Level 5:</strong> Absorbs 25 damage</li><li><strong>Level 6:</strong> Absorbs 30 damage</li></ul>",
+    "description": "Turn incoming physical harm into staying power, drawing strength from impact. Primarily resists conventional blows. See official rules for limits and interactions.\nLevel 1: Absorbs 5 damage\nLevel 2: Absorbs 10 damage\nLevel 3: Absorbs 15 damage\nLevel 4: Absorbs 20 damage\nLevel 5: Absorbs 25 damage\nLevel 6: Absorbs 30 damage",
     "baseCostPerLevel": 5,
     "purchasedLevel": 1,
     "source": "BESM4e"

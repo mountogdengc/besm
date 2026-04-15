@@ -3,7 +3,7 @@
   "name": "Regenerating",
   "type": "enhancement",
   "system": {
-    "description": "<p>Recovers lost potency over short intervals. Source: BESM4e.</p>",
+    "description": "Recovers lost potency over short intervals. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Contact",
   "type": "enhancement",
   "system": {
-    "description": "<p>Delivers effects through touch or exposure rather than direct impact. Source: BESM4e.</p>",
+    "description": "Delivers effects through touch or exposure rather than direct impact. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

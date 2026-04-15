@@ -3,7 +3,7 @@
   "name": "Accurate",
   "type": "enhancement",
   "system": {
-    "description": "<p>Fine-tuned precision that helps attacks land true; often a hallmark of crafted or smart weapons. Source: BESM4e.</p>",
+    "description": "Fine-tuned precision that helps attacks land true; often a hallmark of crafted or smart weapons. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

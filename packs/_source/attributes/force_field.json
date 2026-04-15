@@ -3,7 +3,7 @@
   "name": "Force Field",
   "type": "attribute",
   "system": {
-    "description": "<p>An energy shield that protects the user from damage, often magical or technological in nature.</p>\n<ul><li><strong>Level 1:</strong> Armour Rating = 10</li><li><strong>Level 2:</strong> Armour Rating = 20</li><li><strong>Level 3:</strong> Armour Rating = 30</li><li><strong>Level 4:</strong> Armour Rating = 40</li><li><strong>Level 5:</strong> Armour Rating = 50</li><li><strong>Level 6:</strong> Armour Rating = 60</li></ul>",
+    "description": "An energy shield that protects the user from damage, often magical or technological in nature.\nLevel 1: Armour Rating = 10\nLevel 2: Armour Rating = 20\nLevel 3: Armour Rating = 30\nLevel 4: Armour Rating = 40\nLevel 5: Armour Rating = 50\nLevel 6: Armour Rating = 60",
     "baseCostPerLevel": 4,
     "purchasedLevel": 1,
     "source": "BESM4e"

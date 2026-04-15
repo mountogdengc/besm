@@ -3,7 +3,7 @@
   "name": "Area",
   "type": "enhancement",
   "system": {
-    "description": "<p>Expands an ability’s influence to affect a surrounding space. Source: BESM4e.</p>",
+    "description": "Expands an ability’s influence to affect a surrounding space. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

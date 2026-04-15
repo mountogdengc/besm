@@ -3,7 +3,7 @@
   "name": "Capped",
   "type": "limiter",
   "system": {
-    "description": "<p>Absorption has an upper limit before overflow applies. Source: BESM4e.</p>",
+    "description": "Absorption has an upper limit before overflow applies. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

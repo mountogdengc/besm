@@ -3,7 +3,7 @@
   "name": "Sensory Block",
   "type": "attribute",
   "system": {
-    "description": "<p>Partially hides character from specific senses or detection techniques in a 3m area.</p>\n<ul><li><strong>Level 1:</strong> 1 sense/technique blocked</li><li><strong>Level 2:</strong> 2 senses/techniques blocked</li><li><strong>Level 3:</strong> 3 senses/techniques blocked</li><li><strong>Level 4:</strong> 4 senses/techniques blocked</li><li><strong>Level 5:</strong> 5 senses/techniques blocked</li><li><strong>Level 6:</strong> 6 senses/techniques blocked</li></ul>",
+    "description": "Partially hides character from specific senses or detection techniques in a 3m area.\nLevel 1: 1 sense/technique blocked\nLevel 2: 2 senses/techniques blocked\nLevel 3: 3 senses/techniques blocked\nLevel 4: 4 senses/techniques blocked\nLevel 5: 5 senses/techniques blocked\nLevel 6: 6 senses/techniques blocked",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

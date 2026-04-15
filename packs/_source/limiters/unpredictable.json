@@ -3,7 +3,7 @@
   "name": "Unpredictable",
   "type": "limiter",
   "system": {
-    "description": "<p>Sometimes misfires or behaves unexpectedly. Source: BESM4e.</p>\n<ul><li><strong>Level 1:</strong> The character must make a successful average Stat roll (TN 12) to use the Attribute.</li><li><strong>Level 2:</strong> The character must make a successful average Stat roll (TN 15) to use the Attribute.</li><li><strong>Level 3:</strong> The character must make a successful average Stat roll (TN 18) to use the Attribute.</li></ul>",
+    "description": "Sometimes misfires or behaves unexpectedly. Source: BESM4e.\nLevel 1: The character must make a successful average Stat roll (TN 12) to use the Attribute.\nLevel 2: The character must make a successful average Stat roll (TN 15) to use the Attribute.\nLevel 3: The character must make a successful average Stat roll (TN 18) to use the Attribute.",
     "levels": 1,
     "source": "BESM4e"
   },

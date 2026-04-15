@@ -3,7 +3,7 @@
   "name": "Shortcoming",
   "type": "defect",
   "system": {
-    "description": "<p>A character has a deficiency in one or more aspects of a Stat that is lower than the rest of the Stat.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "description": "A character has a deficiency in one or more aspects of a Stat that is lower than the rest of the Stat.\nRank 1: Slight consequences\nRank 2: Moderate consequences\nRank 3: Severe consequences",
     "cpGranted": 1,
     "tier": "lesser",
     "source": "BESM4e"

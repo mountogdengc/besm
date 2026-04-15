@@ -3,7 +3,7 @@
   "name": "Features",
   "type": "attribute",
   "system": {
-    "description": "<p>Minor edges and conveniences that flesh out your concept with color and utility.</p>\n<ul><li><strong>Level 1:</strong> 1-2 Features</li><li><strong>Level 2:</strong> 3-5 Features</li><li><strong>Level 3:</strong> 6-10 Features</li><li><strong>Level 4:</strong> 11-25 Features</li><li><strong>Level 5:</strong> 26-50 Features</li><li><strong>Level 6:</strong> 51-100 Features</li></ul>",
+    "description": "Minor edges and conveniences that flesh out your concept with color and utility.\nLevel 1: 1-2 Features\nLevel 2: 3-5 Features\nLevel 3: 6-10 Features\nLevel 4: 11-25 Features\nLevel 5: 26-50 Features\nLevel 6: 51-100 Features",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

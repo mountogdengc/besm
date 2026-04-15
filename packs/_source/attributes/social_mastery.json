@@ -3,7 +3,7 @@
   "name": "Social Mastery",
   "type": "attribute",
   "system": {
-    "description": "<p>Increases overall Social Combat Value.</p>\n<ul><li><strong>Level 1:</strong> +1 to social interaction rolls</li><li><strong>Level 2:</strong> +2 to social interaction rolls</li><li><strong>Level 3:</strong> +3 to social interaction rolls</li><li><strong>Level 4:</strong> +4 to social interaction rolls</li><li><strong>Level 5:</strong> +5 to social interaction rolls</li><li><strong>Level 6:</strong> +6 to social interaction rolls</li></ul>",
+    "description": "Increases overall Social Combat Value.\nLevel 1: +1 to social interaction rolls\nLevel 2: +2 to social interaction rolls\nLevel 3: +3 to social interaction rolls\nLevel 4: +4 to social interaction rolls\nLevel 5: +5 to social interaction rolls\nLevel 6: +6 to social interaction rolls",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "Extras"

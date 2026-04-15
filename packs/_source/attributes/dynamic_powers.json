@@ -3,7 +3,7 @@
   "name": "Dynamic Powers",
   "type": "attribute",
   "system": {
-    "description": "<p>Broad narrative authority over a chosen domain; focus shifts with the story. Coordinate scope with your GM.</p>\n<ul><li><strong>Level 1:</strong> Minimal control over area</li><li><strong>Level 2:</strong> Minor control over area</li><li><strong>Level 3:</strong> Moderate control over area</li><li><strong>Level 4:</strong> Good control over area</li><li><strong>Level 5:</strong> Significant control over area</li><li><strong>Level 6:</strong> Major control over area</li></ul>",
+    "description": "Broad narrative authority over a chosen domain; focus shifts with the story. Coordinate scope with your GM.\nLevel 1: Minimal control over area\nLevel 2: Minor control over area\nLevel 3: Moderate control over area\nLevel 4: Good control over area\nLevel 5: Significant control over area\nLevel 6: Major control over area",
     "baseCostPerLevel": 10,
     "purchasedLevel": 1,
     "source": "BESM4e"

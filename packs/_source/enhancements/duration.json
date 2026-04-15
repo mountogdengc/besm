@@ -3,7 +3,7 @@
   "name": "Duration",
   "type": "enhancement",
   "system": {
-    "description": "<p>Extends how long an effect persists once invoked. Source: BESM4e.</p>",
+    "description": "Extends how long an effect persists once invoked. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

@@ -3,7 +3,7 @@
   "name": "Conditional",
   "type": "limiter",
   "system": {
-    "description": "<p>Recovery depends on exposure to a specific source or condition. Source: BESM4e.</p>",
+    "description": "Recovery depends on exposure to a specific source or condition. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

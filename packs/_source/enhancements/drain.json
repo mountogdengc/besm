@@ -3,7 +3,7 @@
   "name": "Drain",
   "type": "enhancement",
   "system": {
-    "description": "<p>Saps a chosen core trait, leaving victims diminished. Source: BESM4e.</p>",
+    "description": "Saps a chosen core trait, leaving victims diminished. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

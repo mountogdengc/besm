@@ -3,7 +3,7 @@
   "name": "Transfer",
   "type": "attribute",
   "system": {
-    "description": "<p>Grants the ability to give attributes to a target.</p>\n<ul><li><strong>Level 1:</strong> Transfer 1 Attribute</li><li><strong>Level 2:</strong> Transfer 2 Attributes</li><li><strong>Level 3:</strong> Transfer 3 Attributes</li><li><strong>Level 4:</strong> Transfer Attributes up to Level 4</li><li><strong>Level 5:</strong> Transfer Attributes up to Level 5</li><li><strong>Level 6:</strong> Transfer Attributes up to Level 6</li></ul>",
+    "description": "Grants the ability to give attributes to a target.\nLevel 1: Transfer 1 Attribute\nLevel 2: Transfer 2 Attributes\nLevel 3: Transfer 3 Attributes\nLevel 4: Transfer Attributes up to Level 4\nLevel 5: Transfer Attributes up to Level 5\nLevel 6: Transfer Attributes up to Level 6",
     "baseCostPerLevel": 3,
     "purchasedLevel": 1,
     "source": "BESM4e"

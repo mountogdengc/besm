@@ -3,7 +3,7 @@
   "name": "Limited Use",
   "type": "limiter",
   "system": {
-    "description": "<p>Only a few uses before it needs a new day or scene. Source: BESM4e.</p>",
+    "description": "Only a few uses before it needs a new day or scene. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

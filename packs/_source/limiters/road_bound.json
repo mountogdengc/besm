@@ -3,7 +3,7 @@
   "name": "Road-Bound",
   "type": "limiter",
   "system": {
-    "description": "<p>Shines on smooth roads; struggles off‑road. Source: BESM4e.</p>",
+    "description": "Shines on smooth roads; struggles off‑road. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

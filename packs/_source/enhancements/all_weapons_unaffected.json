@@ -3,7 +3,7 @@
   "name": "All Weapons (Unaffected)",
   "type": "enhancement",
   "system": {
-    "description": "<p>Unaffected by source-related weapon effects regardless of refinements. Source: BESM4e.</p>",
+    "description": "Unaffected by source-related weapon effects regardless of refinements. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

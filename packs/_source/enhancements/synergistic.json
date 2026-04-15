@@ -3,7 +3,7 @@
   "name": "Synergistic",
   "type": "enhancement",
   "system": {
-    "description": "<p>Coordinates with adjacent defenses or energy flows for smoother operation. Source: BESM4e.</p>",
+    "description": "Coordinates with adjacent defenses or energy flows for smoother operation. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

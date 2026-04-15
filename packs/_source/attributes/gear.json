@@ -3,7 +3,7 @@
   "name": "Gear",
   "type": "attribute",
   "system": {
-    "description": "<p>Represents a character's access to useful but non-powerful equipment suitable for the campaign setting.</p>\n<ul><li><strong>Level 1:</strong> A couple pieces of Gear (1-2)</li><li><strong>Level 2:</strong> A few pieces of Gear (3-5)</li><li><strong>Level 3:</strong> Several pieces of Gear (6-10)</li><li><strong>Level 4:</strong> Many pieces of Gear (11-25)</li><li><strong>Level 5:</strong> Large amount of Gear (26-50)</li><li><strong>Level 6:</strong> Huge amount of Gear (51-100)</li></ul>",
+    "description": "Represents a character's access to useful but non-powerful equipment suitable for the campaign setting.\nLevel 1: A couple pieces of Gear (1-2)\nLevel 2: A few pieces of Gear (3-5)\nLevel 3: Several pieces of Gear (6-10)\nLevel 4: Many pieces of Gear (11-25)\nLevel 5: Large amount of Gear (26-50)\nLevel 6: Huge amount of Gear (51-100)",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

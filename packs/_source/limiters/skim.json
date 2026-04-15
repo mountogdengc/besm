@@ -3,7 +3,7 @@
   "name": "Skim",
   "type": "limiter",
   "system": {
-    "description": "<p>Hovers skimming just above ground or water. Source: BESM4e.</p>",
+    "description": "Hovers skimming just above ground or water. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

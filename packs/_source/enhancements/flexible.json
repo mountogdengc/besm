@@ -3,7 +3,7 @@
   "name": "Flexible",
   "type": "enhancement",
   "system": {
-    "description": "<p>A whiplike or extendable attack that enables tricky maneuvers. Source: BESM4e.</p>",
+    "description": "A whiplike or extendable attack that enables tricky maneuvers. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

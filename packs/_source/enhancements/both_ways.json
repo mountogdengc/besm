@@ -3,7 +3,7 @@
   "name": "Both Ways",
   "type": "enhancement",
   "system": {
-    "description": "<p>Allows size changes in either direction for flexible scale play. Source: BESM4e.</p>",
+    "description": "Allows size changes in either direction for flexible scale play. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

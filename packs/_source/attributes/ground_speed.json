@@ -3,7 +3,7 @@
   "name": "Ground Speed",
   "type": "attribute",
   "system": {
-    "description": "<p>Allows the character or item to move quickly on the ground using various movement techniques.</p>\n<ul><li><strong>Level 1:</strong> Ground speed up to 10 kph</li><li><strong>Level 2:</strong> Ground speed up to 25 kph</li><li><strong>Level 3:</strong> Ground speed up to 50 kph</li><li><strong>Level 4:</strong> Ground speed up to 100 kph</li><li><strong>Level 5:</strong> Ground speed up to 250 kph</li><li><strong>Level 6:</strong> Ground speed up to 500 kph</li></ul>",
+    "description": "Allows the character or item to move quickly on the ground using various movement techniques.\nLevel 1: Ground speed up to 10 kph\nLevel 2: Ground speed up to 25 kph\nLevel 3: Ground speed up to 50 kph\nLevel 4: Ground speed up to 100 kph\nLevel 5: Ground speed up to 250 kph\nLevel 6: Ground speed up to 500 kph",
     "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"

@@ -3,7 +3,7 @@
   "name": "Impaired Speech",
   "type": "defect",
   "system": {
-    "description": "<p>Character cannot easily communicate through spoken language. This may stem from natural design, injury, or species traits. Communication is severely limited or impossible.</p>\n<ul><li><strong>Rank 1:</strong> Slight consequences</li><li><strong>Rank 2:</strong> Moderate consequences</li><li><strong>Rank 3:</strong> Severe consequences</li></ul>",
+    "description": "Character cannot easily communicate through spoken language. This may stem from natural design, injury, or species traits. Communication is severely limited or impossible.\nRank 1: Slight consequences\nRank 2: Moderate consequences\nRank 3: Severe consequences",
     "cpGranted": 3,
     "tier": "serious",
     "source": "BESM4e"

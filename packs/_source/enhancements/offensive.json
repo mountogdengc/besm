@@ -3,7 +3,7 @@
   "name": "Offensive",
   "type": "enhancement",
   "system": {
-    "description": "<p>Your barrier bites back when touched. Source: BESM4e.</p>",
+    "description": "Your barrier bites back when touched. Source: BESM4e.",
     "levels": 1,
     "source": "BESM4e"
   },

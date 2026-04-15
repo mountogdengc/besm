@@ -118,7 +118,7 @@ function writePackEntry(packName, key, doc) {
   writeFileSync(filePath, JSON.stringify(doc, null, 2) + "\n", "utf-8");
 }
 
-/** Format level descriptions as an HTML list. */
+/** Format level descriptions as plain text lines. */
 function formatLevels(levels) {
   if (!levels || typeof levels !== "object") return "";
   const entries = Object.entries(levels)
@@ -126,21 +126,21 @@ function formatLevels(levels) {
   if (entries.length === 0) return "";
   const items = entries.map(([num, val]) => {
     const desc = typeof val === "string" ? val : (val.description || `Level ${num}`);
-    return `<li><strong>Level ${num}:</strong> ${desc}</li>`;
+    return `Level ${num}: ${desc}`;
   });
-  return `\n<ul>${items.join("")}</ul>`;
+  return "\n" + items.join("\n");
 }
 
-/** Format rank descriptions as an HTML list. */
+/** Format rank descriptions as plain text lines. */
 function formatRanks(ranks) {
   if (!ranks || ranks.length === 0) return "";
   const items = ranks.map(
-    (r) => `<li><strong>Rank ${r.rank}:</strong> ${r.description}</li>`
+    (r) => `Rank ${r.rank}: ${r.description}`
   );
-  return `\n<ul>${items.join("")}</ul>`;
+  return "\n" + items.join("\n");
 }
 
-/** Format assignment descriptions as an HTML list. */
+/** Format assignment descriptions as plain text lines. */
 function formatAssignments(assignments) {
   if (!assignments || typeof assignments !== "object") return "";
   const entries = Object.entries(assignments).sort(
@@ -148,9 +148,9 @@ function formatAssignments(assignments) {
   );
   if (entries.length === 0) return "";
   const items = entries.map(
-    ([level, desc]) => `<li><strong>Level ${level}:</strong> ${desc}</li>`
+    ([level, desc]) => `Level ${level}: ${desc}`
   );
-  return `\n<ul>${items.join("")}</ul>`;
+  return "\n" + items.join("\n");
 }
 
 // ---------------------------------------------------------------------------
@@ -169,14 +169,14 @@ function buildAttributes() {
     const key = attr.key || attr.name.toLowerCase().replace(/\s+/g, "-");
     const costPerLevel =
       typeof attr.cost_per_level === "number" ? attr.cost_per_level : 0;
-    const descHtml = `<p>${attr.description || ""}</p>${formatLevels(attr.levels)}`;
+    const descText = `${attr.description || ""}${formatLevels(attr.levels)}`;
 
     const doc = {
       _id: makeId("attributes", key),
       name: attr.name,
       type: "attribute",
       system: {
-        description: descHtml,
+        description: descText,
         baseCostPerLevel: costPerLevel,
         purchasedLevel: 1,
         source: attr.source || "BESM4e",
@@ -201,14 +201,14 @@ function buildDefects() {
   let count = 0;
   for (const defect of data) {
     const key = defect.key || defect.name.toLowerCase().replace(/\s+/g, "-");
-    const descHtml = `<p>${defect.description || ""}</p>${formatRanks(defect.ranks)}`;
+    const descText = `${defect.description || ""}${formatRanks(defect.ranks)}`;
 
     const doc = {
       _id: makeId("defects", key),
       name: defect.name,
       type: "defect",
       system: {
-        description: descHtml,
+        description: descText,
         cpGranted: defect.cp_refund || 1,
         tier: tierMap[defect.rank_type] || "lesser",
         source: defect.source || "BESM4e",
@@ -238,7 +238,7 @@ function buildEnhancements() {
       name: enh.name,
       type: "enhancement",
       system: {
-        description: `<p>${enh.description || ""}</p>`,
+        description: enh.description || "",
         levels: enh.picks || 1,
         source: enh.source || "BESM4e",
       },
@@ -306,14 +306,14 @@ function buildLimiters() {
     if (isPreSplit) continue;
 
     const key = lim.key;
-    const descHtml = `<p>${lim.description || ""}</p>${formatAssignments(lim.assignments)}`;
+    const descText = `${lim.description || ""}${formatAssignments(lim.assignments)}`;
 
     const doc = {
       _id: makeId("limiters", key),
       name: lim.name,
       type: "limiter",
       system: {
-        description: descHtml,
+        description: descText,
         levels: lim.picks || 1,
         source: lim.source || "BESM4e",
       },
@@ -380,7 +380,7 @@ function buildSkills() {
   for (const name of skillNames) {
     const key = name.toLowerCase().replace(/\s+/g, "-");
     const meta = metaMap[name] || {};
-    const descHtml = meta.description ? `<p>${meta.description}</p>` : "";
+    const descText = meta.description || "";
     const linkedStat = statMap[meta.defaultStat] || "body";
 
     const doc = {
@@ -388,7 +388,7 @@ function buildSkills() {
       name: name,
       type: "skill",
       system: {
-        description: descHtml,
+        description: descText,
         linkedStat: linkedStat,
         costClass: "framework",
         rank: 0,

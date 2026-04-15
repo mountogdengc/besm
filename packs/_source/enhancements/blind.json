@@ -3,7 +3,7 @@
   "name": "Blind",
   "type": "enhancement",
   "system": {
-    "description": "<p>Teleport without a clear line of sight to the destination; arrive at a known or sensed point. Source: Extras.</p>",
+    "description": "Teleport without a clear line of sight to the destination; arrive at a known or sensed point. Source: Extras.",
     "levels": 1,
     "source": "Extras"
   },
