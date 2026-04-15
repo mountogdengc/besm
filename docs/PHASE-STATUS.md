@@ -17,6 +17,7 @@
 | **7b** | Alternate Form Token Swap — HP carry-over, status transfer, transformation healing | 8 | src/engine/alternateForm.mjs, src/hooks/alternateForm.mjs |
 | **8** | Templates — besm4eTemplate item type, recursive application, badge tracking, generic examples | — | src/engine/templates.mjs, BESMTemplateData, TemplateSheet |
 | **10** | Vehicle & Mecha — interactive crew tab, pilot dropdown, pilot stat fusion for CV | — | CrewTab, ActorSidebar pilot section, MechaData fusion |
+| **9** | Compendium Population — 5 packs (312 items), `source` field for filtering by book | — | scripts/build-packs.mjs, packs/_source/\* |
 
 **Total unit tests: 113** across 6 test files.
 
@@ -24,8 +25,7 @@
 
 | Phase | Description | Notes |
 |---|---|---|
-| **9** | Compendium Population | Minimal examples only (per Mark's guidance — system must not replace the book). Ship empty compendium packs for GMs to populate. |
-| **11** | Polish & QoL | Tailwind styling pass, accessibility audit, en.json localization, compendium browser, settings UI polish, migration scaffolding, README |
+| **11** | Polish & QoL | Tailwind styling pass, accessibility audit, en.json localization, compendium browser, HTML description rendering, settings UI polish, migration scaffolding, README |
 
 ## Changes from Original Plan
 
@@ -34,7 +34,7 @@
 3. **Phase 4+5 combined:** Skills and Possessions done together (both were tab upgrades).
 4. **Phase 6 split:** Split into 6a (basic rolls + initiative) and 6b (combat + damage + social).
 5. **Phase 7 split:** Split into 7a (folders + linked actors) and 7b (alternate form token swap). Shared Assets deferred.
-6. **Phase 9 scope reduced:** No full book data — generic examples only per licensing guidance.
+6. **Phase 9 scope updated:** Full item names, costs, and short descriptions from all source books (BESM4e, Ikaris, Multiverse, Extras, Naked). Descriptions don't replace the book — users still need the rules for full mechanics. 97 attributes, 47 defects, 45 enhancements, 58 limiters, 65 skills. `source` field on all items for filtering by book.
 
 ## Errata Applied to Master Plan
 
