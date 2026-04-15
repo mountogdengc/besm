@@ -10,9 +10,9 @@ An unofficial Foundry VTT system for Big Eyes, Small Mouth 4th Edition.
 ## Installation
 
 1. Download or clone this repository into your Foundry `Data/systems/besm/` directory
-2. Run `npm install` and `npm run build`
-3. Run `npm run build:packs` to compile compendium packs
-4. Launch Foundry and create a world using the "BESM 4th Edition" system
+2. Launch Foundry and create a world using the "BESM 4th Edition" system
+
+That's it — the built system files and compiled compendium packs are included in the repository.
 
 ## Features
 
