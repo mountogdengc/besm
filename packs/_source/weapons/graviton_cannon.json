@@ -1,0 +1,60 @@
+{
+  "_id": "ac49ec493b43e6df",
+  "name": "Graviton Cannon",
+  "type": "attribute",
+  "system": {
+    "description": "A crew-served weapon projecting focused gravitational pulses.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 18,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "4752f6f2a7f9c216",
+        "name": "Area",
+        "levels": 2
+      },
+      {
+        "id": "2f97f2f652f53dd4",
+        "name": "Insidious",
+        "levels": 2
+      },
+      {
+        "id": "b87a5adf48c36587",
+        "name": "Penetrating",
+        "levels": 3
+      },
+      {
+        "id": "63203261a69eca15",
+        "name": "Range",
+        "levels": 4
+      }
+    ],
+    "limiters": [
+      {
+        "id": "e6e09dfa7db95b14",
+        "name": "Activation",
+        "levels": 2
+      },
+      {
+        "id": "461cfe798b2f781d",
+        "name": "Assisted",
+        "levels": 1
+      },
+      {
+        "id": "f96421ee2226ede6",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!ac49ec493b43e6df"
+}

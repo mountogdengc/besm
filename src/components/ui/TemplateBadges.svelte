@@ -7,6 +7,8 @@
     race: "bg-emerald-900 text-emerald-300",
     class: "bg-blue-900 text-blue-300",
     size: "bg-amber-900 text-amber-300",
+    bundle: "bg-purple-900 text-purple-300",
+    powerpack: "bg-cyan-900 text-cyan-300",
   };
 </script>
 

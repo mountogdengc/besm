@@ -1,0 +1,35 @@
+{
+  "_id": "3bee1fd7342b0931",
+  "name": "Crescent Glaive",
+  "type": "attribute",
+  "system": {
+    "description": "A polearm with a broad moon-shaped blade.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "3acd7c141e668319",
+        "name": "Flexible",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "2910827fba1cb66b",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!3bee1fd7342b0931"
+}

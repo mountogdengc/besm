@@ -1,0 +1,29 @@
+{
+  "_id": "65f42f27a74b2673",
+  "name": "Navigator's Instruments",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "Sextant, compass, star charts, and logbook.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      }
+    ]
+  },
+  "_key": "!items!65f42f27a74b2673"
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "0e8e56ff58af2abd",
+  "name": "Pellet Bow",
+  "type": "attribute",
+  "system": {
+    "description": "A short bow launching clay or stone pellets.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "95e4bd99a5107d27",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "cf64e647e3bbc650",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "db7b45c1aab457a1",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!0e8e56ff58af2abd"
+}

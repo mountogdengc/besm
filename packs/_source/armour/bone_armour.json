@@ -1,0 +1,24 @@
+{
+  "_id": "c9de4e1729e783fe",
+  "name": "Bone Armour",
+  "type": "attribute",
+  "system": {
+    "description": "Plates of beast bone lashed together with sinew.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "b512bf60806c5d24",
+        "name": "Localised",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!c9de4e1729e783fe"
+}

@@ -11,6 +11,7 @@ export class NPCData extends foundry.abstract.TypeDataModel {
     return {
       biography: new fields.HTMLField(),
       genre: new fields.StringField({ initial: "" }),
+      powerLevel: new fields.StringField({ initial: "" }),
       cpBase: new fields.NumberField({ integer: true, initial: 50 }),
       cpTotal: new fields.NumberField({ integer: true, initial: 0 }),
       cpSpent: new fields.NumberField({ integer: true, initial: 0 }),
@@ -105,11 +106,21 @@ export class NPCData extends foundry.abstract.TypeDataModel {
 
     this.derived.baseCv = computeBaseCv(bv, mv, sv);
 
+    const hasCombatTechnique = (technique) => items.some(
+      i => i.type === "attribute" && (
+        (i.system.selectedOptions ?? []).some(o => o.toLowerCase().includes(technique.toLowerCase()))
+        || i.name.toLowerCase().includes(technique.toLowerCase())
+      )
+    );
+
     const attackMastery = items.find(i => i.type === "attribute" && i.name === "Attack Mastery");
     this.derived.acv = this.derived.baseCv + (attackMastery?.system.effectiveLevel ?? 0);
 
     const defenceMastery = items.find(i => i.type === "attribute" && i.name === "Defence Mastery");
     this.derived.dcv = this.derived.baseCv + (defenceMastery?.system.effectiveLevel ?? 0);
+
+    const lightningReflexes = hasCombatTechnique("Lightning Reflexes");
+    this.derived.initiative = this.derived.acv + (lightningReflexes ? 3 : 0);
 
     const tough = items.find(i => i.type === "attribute" && i.name === "Tough");
     const fragile = items.find(i => i.type === "defect" && i.name === "Fragile");
@@ -117,15 +128,21 @@ export class NPCData extends foundry.abstract.TypeDataModel {
     this.derived.hp = hpResult.hp;
     this.derived.hpMax = hpResult.hp;
     this.derived.hpApplicable = hpResult.applicable;
+    if (this.derived.currentHp === 0 || this.derived.currentHp > hpResult.hp) {
+      this.derived.currentHp = hpResult.hp;
+    }
 
     const energised = items.find(i => i.type === "attribute" && i.name === "Energised");
     const epResult = computeEP(mv, sv, energised?.system.effectiveLevel ?? 0);
     this.derived.ep = epResult.ep;
     this.derived.epMax = epResult.ep;
     this.derived.epApplicable = epResult.applicable;
+    if (this.derived.currentEp === 0 || this.derived.currentEp > epResult.ep) {
+      this.derived.currentEp = epResult.ep;
+    }
 
-    const hardboiledCount = items.filter(i => i.type === "attribute" && i.name === "Combat Technique (Hardboiled)").length;
-    this.derived.sv = computeShockValue(this.derived.hp, this.derived.hpApplicable, hardboiledCount);
+    const hardboiled = hasCombatTechnique("Hardboiled") ? 1 : 0;
+    this.derived.sv = computeShockValue(this.derived.hp, this.derived.hpApplicable, hardboiled);
 
     const massiveDamage = items.find(i => i.type === "attribute" && i.name === "Massive Damage");
     const superstrength = items.find(i => i.type === "attribute" && i.name === "Superstrength");
@@ -135,7 +152,7 @@ export class NPCData extends foundry.abstract.TypeDataModel {
 
     this.derived.ar = items
       .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
-      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0) * 5;
 
     Object.assign(this.derived, computeMovement(bv));
 
@@ -144,20 +161,33 @@ export class NPCData extends foundry.abstract.TypeDataModel {
         const unassailable = items.find(i => i.type === "attribute" && i.name === "Unassailable");
         const unsettled = items.find(i => i.type === "defect" && i.name === "Unsettled");
         const sanity = computeSanity(mv, sv, unassailable?.system.effectiveLevel ?? 0, unsettled?.system.rankLevel ?? 0);
-        if (sanity !== null) { this.derived.sanityPoints = sanity; this.derived.sanityMax = sanity; }
+        if (sanity !== null) {
+          this.derived.sanityPoints = sanity;
+          this.derived.sanityMax = sanity;
+          if (this.derived.currentSanity === 0 || this.derived.currentSanity > sanity) {
+            this.derived.currentSanity = sanity;
+          }
+        }
       }
     } catch (e) {}
 
     try {
       if (game.settings.get("besm", "socialCombatEnabled")) {
         const socv = computeSocv(mv, sv);
-        if (socv !== null) { this.derived.socv = socv; this.derived.societyPoints = socv; this.derived.societyPointsMax = socv; }
+        if (socv !== null) {
+          this.derived.socv = socv;
+          this.derived.societyPoints = socv;
+          this.derived.societyPointsMax = socv;
+          if (this.derived.currentSocietyPoints === 0 || this.derived.currentSocietyPoints > socv) {
+            this.derived.currentSocietyPoints = socv;
+          }
+        }
       }
     } catch (e) {}
 
     try {
       if (game.settings.get("besm", "enforceBenchmarks")) {
-        const powerLevel = game.settings.get("besm", "powerLevel");
+        const powerLevel = this.powerLevel || game.settings.get("besm", "powerLevel");
         const result = validateBenchmarks(powerLevel, this.stats, [...items], this.derived);
         this.benchmarkWarnings = result.warnings;
         this.benchmarkValid = result.valid;

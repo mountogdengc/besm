@@ -1,0 +1,45 @@
+{
+  "_id": "3a04f16b9058cb2f",
+  "name": "Riot Fork",
+  "type": "attribute",
+  "system": {
+    "description": "A two-pronged restraining tool on a long shaft.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "72cd595786b04648",
+        "name": "Reach",
+        "levels": 1
+      },
+      {
+        "id": "81ccb737c89fe249",
+        "name": "Tangle",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "57e765af71ea3a70",
+        "name": "Non-Penetrating",
+        "levels": 1
+      },
+      {
+        "id": "76a1e66e2a61085b",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!3a04f16b9058cb2f"
+}

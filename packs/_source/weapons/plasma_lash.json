@@ -1,0 +1,45 @@
+{
+  "_id": "36cddf0500cf2c06",
+  "name": "Plasma Lash",
+  "type": "attribute",
+  "system": {
+    "description": "A flexible whip channeling superheated plasma.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 7,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "762fee0dab04b2f6",
+        "name": "Continuing",
+        "levels": 1
+      },
+      {
+        "id": "285b1932c3d09e0f",
+        "name": "Flexible",
+        "levels": 2
+      },
+      {
+        "id": "84852d593144f987",
+        "name": "Penetrating",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "f1199a6df54c0ac1",
+        "name": "Backlash",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!36cddf0500cf2c06"
+}

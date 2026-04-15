@@ -1,0 +1,18 @@
+{
+  "_id": "ee554461c5b50037",
+  "name": "Lamellar",
+  "type": "attribute",
+  "system": {
+    "description": "Small rectangular plates laced together in horizontal rows.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!ee554461c5b50037"
+}

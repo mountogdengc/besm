@@ -1,0 +1,24 @@
+{
+  "_id": "c60ac6af4532348f",
+  "name": "Gravity Cocoon",
+  "type": "attribute",
+  "system": {
+    "description": "A personal gravitational membrane slowing incoming attacks.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 4,
+    "purchasedLevel": 4,
+    "isWeapon": false,
+    "enhancements": [
+      {
+        "id": "c2b4002dc365e1f3",
+        "name": "Regenerating",
+        "levels": 1
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": [
+      "Force Field"
+    ]
+  },
+  "_key": "!items!c60ac6af4532348f"
+}

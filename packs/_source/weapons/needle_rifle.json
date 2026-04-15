@@ -1,0 +1,50 @@
+{
+  "_id": "f3529e95db00efe3",
+  "name": "Needle Rifle",
+  "type": "attribute",
+  "system": {
+    "description": "A precision weapon firing magnetically guided flechettes.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 8,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "f806defe287f84ff",
+        "name": "Accurate",
+        "levels": 2
+      },
+      {
+        "id": "ec96df16b30348a4",
+        "name": "Homing",
+        "levels": 1
+      },
+      {
+        "id": "bbfab9d1dc6325af",
+        "name": "Range",
+        "levels": 4
+      }
+    ],
+    "limiters": [
+      {
+        "id": "93b31d77d0445878",
+        "name": "Ammo",
+        "levels": 2
+      },
+      {
+        "id": "00a2e7f19069c2f9",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!f3529e95db00efe3"
+}

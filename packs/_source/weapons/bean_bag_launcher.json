@@ -1,0 +1,50 @@
+{
+  "_id": "221688a037b33a1d",
+  "name": "Bean Bag Launcher",
+  "type": "attribute",
+  "system": {
+    "description": "A modified shotgun firing fabric pouches.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 4,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "605d4886cc1a3f57",
+        "name": "Range",
+        "levels": 2
+      },
+      {
+        "id": "2034dc52c0484dd9",
+        "name": "Stun",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "6e70fd6ddf87dd5d",
+        "name": "Ammo",
+        "levels": 2
+      },
+      {
+        "id": "e22a3dace735f12e",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "6bfca0318a66d651",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!221688a037b33a1d"
+}

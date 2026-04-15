@@ -1,0 +1,139 @@
+{
+  "_id": "7f7d0ce96039767a",
+  "name": "Town Guard",
+  "type": "npc",
+  "system": {
+    "biography": "<p>Rank-and-file soldier posted at gates and on walls. Competent enough to deter petty criminals. Deploy in groups of 3-5.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "be732e9a2faa31b8",
+      "name": "Spear",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!be732e9a2faa31b8"
+    },
+    {
+      "_id": "5ca747234ffca620",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "f7842770c00e71b2",
+            "name": "Localised",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!5ca747234ffca620"
+    },
+    {
+      "_id": "a07b5619a66c96a0",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Kite Shield"
+        ]
+      },
+      "_key": "!items!a07b5619a66c96a0"
+    },
+    {
+      "_id": "78ce4e8161e94434",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Badge of Office"
+        ]
+      },
+      "_key": "!items!78ce4e8161e94434"
+    },
+    {
+      "_id": "c4e1006541c45bef",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!c4e1006541c45bef"
+    }
+  ],
+  "_key": "!actors!7f7d0ce96039767a"
+}

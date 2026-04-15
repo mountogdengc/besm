@@ -1,0 +1,153 @@
+{
+  "_id": "5dbfee4bdd18efa5",
+  "name": "Wasteland Raider",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A violent scavenger who takes what they need at gunpoint. Deploy in gangs of 5-8.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "34f4219eaf3bddec",
+      "name": "Pistol, Holdout",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 4,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "0ce47903f09c84ea",
+            "name": "Range",
+            "levels": 2
+          }
+        ],
+        "limiters": [
+          {
+            "id": "51fcc876ac6f3ba7",
+            "name": "Ammo",
+            "levels": 2
+          },
+          {
+            "id": "908e4b0c9a0e2a28",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!34f4219eaf3bddec"
+    },
+    {
+      "_id": "67286eb5ecd10eaa",
+      "name": "Claw Gauntlet",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "74b9f4fc26826e60",
+            "name": "Potent",
+            "levels": 1
+          }
+        ],
+        "limiters": [
+          {
+            "id": "db04174e25b78b92",
+            "name": "Non-Penetrating",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!67286eb5ecd10eaa"
+    },
+    {
+      "_id": "b9dbaa7fa182b325",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "9cf6774b39a7d43f",
+            "name": "Localised",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!b9dbaa7fa182b325"
+    },
+    {
+      "_id": "4a307ab555027d45",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!4a307ab555027d45"
+    },
+    {
+      "_id": "9f893abffb0fa706",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!9f893abffb0fa706"
+    }
+  ],
+  "_key": "!actors!5dbfee4bdd18efa5"
+}

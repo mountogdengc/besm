@@ -1,0 +1,40 @@
+{
+  "_id": "f0af3f2f814a2dd7",
+  "name": "Chakram",
+  "type": "attribute",
+  "system": {
+    "description": "A flat metal ring with a sharpened outer edge, thrown spinning.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "1dcd38a2e81f8f27",
+        "name": "Potent",
+        "levels": 1
+      },
+      {
+        "id": "362787b074980ef3",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "a160ac0f0f13e628",
+        "name": "Ammo",
+        "levels": 3
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!f0af3f2f814a2dd7"
+}

@@ -1,0 +1,168 @@
+{
+  "_id": "e19b0a3742b40e1c",
+  "name": "Station Security Bot",
+  "type": "npc",
+  "system": {
+    "biography": "<p>An autonomous security drone. Tireless and networked to central security AI. Deploy in pairs or squads of 4.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 6,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 2,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "d74da21864851e73",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!d74da21864851e73"
+    },
+    {
+      "_id": "158810a084c54706",
+      "name": "Pulse Pistol",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 7,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "ecf0164d095fdc7c",
+            "name": "Autofire",
+            "levels": 2
+          },
+          {
+            "id": "66d219e50d612407",
+            "name": "Range",
+            "levels": 3
+          }
+        ],
+        "limiters": [
+          {
+            "id": "d84d128ef67e2187",
+            "name": "Ammo",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!158810a084c54706"
+    },
+    {
+      "_id": "a24a4981ff466569",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!a24a4981ff466569"
+    },
+    {
+      "_id": "8ab492949afa1961",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Networked"
+        ]
+      },
+      "_key": "!items!8ab492949afa1961"
+    },
+    {
+      "_id": "10a7bed1c504f57f",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!10a7bed1c504f57f"
+    },
+    {
+      "_id": "0d8760f0903716a4",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!0d8760f0903716a4"
+    },
+    {
+      "_id": "b9cf24c7f7983ef4",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!b9cf24c7f7983ef4"
+    }
+  ],
+  "_key": "!actors!e19b0a3742b40e1c"
+}

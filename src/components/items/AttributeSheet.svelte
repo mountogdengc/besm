@@ -92,6 +92,21 @@
     </div>
   </div>
 
+  <!-- Options -->
+  <div>
+    <label class="text-xs text-slate-500 uppercase">Options (comma-separated)</label>
+    <input
+      class="w-full bg-slate-800 border border-slate-700 rounded text-sm text-slate-100 p-1"
+      value={(item.system.selectedOptions ?? []).join(", ")}
+      placeholder="e.g. Fire, Area Effect"
+      onchange={(e) => {
+        const val = e.target.value.trim();
+        const opts = val ? val.split(",").map(s => s.trim()).filter(Boolean) : [];
+        update("system.selectedOptions", opts);
+      }}
+    />
+  </div>
+
   <!-- Description -->
   <div>
     <label class="text-xs text-slate-500 uppercase">Description</label>

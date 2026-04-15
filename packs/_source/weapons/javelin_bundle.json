@@ -1,0 +1,35 @@
+{
+  "_id": "4eb4e07343663a08",
+  "name": "Javelin Bundle",
+  "type": "attribute",
+  "system": {
+    "description": "A set of light throwing spears.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "acbfb6038a782beb",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "5aa47453122c5feb",
+        "name": "Ammo",
+        "levels": 2
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!4eb4e07343663a08"
+}

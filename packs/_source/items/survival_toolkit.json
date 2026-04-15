@@ -1,0 +1,29 @@
+{
+  "_id": "f1af0a3999ff8a2e",
+  "name": "Survival Toolkit",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "Fire-starting kit, water purification, emergency shelter, and multi-tool.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      }
+    ]
+  },
+  "_key": "!items!f1af0a3999ff8a2e"
+}

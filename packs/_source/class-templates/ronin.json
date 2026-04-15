@@ -1,0 +1,83 @@
+{
+  "_id": "b11c7f0e3cb16ccd",
+  "name": "Ronin",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "class",
+    "tradition": "",
+    "description": "A masterless warrior bound by a personal code. Wandering, lethal, and burdened by the past.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 6,
+      "mind": 5,
+      "soul": 6
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Weapon",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Attack Mastery",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Defence Mastery",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Heightened Awareness",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Skeleton in the Closet",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Nemesis",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!b11c7f0e3cb16ccd"
+}

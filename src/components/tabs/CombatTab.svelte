@@ -1,11 +1,16 @@
 <script>
   import ResourceBar from "../ui/ResourceBar.svelte";
   import RollButton from "../ui/RollButton.svelte";
+  import { performAttackRoll } from "../../rolls/BESMCombat.mjs";
   import { performSanityRoll } from "../../rolls/BESMCombat.mjs";
-  import { performSocialAttackRoll, openSocialEdgeDialog } from "../../rolls/BESMSocial.mjs";
+  import { performSocialAttackRoll } from "../../rolls/BESMSocial.mjs";
 
   let { actor } = $props();
   let d = $derived(actor.system.derived);
+
+  let weapons = $derived(
+    [...actor.items].filter(i => i.type === "attribute" && i.system.isWeapon)
+  );
 
   let sanityEnabled = $state(false);
   let socialEnabled = $state(false);
@@ -25,6 +30,10 @@
     actor.update({ "system.derived.currentEp": val });
   }
 
+  function attackWith(weapon) {
+    performAttackRoll(actor, weapon);
+  }
+
   function rollSanity() {
     performSanityRoll(actor);
   }
@@ -38,51 +47,55 @@
   <!-- Resource Bars -->
   <div class="flex flex-col gap-2">
     {#if d.hpApplicable}
-      <ResourceBar label="HP" current={d.currentHp} max={d.hpMax} onUpdate={updateCurrentHp} />
+      <ResourceBar label="Health Points (HP)" current={d.currentHp} max={d.hpMax} onUpdate={updateCurrentHp} />
     {/if}
     {#if d.epApplicable}
-      <ResourceBar label="EP" current={d.currentEp} max={d.epMax} onUpdate={updateCurrentEp} />
+      <ResourceBar label="Energy Points (EP)" current={d.currentEp} max={d.epMax} onUpdate={updateCurrentEp} />
     {/if}
   </div>
 
-  <!-- Combat Values Grid -->
-  <div class="grid grid-cols-3 gap-3">
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">ACV</div>
-      <div class="text-2xl font-bold text-slate-100">{d.acv}</div>
-    </div>
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">DCV</div>
-      <div class="text-2xl font-bold text-slate-100">{d.dcv}</div>
-    </div>
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">Init</div>
-      <div class="text-2xl font-bold text-slate-100">{d.initiative}</div>
-    </div>
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">SV</div>
-      <div class="text-lg font-bold text-slate-100">{d.sv}</div>
-    </div>
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">DM</div>
-      <div class="text-lg font-bold text-slate-100">{d.damageMultiplier}</div>
-      <div class="text-xs text-slate-500">melee {d.meleeDamageMultiplier}</div>
-    </div>
-    <div class="text-center">
-      <div class="text-xs text-slate-500 uppercase">AR</div>
-      <div class="text-lg font-bold text-slate-100">{d.ar}</div>
-    </div>
+  <!-- Attacks -->
+  <div>
+    <div class="text-xs text-slate-500 uppercase tracking-wide mb-2">Attacks</div>
+    {#if weapons.length === 0}
+      <p class="text-xs text-slate-500 italic">No weapon attributes. Mark an attribute as a Weapon on its sheet to add it here.</p>
+    {:else}
+      <div class="flex flex-col gap-1">
+        {#each weapons as weapon}
+          <div class="flex items-center justify-between px-2 py-1.5 border border-slate-700 rounded text-xs hover:bg-slate-800/50">
+            <div class="flex flex-col">
+              <span class="text-slate-200 font-medium">{weapon.name}</span>
+              <span class="text-slate-500">
+                Lv {weapon.system.effectiveLevel}
+                {#if weapon.system.weaponOptions.isMuscleAttack}
+                  · Melee (DM {d.meleeDamageMultiplier})
+                {:else}
+                  · Ranged (DM {d.damageMultiplier})
+                {/if}
+                {#if weapon.system.weaponOptions.range}
+                  · {weapon.system.weaponOptions.range}
+                {/if}
+                {#if weapon.system.weaponOptions.accurate > 0}
+                  · Accurate +{weapon.system.weaponOptions.accurate}
+                {/if}
+                {#if weapon.system.weaponOptions.spreading}
+                  · Spreading
+                {/if}
+              </span>
+            </div>
+            <RollButton onclick={() => attackWith(weapon)} title="Attack with {weapon.name}" />
+          </div>
+        {/each}
+      </div>
+    {/if}
   </div>
 
   <!-- Sanity (settings-gated) -->
   {#if sanityEnabled && d.sanityPoints > 0}
     <div class="border-t border-slate-700 pt-3">
-      <div class="flex items-center justify-between mb-2">
+      <div class="flex items-center justify-between">
         <div class="text-xs text-slate-500 uppercase">Sanity</div>
         <RollButton onclick={rollSanity} title="Sanity Roll" />
-      </div>
-      <div class="text-sm text-slate-300">
-        Sanity Points: {d.currentSanity ?? d.sanityPoints} / {d.sanityMax}
       </div>
     </div>
   {/if}
@@ -90,12 +103,9 @@
   <!-- Social Combat (settings-gated) -->
   {#if socialEnabled && d.socv > 0}
     <div class="border-t border-slate-700 pt-3">
-      <div class="flex items-center justify-between mb-2">
+      <div class="flex items-center justify-between">
         <div class="text-xs text-slate-500 uppercase">Social Combat</div>
         <RollButton onclick={rollSocialAttack} title="Social Attack Roll" />
-      </div>
-      <div class="text-sm text-slate-300">
-        SoCV: {d.socv} | Society Points: {d.currentSocietyPoints ?? d.societyPoints} / {d.societyPointsMax}
       </div>
     </div>
   {/if}

@@ -1,0 +1,89 @@
+{
+  "_id": "a1498202af4ddd28",
+  "name": "Convenience Store Clerk",
+  "type": "npc",
+  "system": {
+    "biography": "<p>The person behind the counter. Knows every regular by name. Information hub for the neighborhood.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 5,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "af92e72639c2b5c0",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Local Knowledge"
+        ]
+      },
+      "_key": "!items!af92e72639c2b5c0"
+    },
+    {
+      "_id": "c078059e20c8dc63",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!c078059e20c8dc63"
+    },
+    {
+      "_id": "3e1cd36d4a6af381",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!3e1cd36d4a6af381"
+    }
+  ],
+  "_key": "!actors!a1498202af4ddd28"
+}

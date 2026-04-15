@@ -1,0 +1,193 @@
+{
+  "_id": "d9e3e43bb8dc0027",
+  "name": "Alien Merchant",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A traveling trader from a non-human species. Socially shrewd and difficult to cheat. Social encounter.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 6,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 7,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "079f14a37acc3a8f",
+      "name": "Disintegrator Pistol",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 10,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "d3cb0a980b64fedf",
+            "name": "Insidious",
+            "levels": 2
+          },
+          {
+            "id": "d4d66eda3ffb859c",
+            "name": "Range",
+            "levels": 3
+          }
+        ],
+        "limiters": [
+          {
+            "id": "6691da7fc5e6e365",
+            "name": "Ammo",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!079f14a37acc3a8f"
+    },
+    {
+      "_id": "f1b82070cb8b2b9c",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Trade Contacts"
+        ]
+      },
+      "_key": "!items!f1b82070cb8b2b9c"
+    },
+    {
+      "_id": "f600b24d0a0faa57",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Chromatophore Skin"
+        ]
+      },
+      "_key": "!items!f600b24d0a0faa57"
+    },
+    {
+      "_id": "b56ead6cb7c24e71",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!b56ead6cb7c24e71"
+    },
+    {
+      "_id": "380d693336884aab",
+      "name": "Mind Control",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 5,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Pheromone Suggestion"
+        ]
+      },
+      "_key": "!items!380d693336884aab"
+    },
+    {
+      "_id": "1b4fdad262e00a47",
+      "name": "Marked",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!1b4fdad262e00a47"
+    },
+    {
+      "_id": "1d734aeaaa1b0257",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!1d734aeaaa1b0257"
+    },
+    {
+      "_id": "32d0b4808786317e",
+      "name": "Skeleton in the Closet",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!32d0b4808786317e"
+    }
+  ],
+  "_key": "!actors!d9e3e43bb8dc0027"
+}

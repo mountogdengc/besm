@@ -1,0 +1,19 @@
+{
+  "_id": "89042cde8db88a03",
+  "name": "Medium (Size Rank 0)",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "size",
+    "tradition": "",
+    "description": "",
+    "pointTotal": 0,
+    "sizeRank": 0,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": []
+  },
+  "_key": "!items!89042cde8db88a03"
+}

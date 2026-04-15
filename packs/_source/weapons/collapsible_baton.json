@@ -1,0 +1,35 @@
+{
+  "_id": "71b755a913ec072a",
+  "name": "Collapsible Baton",
+  "type": "attribute",
+  "system": {
+    "description": "A telescoping steel baton.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "ebe33b9b64fc08ba",
+        "name": "Stun",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "8d93c6e33512380f",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!71b755a913ec072a"
+}

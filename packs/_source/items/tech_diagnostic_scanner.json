@@ -1,0 +1,38 @@
+{
+  "_id": "988a59b88d0ac584",
+  "name": "Tech Diagnostic Scanner",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A handheld device analyzing electronic systems and identifying faults.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Supersense",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!988a59b88d0ac584"
+}

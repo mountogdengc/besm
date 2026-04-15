@@ -1,0 +1,40 @@
+{
+  "_id": "567134a74ab07288",
+  "name": "Disruption Gauntlet",
+  "type": "attribute",
+  "system": {
+    "description": "A powered glove generating a molecular destabilization field.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 6,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "140ed75de7e3a584",
+        "name": "Insidious",
+        "levels": 2
+      },
+      {
+        "id": "1e6b15e60b2bfeef",
+        "name": "Penetrating",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "1c486e6fd1c8ba8a",
+        "name": "Ammo",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!567134a74ab07288"
+}

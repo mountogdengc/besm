@@ -1,0 +1,19 @@
+{
+  "_id": "fad7b07a38dec4c3",
+  "name": "Wee (Size Rank -6)",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "size",
+    "tradition": "",
+    "description": "",
+    "pointTotal": -40,
+    "sizeRank": -6,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": []
+  },
+  "_key": "!items!fad7b07a38dec4c3"
+}

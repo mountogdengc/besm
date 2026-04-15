@@ -1,0 +1,35 @@
+{
+  "_id": "ba7220c418f80d63",
+  "name": "Claw Gauntlet",
+  "type": "attribute",
+  "system": {
+    "description": "Reinforced leather glove with steel talons.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "756c280f3a6cc687",
+        "name": "Potent",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "e00179069c11d7ef",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!ba7220c418f80d63"
+}

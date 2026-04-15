@@ -1,0 +1,18 @@
+{
+  "_id": "6bda5baf387c467d",
+  "name": "Kite Shield",
+  "type": "attribute",
+  "system": {
+    "description": "A tall tapered shield covering shoulder to knee.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!6bda5baf387c467d"
+}

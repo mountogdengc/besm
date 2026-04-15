@@ -1,0 +1,34 @@
+{
+  "_id": "c567e37de0393a09",
+  "name": "Phase Blade",
+  "type": "attribute",
+  "system": {
+    "description": "A hilt projecting a blade of phased matter.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 8,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "f5de72e5ca952ff7",
+        "name": "Insidious",
+        "levels": 2
+      },
+      {
+        "id": "02b7fdc69a856ce8",
+        "name": "Penetrating",
+        "levels": 3
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": []
+  },
+  "_key": "!items!c567e37de0393a09"
+}

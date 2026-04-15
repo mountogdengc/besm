@@ -1,0 +1,92 @@
+{
+  "_id": "595d8c9fa7c4771a",
+  "name": "Android",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "race",
+    "tradition": "",
+    "description": "A synthetic humanoid with a positronic neural network. Physically resilient and intellectually precise, but emotionally limited.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 6,
+      "mind": 7,
+      "soul": 4
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Armour",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Heightened Awareness",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Tough",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Marked",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Bane",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!595d8c9fa7c4771a"
+}

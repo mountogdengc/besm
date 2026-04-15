@@ -1,0 +1,55 @@
+{
+  "_id": "1deb1af6fa354ac1",
+  "name": "Door Breacher",
+  "type": "attribute",
+  "system": {
+    "description": "A short-barreled shotgun for destroying locks and hinges.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 4,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "efc85e6479a6564c",
+        "name": "Penetrating",
+        "levels": 2
+      },
+      {
+        "id": "bf029f8f0f8cd6e9",
+        "name": "Range",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "da11408f16975093",
+        "name": "Ammo",
+        "levels": 2
+      },
+      {
+        "id": "9f255bd7c1de66b6",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "e0e8a044ad2409ff",
+        "name": "Inaccurate",
+        "levels": 1
+      },
+      {
+        "id": "b19385fa81c8f82c",
+        "name": "Short Range",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!1deb1af6fa354ac1"
+}

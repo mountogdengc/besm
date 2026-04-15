@@ -1,0 +1,56 @@
+{
+  "_id": "1b2ddf09d0f7aec9",
+  "name": "Voidstone Amulet",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A pendant rendering the wearer invisible to scrying and divination.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Undetectable",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Mind Shield",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Marked",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!1b2ddf09d0f7aec9"
+}

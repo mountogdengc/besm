@@ -1,0 +1,161 @@
+{
+  "_id": "d6538834068c3361",
+  "name": "Goblin Raider",
+  "type": "npc",
+  "system": {
+    "biography": "<p>The universal starter mob. Small, vicious, cowardly in singles but dangerous in packs of 6-10.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 3,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 3,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "7bc6fc25e3cd00f3",
+      "name": "Natural Weapons",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Bite"
+        ]
+      },
+      "_key": "!items!7bc6fc25e3cd00f3"
+    },
+    {
+      "_id": "a69805232c66f5a7",
+      "name": "Jawbone Club",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "25447c0543dd788d",
+            "name": "Unreliable",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!a69805232c66f5a7"
+    },
+    {
+      "_id": "1ab86a16d7d679d2",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Darkvision"
+        ]
+      },
+      "_key": "!items!1ab86a16d7d679d2"
+    },
+    {
+      "_id": "8e757909dbb5cf60",
+      "name": "Special Movement",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Climbing"
+        ]
+      },
+      "_key": "!items!8e757909dbb5cf60"
+    },
+    {
+      "_id": "37b7d66bac585ae1",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!37b7d66bac585ae1"
+    },
+    {
+      "_id": "ee328cbf54f4f25f",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!ee328cbf54f4f25f"
+    },
+    {
+      "_id": "bb9a1fc0e4721b82",
+      "name": "Awkward Size",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!bb9a1fc0e4721b82"
+    }
+  ],
+  "_key": "!actors!d6538834068c3361"
+}

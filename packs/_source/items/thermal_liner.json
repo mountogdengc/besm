@@ -1,0 +1,29 @@
+{
+  "_id": "4f191ed6b498b395",
+  "name": "Thermal Liner",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A thin undersuit regulating body temperature in extreme environments.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Resilient",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 2
+        }
+      }
+    ]
+  },
+  "_key": "!items!4f191ed6b498b395"
+}

@@ -15,6 +15,9 @@
 
   let cpValid = $derived(cpSpent <= cpBudget);
 
+  let isItemAttr = $derived(attribute.system.baseCostPerLevel === 0 && attribute.system.linkedActorId);
+  let itemCost = $derived(isItemAttr ? Math.ceil(cpSpent / 2) : null);
+
   let isAlternateForm = $derived(/alternate/i.test(attribute.name));
 
   function openLinkedSheet(e) {
@@ -34,6 +37,11 @@
     <span class="px-1 rounded text-xs {cpValid ? 'bg-emerald-900 text-emerald-300' : 'bg-red-900 text-red-300'}">
       {cpSpent}/{cpBudget} CP
     </span>
+    {#if itemCost !== null}
+      <span class="px-1 rounded bg-slate-600 text-slate-200 text-xs" title="Character pays half the linked actor's CP">
+        Cost: {itemCost} CP
+      </span>
+    {/if}
     <button
       class="text-blue-400 hover:text-blue-200 bg-transparent border-0 cursor-pointer text-xs p-0"
       onclick={openLinkedSheet}

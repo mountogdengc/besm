@@ -1,0 +1,24 @@
+{
+  "_id": "3b193b863e3a2ae9",
+  "name": "Stab Vest",
+  "type": "attribute",
+  "system": {
+    "description": "A vest reinforced with chainmail for edged weapons.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "72e1c4a09748f00f",
+        "name": "Localised",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!3b193b863e3a2ae9"
+}

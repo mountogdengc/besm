@@ -71,6 +71,86 @@
       "path": "packs/skills",
       "system": "besm",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Race Templates",
+      "type": "Item",
+      "name": "race-templates",
+      "path": "packs/race-templates",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Class Templates",
+      "type": "Item",
+      "name": "class-templates",
+      "path": "packs/class-templates",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Size Templates",
+      "type": "Item",
+      "name": "size-templates",
+      "path": "packs/size-templates",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Power Packs",
+      "type": "Item",
+      "name": "power-packs",
+      "path": "packs/power-packs",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Power Bundles",
+      "type": "Item",
+      "name": "power-bundles",
+      "path": "packs/power-bundles",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Weapons",
+      "type": "Item",
+      "name": "weapons",
+      "path": "packs/weapons",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Armour",
+      "type": "Item",
+      "name": "armour",
+      "path": "packs/armour",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Items",
+      "type": "Item",
+      "name": "items",
+      "path": "packs/items",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Vehicles & Mecha",
+      "type": "Actor",
+      "name": "vehicles-mecha",
+      "path": "packs/vehicles-mecha",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "label": "Bestiary",
+      "type": "Actor",
+      "name": "bestiary",
+      "path": "packs/bestiary",
+      "system": "besm",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
   "socket": false,

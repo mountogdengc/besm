@@ -1,0 +1,148 @@
+{
+  "_id": "14bdfe101842b57f",
+  "name": "Bandit",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A desperate outlaw living off highway robbery. Deploy in ambush groups of 4-6.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "42081940632dec71",
+      "name": "Falx",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "78039a9321a464a3",
+            "name": "Penetrating",
+            "levels": 1
+          }
+        ],
+        "limiters": [
+          {
+            "id": "35eae6757058f25c",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!42081940632dec71"
+    },
+    {
+      "_id": "417a4df9efabefaf",
+      "name": "Javelin Bundle",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "1290dae8b7a104c4",
+            "name": "Range",
+            "levels": 2
+          }
+        ],
+        "limiters": [
+          {
+            "id": "9a0b404b9bedbc9c",
+            "name": "Ammo",
+            "levels": 2
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!417a4df9efabefaf"
+    },
+    {
+      "_id": "a9a4300916df7b8d",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "a365dd2534adaf26",
+            "name": "Localised",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!a9a4300916df7b8d"
+    },
+    {
+      "_id": "d6bbdf265fc2c4bd",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!d6bbdf265fc2c4bd"
+    },
+    {
+      "_id": "51f1c04f66407689",
+      "name": "Wanted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!51f1c04f66407689"
+    }
+  ],
+  "_key": "!actors!14bdfe101842b57f"
+}

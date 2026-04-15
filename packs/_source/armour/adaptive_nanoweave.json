@@ -1,0 +1,18 @@
+{
+  "_id": "3b799d725c420166",
+  "name": "Adaptive Nanoweave",
+  "type": "attribute",
+  "system": {
+    "description": "A bodysuit of programmable nanomaterials that harden on impact.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 5,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!3b799d725c420166"
+}

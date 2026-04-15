@@ -1,0 +1,83 @@
+{
+  "_id": "cbac85c19b6d54c6",
+  "name": "Scavenger",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "class",
+    "tradition": "",
+    "description": "A ruin-crawler who survives by salvaging pre-collapse technology. Part archaeologist, part merchant, part trap-dodger.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 5,
+      "mind": 6,
+      "soul": 5
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Weapon",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Heightened Awareness",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Easily Distracted",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Skeleton in the Closet",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Wanted",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!cbac85c19b6d54c6"
+}

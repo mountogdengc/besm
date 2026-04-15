@@ -1,28 +1,63 @@
-import { resolveRollTotal, resolveEdgeFormula, formatRollBreakdown } from "../engine/rolls.mjs";
+import { resolveRollTotal, resolveEdgeFormula, edgeObstacleOptionsHtml, readEdgeSelection, formatRollBreakdown } from "../engine/rolls.mjs";
 import { calculateDamage, resolveOpposed, computeEpBonus } from "../engine/combat.mjs";
 
 function extractDice(roll) {
   const terms = roll.terms ?? [];
   const diceTerm = terms.find(t => t.results);
-  if (!diceTerm) return { dice: [], diceTotal: roll.total };
-  const dice = diceTerm.results.map(r => r.result);
-  const diceTotal = dice.reduce((s, d) => s + d, 0);
-  return { dice, diceTotal };
+  if (!diceTerm) return { dice: [], discarded: [], diceTotal: roll.total };
+  const kept = diceTerm.results.filter(r => r.active !== false).map(r => r.result);
+  const discarded = diceTerm.results.filter(r => r.active === false).map(r => r.result);
+  const diceTotal = kept.reduce((s, d) => s + d, 0);
+  return { dice: kept, discarded, diceTotal };
 }
 
 export async function performAttackRoll(attacker, weaponAttr, targetActorId = null) {
   const acv = attacker.system.derived.acv;
-  const formula = "2d6";
-  const roll = await new Roll(formula).evaluate();
-  const rollData = extractDice(roll);
-  const total = resolveRollTotal(rollData.diceTotal, acv);
-
   const isMuscle = weaponAttr.system.weaponOptions?.isMuscleAttack ?? false;
   const dm = isMuscle
     ? attacker.system.derived.meleeDamageMultiplier
     : attacker.system.derived.damageMultiplier;
 
-  const modifiers = [{ label: "ACV", value: acv }];
+  const content = `<div class="besm-roll">
+  <div class="besm-roll-header">Attack Roll — ${weaponAttr.name}</div>
+  <div style="font-size:11px; color:#94a3b8; margin-bottom:4px;">Attack Combat Value: ${acv}</div>
+  ${edgeObstacleOptionsHtml()}
+  <button data-action="execute-attack-roll"
+    data-actor-id="${attacker.id}"
+    data-weapon-id="${weaponAttr.id}"
+    data-acv="${acv}"
+    data-dm="${dm}"
+    data-weapon-level="${weaponAttr.system.effectiveLevel}"
+    data-is-muscle="${isMuscle}"
+    data-target-id="${targetActorId ?? ""}"
+    style="padding:4px 12px; font-size:12px; cursor:pointer; font-weight:bold;">Roll</button>
+</div>`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor: attacker }),
+  });
+}
+
+export async function executeAttackRoll(btn, edge) {
+  const attackerId = btn.getAttribute("data-actor-id");
+  const acv = Number(btn.getAttribute("data-acv"));
+  const dm = Number(btn.getAttribute("data-dm"));
+  const weaponLevel = Number(btn.getAttribute("data-weapon-level"));
+  const isMuscle = btn.getAttribute("data-is-muscle") === "true";
+  const targetActorId = btn.getAttribute("data-target-id") || null;
+  const weaponId = btn.getAttribute("data-weapon-id");
+  const attacker = game.actors.get(attackerId);
+  if (!attacker) return;
+  const weaponAttr = attacker.items.get(weaponId);
+  const weaponName = weaponAttr?.name ?? "Weapon";
+
+  const formula = resolveEdgeFormula(edge);
+  const roll = await new Roll(formula).evaluate();
+  const rollData = extractDice(roll);
+  const total = resolveRollTotal(rollData.diceTotal, acv);
+
+  const modifiers = [{ label: "Attack Combat Value (ACV)", value: acv }];
   const rollHtml = formatRollBreakdown("attack", rollData, modifiers, total);
 
   const content = `${rollHtml}
@@ -38,10 +73,10 @@ export async function performAttackRoll(attacker, weaponAttr, targetActorId = nu
     flags: {
       besm: {
         type: "attack",
-        attackerId: attacker.id,
+        attackerId,
         attackTotal: total,
-        weaponName: weaponAttr.name,
-        weaponLevel: weaponAttr.system.effectiveLevel,
+        weaponName,
+        weaponLevel,
         isMuscle,
         dm,
         targetActorId,
@@ -49,22 +84,46 @@ export async function performAttackRoll(attacker, weaponAttr, targetActorId = nu
     },
   });
 
-  // Patch message IDs into buttons
   const el = document.createElement("div");
   el.innerHTML = msg.content;
-  el.querySelectorAll("[data-message-id]").forEach(btn => {
-    btn.setAttribute("data-message-id", msg.id);
+  el.querySelectorAll("[data-message-id]").forEach(b => {
+    b.setAttribute("data-message-id", msg.id);
   });
   await msg.update({ content: el.innerHTML });
-
-  return { roll, total, acv };
 }
 
 export async function performDefenceRoll(defender, attackMessage) {
   const flags = attackMessage.flags.besm;
   const dcv = defender.system.derived.dcv;
 
-  const roll = await new Roll("2d6").evaluate();
+  const content = `<div class="besm-roll">
+  <div class="besm-roll-header">Defence Roll — ${defender.name}</div>
+  <div style="font-size:11px; color:#94a3b8; margin-bottom:4px;">Defence Combat Value: ${dcv} vs Attack: ${flags.attackTotal}</div>
+  ${edgeObstacleOptionsHtml()}
+  <button data-action="execute-defence-roll"
+    data-defender-id="${defender.id}"
+    data-attack-msg-id="${attackMessage.id}"
+    data-dcv="${dcv}"
+    style="padding:4px 12px; font-size:12px; cursor:pointer; font-weight:bold;">Roll</button>
+</div>`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor: defender }),
+  });
+}
+
+export async function executeDefenceRoll(btn, edge) {
+  const defenderId = btn.getAttribute("data-defender-id");
+  const attackMsgId = btn.getAttribute("data-attack-msg-id");
+  const dcv = Number(btn.getAttribute("data-dcv"));
+  const defender = game.actors.get(defenderId);
+  const attackMessage = game.messages.get(attackMsgId);
+  if (!defender || !attackMessage) return;
+  const flags = attackMessage.flags.besm;
+
+  const formula = resolveEdgeFormula(edge);
+  const roll = await new Roll(formula).evaluate();
   const rollData = extractDice(roll);
   const defenceTotal = resolveRollTotal(rollData.diceTotal, dcv);
 
@@ -79,12 +138,12 @@ export async function performDefenceRoll(defender, attackMessage) {
 
     damageHtml = `
 <div style="margin-top:4px; font-size:12px; color:#f87171;">
-  Damage: ${damage} (DM ${flags.dm} × Lv ${flags.weaponLevel} + ACV ${attackerAcv} - AR ${defender.system.derived.ar})
+  Damage: ${damage} (Damage Multiplier ${flags.dm} × Lv ${flags.weaponLevel} + Attack Combat Value ${attackerAcv} - Armour Rating ${defender.system.derived.ar})
 </div>
 <button data-action="apply-damage" data-defender-id="${defender.id}" data-damage="${damage}" style="padding:2px 8px; font-size:11px; cursor:pointer; margin-top:4px;">Apply Damage</button>`;
   }
 
-  const defenceModifiers = [{ label: "DCV", value: dcv }];
+  const defenceModifiers = [{ label: "Defence Combat Value (DCV)", value: dcv }];
   const defenceHtml = formatRollBreakdown("defence", rollData, defenceModifiers, defenceTotal);
 
   const resultLabel = result.attackerWins
@@ -112,8 +171,6 @@ ${damageHtml}`;
       },
     },
   });
-
-  return { defenceTotal, result, damage };
 }
 
 export async function applyDamage(actor, amount) {
@@ -121,7 +178,6 @@ export async function applyDamage(actor, amount) {
   const newHP = Math.max(0, currentHp - amount);
   await actor.update({ "system.derived.currentHp": newHP });
 
-  // Shock value check
   if (amount >= actor.system.derived.sv && actor.system.derived.sv > 0) {
     const token = actor.getActiveTokens()[0];
     if (token) {
@@ -129,7 +185,6 @@ export async function applyDamage(actor, amount) {
     }
   }
 
-  // Unconscious at 0 HP
   if (newHP === 0) {
     const token = actor.getActiveTokens()[0];
     if (token) {
@@ -172,12 +227,10 @@ export async function promptEpBonus(actor, originalTotal, messageId) {
 
   if (!bonus || bonus === 0) return 0;
 
-  // Deduct EP
   await actor.update({
     "system.derived.currentEp": currentEp - (bonus * 10),
   });
 
-  // Update the chat message with new total
   const msg = game.messages.get(messageId);
   if (msg) {
     const newTotal = originalTotal + bonus;
@@ -201,7 +254,31 @@ export async function performSanityRoll(actor) {
   }
 
   const sanityBase = Math.floor((mind + soul) / 2);
-  const roll = await new Roll("2d6").evaluate();
+
+  const content = `<div class="besm-roll">
+  <div class="besm-roll-header">Sanity Roll</div>
+  <div style="font-size:11px; color:#94a3b8; margin-bottom:4px;">Sanity Base: ${sanityBase}</div>
+  ${edgeObstacleOptionsHtml()}
+  <button data-action="execute-sanity-roll"
+    data-actor-id="${actor.id}"
+    data-sanity-base="${sanityBase}"
+    style="padding:4px 12px; font-size:12px; cursor:pointer; font-weight:bold;">Roll</button>
+</div>`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor }),
+  });
+}
+
+export async function executeSanityRoll(btn, edge) {
+  const actorId = btn.getAttribute("data-actor-id");
+  const sanityBase = Number(btn.getAttribute("data-sanity-base"));
+  const actor = game.actors.get(actorId);
+  if (!actor) return;
+
+  const formula = resolveEdgeFormula(edge);
+  const roll = await new Roll(formula).evaluate();
   const rollData = extractDice(roll);
   const total = resolveRollTotal(rollData.diceTotal, sanityBase);
 
@@ -213,6 +290,4 @@ export async function performSanityRoll(actor) {
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
   });
-
-  return { roll, total, sanityBase };
 }

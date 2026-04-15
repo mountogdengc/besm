@@ -1,0 +1,362 @@
+{
+  "_id": "ccc3b354c898cd70",
+  "name": "Rogue Combat AI",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A combat mecha whose AI has gone autonomous. Machine precision, never panics, never retreats. Boss-level encounter.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 8,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 7,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 3,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "db97bda6081d8d77",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 5,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!db97bda6081d8d77"
+    },
+    {
+      "_id": "5c9f45c3ae95a9e0",
+      "name": "Coilgun Rifle",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 9,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "04f12908a38d976d",
+            "name": "Accurate",
+            "levels": 1
+          },
+          {
+            "id": "09d6805ba0983a3b",
+            "name": "Penetrating",
+            "levels": 2
+          },
+          {
+            "id": "c1b868c68a87b41e",
+            "name": "Range",
+            "levels": 4
+          }
+        ],
+        "limiters": [
+          {
+            "id": "48b88d9c1430c8c0",
+            "name": "Activation",
+            "levels": 1
+          },
+          {
+            "id": "1edfa152df09a936",
+            "name": "Hands",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!5c9f45c3ae95a9e0"
+    },
+    {
+      "_id": "23d639e34f5aa5e0",
+      "name": "Disruption Gauntlet",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 6,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "80ec340551c9f451",
+            "name": "Insidious",
+            "levels": 2
+          },
+          {
+            "id": "3df39a15b78ca9e0",
+            "name": "Penetrating",
+            "levels": 2
+          }
+        ],
+        "limiters": [
+          {
+            "id": "30a4b3cba8961a79",
+            "name": "Ammo",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!23d639e34f5aa5e0"
+    },
+    {
+      "_id": "289333933e520bb5",
+      "name": "Attack Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 3,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!289333933e520bb5"
+    },
+    {
+      "_id": "5c645d0b40a34b92",
+      "name": "Defence Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!5c645d0b40a34b92"
+    },
+    {
+      "_id": "0e5fa439bc721a0e",
+      "name": "Tough",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!0e5fa439bc721a0e"
+    },
+    {
+      "_id": "fe1a7f4e25237861",
+      "name": "Regeneration",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 5,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!fe1a7f4e25237861"
+    },
+    {
+      "_id": "6b4ec33b65b66747",
+      "name": "Ground Speed",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!6b4ec33b65b66747"
+    },
+    {
+      "_id": "4159a7f889d830ff",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!4159a7f889d830ff"
+    },
+    {
+      "_id": "43fc3d6578ffcc2a",
+      "name": "Sensory Block",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!43fc3d6578ffcc2a"
+    },
+    {
+      "_id": "2854abb9542b8f10",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Basic AI"
+        ]
+      },
+      "_key": "!items!2854abb9542b8f10"
+    },
+    {
+      "_id": "0d0a8eaccae7f6ff",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!0d0a8eaccae7f6ff"
+    },
+    {
+      "_id": "467922895839dd45",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!467922895839dd45"
+    },
+    {
+      "_id": "d29a1fe29498e9a6",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!d29a1fe29498e9a6"
+    },
+    {
+      "_id": "6e7e4b0025eb5209",
+      "name": "Awkward Size",
+      "type": "defect",
+      "system": {
+        "rankLevel": 4,
+        "cpGranted": 4
+      },
+      "_key": "!items!6e7e4b0025eb5209"
+    },
+    {
+      "_id": "d1d6f5ae9bfe38ea",
+      "name": "Marked",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!d1d6f5ae9bfe38ea"
+    }
+  ],
+  "_key": "!actors!ccc3b354c898cd70"
+}

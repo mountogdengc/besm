@@ -1,0 +1,40 @@
+{
+  "_id": "fe82ff249c9a0a39",
+  "name": "Designated Marksman Rifle",
+  "type": "attribute",
+  "system": {
+    "description": "A semi-automatic rifle with magnified optics.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 8,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "f99c9d977f018d94",
+        "name": "Accurate",
+        "levels": 1
+      },
+      {
+        "id": "c52e34b00893aee2",
+        "name": "Range",
+        "levels": 4
+      }
+    ],
+    "limiters": [
+      {
+        "id": "35ca9fca835971bc",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!fe82ff249c9a0a39"
+}

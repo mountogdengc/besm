@@ -1,0 +1,45 @@
+{
+  "_id": "814788ab02dd19ea",
+  "name": "Harpoon",
+  "type": "attribute",
+  "system": {
+    "description": "A barbed spear attached to rope, designed to lodge in targets.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "9c75b740dbcd244e",
+        "name": "Range",
+        "levels": 1
+      },
+      {
+        "id": "5b1cd6370afb4608",
+        "name": "Tangle",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "38bfabeb2730bf13",
+        "name": "Ammo",
+        "levels": 3
+      },
+      {
+        "id": "90a5fde749acf32c",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!814788ab02dd19ea"
+}

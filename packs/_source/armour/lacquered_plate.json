@@ -1,0 +1,18 @@
+{
+  "_id": "86e3f04ef9da1a2f",
+  "name": "Lacquered Plate",
+  "type": "attribute",
+  "system": {
+    "description": "Interlocking lacquered steel plates allowing freedom of movement.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 4,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!86e3f04ef9da1a2f"
+}

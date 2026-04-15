@@ -1,0 +1,143 @@
+{
+  "_id": "12a5f2f18f471905",
+  "name": "Guild Receptionist",
+  "type": "npc",
+  "system": {
+    "biography": "<p>The first NPC every isekai protagonist meets. Calm, professional, and relentlessly cheerful. Quest dispenser and information source.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 7,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 7,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "fc9252e074bd3b9d",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Guild Authority"
+        ]
+      },
+      "_key": "!items!fc9252e074bd3b9d"
+    },
+    {
+      "_id": "a6e5e8788dda2fbf",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Eidetic Memory"
+        ]
+      },
+      "_key": "!items!a6e5e8788dda2fbf"
+    },
+    {
+      "_id": "642e1c1677ac4eec",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!642e1c1677ac4eec"
+    },
+    {
+      "_id": "1b392c6b3400b420",
+      "name": "Mind Shield",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!1b392c6b3400b420"
+    },
+    {
+      "_id": "f80053b327f4c3ef",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!f80053b327f4c3ef"
+    },
+    {
+      "_id": "f928e152e119e328",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!f928e152e119e328"
+    }
+  ],
+  "_key": "!actors!12a5f2f18f471905"
+}

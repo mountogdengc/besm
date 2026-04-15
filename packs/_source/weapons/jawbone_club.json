@@ -1,0 +1,29 @@
+{
+  "_id": "449b4217c51244e5",
+  "name": "Jawbone Club",
+  "type": "attribute",
+  "system": {
+    "description": "A primitive weapon fashioned from a large beast mandible.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "f190e33917d7c324",
+        "name": "Unreliable",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!449b4217c51244e5"
+}

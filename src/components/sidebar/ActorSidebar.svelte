@@ -55,7 +55,7 @@
   }
 </script>
 
-<div class="w-44 bg-slate-800 p-3 border-r border-slate-700 flex flex-col gap-3 overflow-y-auto">
+<div class="bg-slate-800 p-3 border-r border-slate-700 flex flex-col gap-3 overflow-y-auto" style="width: calc(var(--spacing) * 55);">
   <!-- Name -->
   <input
     class="text-base font-bold text-slate-100 bg-transparent border border-transparent hover:border-slate-600 focus:border-blue-500 w-full p-0.5 rounded"
@@ -82,11 +82,7 @@
   </div>
 
   <!-- CP Tracker -->
-  <CPTracker
-    total={actor.system.cpTotal}
-    spent={actor.system.cpSpent}
-    remaining={actor.system.cpRemaining}
-  />
+  <CPTracker {actor} />
 
   <!-- SP Tracker (character only, point-buy mode) -->
   {#if showSP && actor.system.spPool > 0}

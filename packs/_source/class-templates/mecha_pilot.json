@@ -1,0 +1,56 @@
+{
+  "_id": "2471662e15241dbf",
+  "name": "Mecha Pilot",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "class",
+    "tradition": "",
+    "description": "A trained operator of a humanoid combat vehicle. Inside the mecha, they are a force multiplier.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 5,
+      "mind": 6,
+      "soul": 5
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Attack Mastery",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Defence Mastery",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Nemesis",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!2471662e15241dbf"
+}

@@ -1,0 +1,139 @@
+{
+  "_id": "d9a657cb6ea362b3",
+  "name": "Spaceport Customs Inspector",
+  "type": "npc",
+  "system": {
+    "biography": "<p>Bureaucratic gatekeeper of interstellar commerce. Social obstacle, not a combat encounter.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 5,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "ac7db999d253e9c0",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Scanner Wand"
+        ]
+      },
+      "_key": "!items!ac7db999d253e9c0"
+    },
+    {
+      "_id": "410691d23ddbea39",
+      "name": "Pulse Pistol",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 7,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "03bef8df21b3fb33",
+            "name": "Autofire",
+            "levels": 2
+          },
+          {
+            "id": "e398e2d885bdf26f",
+            "name": "Range",
+            "levels": 3
+          }
+        ],
+        "limiters": [
+          {
+            "id": "82eb635dc33d6be1",
+            "name": "Ammo",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!410691d23ddbea39"
+    },
+    {
+      "_id": "64a0a3cbf7e3c59c",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Customs Authority"
+        ]
+      },
+      "_key": "!items!64a0a3cbf7e3c59c"
+    },
+    {
+      "_id": "71f2d77df2130d5f",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!71f2d77df2130d5f"
+    },
+    {
+      "_id": "857246497c6e8646",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!857246497c6e8646"
+    }
+  ],
+  "_key": "!actors!d9a657cb6ea362b3"
+}

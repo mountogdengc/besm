@@ -1,13 +1,14 @@
-import { resolveRollTotal, resolveEdgeFormula, formatRollBreakdown } from "../engine/rolls.mjs";
+import { resolveRollTotal, resolveEdgeFormula, edgeObstacleOptionsHtml, readEdgeSelection, formatRollBreakdown } from "../engine/rolls.mjs";
 import { resolveSocialOpposed, socialDamage } from "../engine/combat.mjs";
 
 function extractDice(roll) {
   const terms = roll.terms ?? [];
   const diceTerm = terms.find(t => t.results);
-  if (!diceTerm) return { dice: [], diceTotal: roll.total };
-  const dice = diceTerm.results.map(r => r.result);
-  const diceTotal = dice.reduce((s, d) => s + d, 0);
-  return { dice, diceTotal };
+  if (!diceTerm) return { dice: [], discarded: [], diceTotal: roll.total };
+  const kept = diceTerm.results.filter(r => r.active !== false).map(r => r.result);
+  const discarded = diceTerm.results.filter(r => r.active === false).map(r => r.result);
+  const diceTotal = kept.reduce((s, d) => s + d, 0);
+  return { dice: kept, discarded, diceTotal };
 }
 
 const EDGE_CATEGORIES = [

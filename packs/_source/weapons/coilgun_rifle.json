@@ -1,0 +1,50 @@
+{
+  "_id": "1b82eb983085dbe2",
+  "name": "Coilgun Rifle",
+  "type": "attribute",
+  "system": {
+    "description": "A magnetically accelerated projectile weapon.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 9,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "530aa6ca8f72a8db",
+        "name": "Accurate",
+        "levels": 1
+      },
+      {
+        "id": "7572a9ae1d2f17d7",
+        "name": "Penetrating",
+        "levels": 2
+      },
+      {
+        "id": "b2852423716fd84c",
+        "name": "Range",
+        "levels": 4
+      }
+    ],
+    "limiters": [
+      {
+        "id": "92e53a7b318967ce",
+        "name": "Activation",
+        "levels": 1
+      },
+      {
+        "id": "ce92c489039ece82",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!1b82eb983085dbe2"
+}

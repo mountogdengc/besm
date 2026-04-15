@@ -1,0 +1,257 @@
+{
+  "_id": "404558381fdb1871",
+  "name": "Forest Troll",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A hulking territorial predator that regenerates from most wounds. Fire is the traditional answer.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 9,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 3,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "c581632498f45688",
+      "name": "Superstrength",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 4,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!c581632498f45688"
+    },
+    {
+      "_id": "d38ce850dd4f4b5a",
+      "name": "Natural Weapons",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Claws"
+        ]
+      },
+      "_key": "!items!d38ce850dd4f4b5a"
+    },
+    {
+      "_id": "0f4805d9a55451b6",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!0f4805d9a55451b6"
+    },
+    {
+      "_id": "2efe0405a2ffa64c",
+      "name": "Regeneration",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 5,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!2efe0405a2ffa64c"
+    },
+    {
+      "_id": "9cf9395960d23159",
+      "name": "Tough",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!9cf9395960d23159"
+    },
+    {
+      "_id": "33833fa1cd4656e6",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!33833fa1cd4656e6"
+    },
+    {
+      "_id": "abc810520a7e9b20",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Darkvision"
+        ]
+      },
+      "_key": "!items!abc810520a7e9b20"
+    },
+    {
+      "_id": "916f6b8fe1b87e4f",
+      "name": "Jumping",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!916f6b8fe1b87e4f"
+    },
+    {
+      "_id": "0ce35af690f9bce6",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!0ce35af690f9bce6"
+    },
+    {
+      "_id": "fccc69f23554c325",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!fccc69f23554c325"
+    },
+    {
+      "_id": "ac2f1226fd03ac32",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!ac2f1226fd03ac32"
+    },
+    {
+      "_id": "f92f054075f3b06c",
+      "name": "Awkward Size",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!f92f054075f3b06c"
+    },
+    {
+      "_id": "987b519dcd683eb5",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!987b519dcd683eb5"
+    }
+  ],
+  "_key": "!actors!404558381fdb1871"
+}

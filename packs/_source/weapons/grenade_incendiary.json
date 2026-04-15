@@ -1,0 +1,50 @@
+{
+  "_id": "81035f7225b7e371",
+  "name": "Grenade, Incendiary",
+  "type": "attribute",
+  "system": {
+    "description": "A thermite-based grenade that burns at extreme temperatures.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 5,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "bff62046cb839de4",
+        "name": "Area",
+        "levels": 1
+      },
+      {
+        "id": "8a8d80e6dbc8fc1c",
+        "name": "Continuing",
+        "levels": 4
+      },
+      {
+        "id": "f275da51a1504e90",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "e871d8e8b3f2d55f",
+        "name": "Ammo",
+        "levels": 4
+      },
+      {
+        "id": "b7b84c5db443f615",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!81035f7225b7e371"
+}

@@ -1,0 +1,74 @@
+{
+  "_id": "d04967a2144064d5",
+  "name": "Enhanced Human",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "race",
+    "tradition": "",
+    "description": "A human who has undergone genetic therapy or neural augmentation. Faster, sharper, and more durable than baseline.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 6,
+      "mind": 6,
+      "soul": 5
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Tough",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Heightened Awareness",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Bane",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Defect",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!d04967a2144064d5"
+}

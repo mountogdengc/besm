@@ -1,0 +1,35 @@
+{
+  "_id": "4d065c074f4b4658",
+  "name": "Ironwood Tonfa",
+  "type": "attribute",
+  "system": {
+    "description": "A hardwood baton of alchemically treated ironwood.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "34fd01e567417020",
+        "name": "Stun",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "0bf5a4270e588df6",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!4d065c074f4b4658"
+}

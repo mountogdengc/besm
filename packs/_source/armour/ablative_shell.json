@@ -1,0 +1,29 @@
+{
+  "_id": "4b8aaf85eafa31a0",
+  "name": "Ablative Shell",
+  "type": "attribute",
+  "system": {
+    "description": "Disposable layered armor absorbing energy weapon hits.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 8,
+    "isWeapon": false,
+    "enhancements": [
+      {
+        "id": "2054664056a12b79",
+        "name": "Localised",
+        "levels": 1
+      },
+      {
+        "id": "8ae86151df4a7578",
+        "name": "Unique",
+        "levels": 1
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!4b8aaf85eafa31a0"
+}

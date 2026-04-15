@@ -1,0 +1,45 @@
+{
+  "_id": "8d4e4961770a9e63",
+  "name": "Grenade, Flashpowder",
+  "type": "attribute",
+  "system": {
+    "description": "A hand-thrown device detonating in a blinding white flash.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "267a0cad6703c129",
+        "name": "Flare",
+        "levels": 2
+      },
+      {
+        "id": "8da588bdd5f236c6",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "a03eb10af34eded2",
+        "name": "Ammo",
+        "levels": 4
+      },
+      {
+        "id": "535de3ece762fa63",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!8d4e4961770a9e63"
+}

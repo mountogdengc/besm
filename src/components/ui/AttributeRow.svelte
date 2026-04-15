@@ -12,7 +12,20 @@
 
   let enhancements = $derived(attribute.system.enhancements ?? []);
   let limiters = $derived(attribute.system.limiters ?? []);
+  let options = $derived(attribute.system.selectedOptions ?? []);
   let levelMismatch = $derived(attribute.system.purchasedLevel !== attribute.system.effectiveLevel);
+
+  let parenthetical = $derived(() => {
+    const parts = [];
+    if (options.length > 0) parts.push(options.join(", "));
+    if (enhancements.length > 0) {
+      parts.push(enhancements.map(e => `${e.name} -${e.levels}`).join(", "));
+    }
+    if (limiters.length > 0) {
+      parts.push(limiters.map(l => `${l.name} +${l.levels}`).join(", "));
+    }
+    return parts.length > 0 ? `(${parts.join("; ")})` : "";
+  });
 
   function openSheet() {
     attribute.sheet.render(true);
@@ -45,6 +58,20 @@
     } else if (item.type === "limiter") {
       const entry = { id: foundry.utils.randomID(), name: item.name, levels: item.system.levels };
       await attribute.update({ "system.limiters": [...limiters, entry] });
+    } else if (item.type === "besm4eTemplate" && item.system.templateType === "powerpack") {
+      // Apply all enhancements/limiters from the power pack
+      const newEnhancements = [...enhancements];
+      const newLimiters = [...limiters];
+      for (const entry of item.system.entries ?? []) {
+        if (entry.entryType !== "item") continue;
+        const e = { id: foundry.utils.randomID(), name: entry.name, levels: entry.systemData?.levels ?? 1 };
+        if (entry.itemType === "enhancement") newEnhancements.push(e);
+        else if (entry.itemType === "limiter") newLimiters.push(e);
+      }
+      await attribute.update({
+        "system.enhancements": newEnhancements,
+        "system.limiters": newLimiters,
+      });
     }
   }
 
@@ -61,36 +88,17 @@
   ondragover={handleDragOver}
   ondrop={handleDrop}
 >
-  <span class="text-slate-200 font-medium flex-shrink-0">{attribute.name}</span>
-
-  <span class="text-slate-400">
-    Lv {attribute.system.purchasedLevel}
-    {#if levelMismatch}
-      <span class="text-amber-400">→ Eff {attribute.system.effectiveLevel}</span>
-    {/if}
+  <span class="text-slate-400 flex-shrink-0 tabular-nums">
+    {attribute.system.purchasedLevel}{#if levelMismatch}<span class="text-amber-400">({attribute.system.effectiveLevel})</span>{/if}
   </span>
 
-  {#each enhancements as enh, i}
-    <span class="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-sky-900/50 text-sky-300 text-xs">
-      {enh.name} -{enh.levels}
-      <button
-        class="ml-0.5 text-sky-400 hover:text-sky-200 bg-transparent border-0 cursor-pointer text-xs p-0 leading-none"
-        onclick={(e) => { e.stopPropagation(); removeEnhancement(i); }}
-      >×</button>
-    </span>
-  {/each}
+  <span class="text-slate-400 flex-shrink-0 tabular-nums">{attribute.system.totalCost}</span>
 
-  {#each limiters as lim, i}
-    <span class="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-violet-900/50 text-violet-300 text-xs">
-      {lim.name} +{lim.levels}
-      <button
-        class="ml-0.5 text-violet-400 hover:text-violet-200 bg-transparent border-0 cursor-pointer text-xs p-0 leading-none"
-        onclick={(e) => { e.stopPropagation(); removeLimiter(i); }}
-      >×</button>
-    </span>
-  {/each}
+  <span class="text-slate-200 font-medium">{attribute.name}</span>
 
-  <span class="text-slate-400 ml-auto flex-shrink-0">{attribute.system.totalCost} CP</span>
+  {#if parenthetical()}
+    <span class="text-slate-400">{parenthetical()}</span>
+  {/if}
 
   {#if attribute.system.isWeapon}
     <RollButton onclick={attackRoll} title="Attack with {attribute.name}" />

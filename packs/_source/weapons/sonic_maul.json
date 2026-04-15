@@ -1,0 +1,35 @@
+{
+  "_id": "8c42b2b66e489c18",
+  "name": "Sonic Maul",
+  "type": "attribute",
+  "system": {
+    "description": "A heavy two-handed weapon with a vibration generator.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 6,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "3d9f55b743b4df31",
+        "name": "Penetrating",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "63fc61ef1e8a3c24",
+        "name": "Hands",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!8c42b2b66e489c18"
+}

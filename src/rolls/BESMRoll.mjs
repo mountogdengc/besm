@@ -1,12 +1,13 @@
-import { resolveRollTotal, resolveEdgeFormula, formatRollBreakdown } from "../engine/rolls.mjs";
+import { resolveRollTotal, resolveEdgeFormula, edgeObstacleOptionsHtml, readEdgeSelection, formatRollBreakdown } from "../engine/rolls.mjs";
 
 function extractDice(roll) {
   const terms = roll.terms ?? [];
   const diceTerm = terms.find(t => t.results);
-  if (!diceTerm) return { dice: [], diceTotal: roll.total };
-  const dice = diceTerm.results.map(r => r.result);
-  const diceTotal = dice.reduce((s, d) => s + d, 0);
-  return { dice, diceTotal };
+  if (!diceTerm) return { dice: [], discarded: [], diceTotal: roll.total };
+  const kept = diceTerm.results.filter(r => r.active !== false).map(r => r.result);
+  const discarded = diceTerm.results.filter(r => r.active === false).map(r => r.result);
+  const diceTotal = kept.reduce((s, d) => s + d, 0);
+  return { dice: kept, discarded, diceTotal };
 }
 
 export async function resolveStatForRoll(actor, nominalStat) {
@@ -49,20 +50,36 @@ export async function resolveStatForRoll(actor, nominalStat) {
   return pick ? { value: pick.value, label: pick.key } : null;
 }
 
-export async function performStatRoll(actor, statKey, options = {}) {
+export async function performStatRoll(actor, statKey) {
   const resolved = await resolveStatForRoll(actor, statKey);
   if (!resolved) return null;
 
-  const formula = resolveEdgeFormula(options.edge ?? null);
+  const content = `<div class="besm-roll">
+  <div class="besm-roll-header">Stat Roll — ${resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1)} (${resolved.value})</div>
+  ${edgeObstacleOptionsHtml()}
+  <button data-action="execute-stat-roll" data-actor-id="${actor.id}" data-stat-key="${resolved.label}" data-stat-value="${resolved.value}" style="padding:4px 12px; font-size:12px; cursor:pointer; font-weight:bold;">Roll</button>
+</div>`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor }),
+  });
+}
+
+export async function executeStatRoll(actorId, statLabel, statValue, edge) {
+  const actor = game.actors.get(actorId);
+  if (!actor) return;
+
+  const formula = resolveEdgeFormula(edge);
   const roll = await new Roll(formula).evaluate();
   const rollData = extractDice(roll);
-  const total = resolveRollTotal(rollData.diceTotal, resolved.value);
+  const total = resolveRollTotal(rollData.diceTotal, statValue);
 
-  const modifiers = [{ label: resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1), value: resolved.value }];
+  const modifiers = [{ label: statLabel.charAt(0).toUpperCase() + statLabel.slice(1), value: statValue }];
   const rollHtml = formatRollBreakdown("stat", rollData, modifiers, total);
   const content = `${rollHtml}
 <div class="besm-roll-actions" style="margin-top:4px;">
-  <button data-action="spend-ep" data-actor-id="${actor.id}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
+  <button data-action="spend-ep" data-actor-id="${actorId}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
 </div>`;
 
   const msg = await ChatMessage.create({
@@ -71,34 +88,48 @@ export async function performStatRoll(actor, statKey, options = {}) {
     rolls: [roll],
   });
 
-  // Patch message ID into EP button
   const el = document.createElement("div");
   el.innerHTML = msg.content;
   el.querySelectorAll('[data-action="spend-ep"]').forEach(btn => {
     btn.setAttribute("data-message-id", msg.id);
   });
   await msg.update({ content: el.innerHTML });
-
-  return { roll, total, statValue: resolved.value };
 }
 
-export async function performSkillRoll(actor, statKey, skillLevel, skillName, options = {}) {
+export async function performSkillRoll(actor, statKey, skillLevel, skillName) {
   const resolved = await resolveStatForRoll(actor, statKey);
   if (!resolved) return null;
 
-  const formula = resolveEdgeFormula(options.edge ?? null);
+  const content = `<div class="besm-roll">
+  <div class="besm-roll-header">Skill Roll — ${skillName}</div>
+  <div style="font-size:11px; color:#94a3b8; margin-bottom:4px;">${resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1)} (${resolved.value}) + ${skillName} (${skillLevel})</div>
+  ${edgeObstacleOptionsHtml()}
+  <button data-action="execute-skill-roll" data-actor-id="${actor.id}" data-stat-key="${resolved.label}" data-stat-value="${resolved.value}" data-skill-level="${skillLevel}" data-skill-name="${skillName}" style="padding:4px 12px; font-size:12px; cursor:pointer; font-weight:bold;">Roll</button>
+</div>`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor }),
+  });
+}
+
+export async function executeSkillRoll(actorId, statLabel, statValue, skillLevel, skillName, edge) {
+  const actor = game.actors.get(actorId);
+  if (!actor) return;
+
+  const formula = resolveEdgeFormula(edge);
   const roll = await new Roll(formula).evaluate();
   const rollData = extractDice(roll);
-  const total = resolveRollTotal(rollData.diceTotal, resolved.value, skillLevel);
+  const total = resolveRollTotal(rollData.diceTotal, statValue, skillLevel);
 
   const modifiers = [
-    { label: resolved.label.charAt(0).toUpperCase() + resolved.label.slice(1), value: resolved.value },
+    { label: statLabel.charAt(0).toUpperCase() + statLabel.slice(1), value: statValue },
     { label: skillName, value: skillLevel },
   ];
   const rollHtml = formatRollBreakdown("skill", rollData, modifiers, total);
   const content = `${rollHtml}
 <div class="besm-roll-actions" style="margin-top:4px;">
-  <button data-action="spend-ep" data-actor-id="${actor.id}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
+  <button data-action="spend-ep" data-actor-id="${actorId}" data-total="${total}" data-message-id="" style="padding:2px 8px; font-size:11px; cursor:pointer;">Spend EP?</button>
 </div>`;
 
   const msg = await ChatMessage.create({
@@ -113,6 +144,4 @@ export async function performSkillRoll(actor, statKey, skillLevel, skillName, op
     btn.setAttribute("data-message-id", msg.id);
   });
   await msg.update({ content: el.innerHTML });
-
-  return { roll, total, statValue: resolved.value, skillLevel };
 }

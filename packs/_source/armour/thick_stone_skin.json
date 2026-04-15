@@ -1,0 +1,18 @@
+{
+  "_id": "11a055a5a6b50ecd",
+  "name": "Thick Stone Skin",
+  "type": "attribute",
+  "system": {
+    "description": "Dense mineral skin providing excellent defense.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 5,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!11a055a5a6b50ecd"
+}

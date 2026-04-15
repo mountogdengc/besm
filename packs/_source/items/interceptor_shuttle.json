@@ -1,0 +1,128 @@
+{
+  "_id": "8cf8113e44d0c876",
+  "name": "Interceptor Shuttle",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A fast, lightly armed spacecraft for pursuit and patrol.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Armour",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 8
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Capacity",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Flight",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 3,
+          "purchasedLevel": 5
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Resilient",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 7
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Sensory Block",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Spaceflight",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Supersense",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 3
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Weapon",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 18
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Awkward Size",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 3,
+          "cpGranted": 6
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Special Requirement",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 3
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Special Requirement",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 1,
+          "cpGranted": 3
+        }
+      }
+    ]
+  },
+  "_key": "!items!8cf8113e44d0c876"
+}

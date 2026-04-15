@@ -1,0 +1,40 @@
+{
+  "_id": "5f84dec7b3ae2acc",
+  "name": "Disintegrator Pistol",
+  "type": "attribute",
+  "system": {
+    "description": "A compact beam that breaks molecular bonds.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 10,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "01b0ada44e6566eb",
+        "name": "Insidious",
+        "levels": 2
+      },
+      {
+        "id": "a4991bf5769609b8",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "088a9c98a2731fbd",
+        "name": "Ammo",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!5f84dec7b3ae2acc"
+}

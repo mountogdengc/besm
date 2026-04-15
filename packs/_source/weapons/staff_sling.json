@@ -1,0 +1,45 @@
+{
+  "_id": "19016443fe1bc3cd",
+  "name": "Staff Sling",
+  "type": "attribute",
+  "system": {
+    "description": "A sling on a long staff for greater leverage and range.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "9155b47eed30fc45",
+        "name": "Muscle",
+        "levels": 1
+      },
+      {
+        "id": "4452ef648261684f",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "e53649fcbecd4dc5",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "ef755939ab72b61e",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!19016443fe1bc3cd"
+}

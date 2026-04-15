@@ -1,0 +1,35 @@
+{
+  "_id": "a91fe1e73ee28047",
+  "name": "Electrified Knuckles",
+  "type": "attribute",
+  "system": {
+    "description": "Brass knuckles wired to a small battery pack.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "10eeaed474365fd3",
+        "name": "Incapacitating",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "959eecc9292ba5ff",
+        "name": "Ammo",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!a91fe1e73ee28047"
+}

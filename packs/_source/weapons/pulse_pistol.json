@@ -1,0 +1,40 @@
+{
+  "_id": "19e3dea6a8351f4a",
+  "name": "Pulse Pistol",
+  "type": "attribute",
+  "system": {
+    "description": "A standard-issue sidearm firing rapid electromagnetic bursts.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 7,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "bb3b79b6c2e069c1",
+        "name": "Autofire",
+        "levels": 2
+      },
+      {
+        "id": "153e6147d273e786",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "c72fba29d7515064",
+        "name": "Ammo",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!19e3dea6a8351f4a"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "9f1203ba0e6ce959",
+  "name": "Conscript Pilot",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A barely trained recruit in a mass-produced combat frame. The mecha is the real threat — assign a 40-60 CP mecha separately.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "c2336c73b34d7d36",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Neural Helmet"
+        ]
+      },
+      "_key": "!items!c2336c73b34d7d36"
+    },
+    {
+      "_id": "451a05e058fa0845",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!451a05e058fa0845"
+    },
+    {
+      "_id": "c5b6ce4d2bc88f55",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!c5b6ce4d2bc88f55"
+    }
+  ],
+  "_key": "!actors!9f1203ba0e6ce959"
+}

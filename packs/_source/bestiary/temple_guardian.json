@@ -1,0 +1,226 @@
+{
+  "_id": "1714a8fa3b51019f",
+  "name": "Temple Guardian",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A sacred warrior bound by divine oath to protect a holy site. Location boss — nearly unbeatable on their own ground.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 7,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 7,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "48173b829e491789",
+      "name": "Crescent Glaive",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "aa1a0a1933cb0eb8",
+            "name": "Flexible",
+            "levels": 1
+          }
+        ],
+        "limiters": [
+          {
+            "id": "cda40bf41d32d246",
+            "name": "Hands",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!48173b829e491789"
+    },
+    {
+      "_id": "b7ceab81ce4d4844",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 4,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!b7ceab81ce4d4844"
+    },
+    {
+      "_id": "00855c8eceeeea40",
+      "name": "Attack Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!00855c8eceeeea40"
+    },
+    {
+      "_id": "1cda0ea22e6b6b7f",
+      "name": "Defence Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!1cda0ea22e6b6b7f"
+    },
+    {
+      "_id": "81c4d3c31fa8e508",
+      "name": "Sixth Sense",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Desecration"
+        ]
+      },
+      "_key": "!items!81c4d3c31fa8e508"
+    },
+    {
+      "_id": "d4c77c3896f730e9",
+      "name": "Tough",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!d4c77c3896f730e9"
+    },
+    {
+      "_id": "1ca378416bad36d0",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!1ca378416bad36d0"
+    },
+    {
+      "_id": "ad8d31595f658c12",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!ad8d31595f658c12"
+    },
+    {
+      "_id": "29c44ae68f4ed5b5",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!29c44ae68f4ed5b5"
+    },
+    {
+      "_id": "e147177184c12b46",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!e147177184c12b46"
+    }
+  ],
+  "_key": "!actors!1714a8fa3b51019f"
+}

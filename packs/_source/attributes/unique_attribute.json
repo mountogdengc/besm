@@ -4,7 +4,7 @@
   "type": "attribute",
   "system": {
     "description": "Fill in the blank.\nLevel 1: Basic aptitude\nLevel 2: Minor aptitude\nLevel 3: Moderate aptitude\nLevel 4: Significant aptitude\nLevel 5: Major aptitude\nLevel 6: Extreme aptitude",
-    "baseCostPerLevel": 0,
+    "baseCostPerLevel": 1,
     "purchasedLevel": 1,
     "source": "BESM4e"
   },

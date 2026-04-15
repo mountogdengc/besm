@@ -1,0 +1,122 @@
+{
+  "_id": "9ef3eee2b41841f1",
+  "name": "Strict Teacher",
+  "type": "npc",
+  "system": {
+    "biography": "<p>The disciplinarian on the faculty. Fair but demanding. Social boss encounter for Slice of Life campaigns.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 7,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 6,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "8da8b00e50837a20",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!8da8b00e50837a20"
+    },
+    {
+      "_id": "32389ff05115a0ce",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Institutional Authority"
+        ]
+      },
+      "_key": "!items!32389ff05115a0ce"
+    },
+    {
+      "_id": "099f09eea0f90c2a",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Sixth Sense for Trouble"
+        ]
+      },
+      "_key": "!items!099f09eea0f90c2a"
+    },
+    {
+      "_id": "e4e65027c6a902c8",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!e4e65027c6a902c8"
+    },
+    {
+      "_id": "b4c8d0e1162d7e36",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!b4c8d0e1162d7e36"
+    }
+  ],
+  "_key": "!actors!9ef3eee2b41841f1"
+}

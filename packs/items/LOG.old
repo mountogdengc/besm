@@ -1,0 +1,5 @@
+2026/04/15-00:24:00.761 7a58 Delete type=3 #1
+2026/04/15-00:24:00.766 ff8c Level-0 table #5: started
+2026/04/15-00:24:00.769 ff8c Level-0 table #5: 5199 bytes OK
+2026/04/15-00:24:00.771 ff8c Delete type=0 #3
+2026/04/15-00:24:00.772 ff8c Manual compaction at level-0 from '!items!10d13e402c4578a8' @ 72057594037927935 : 1 .. '!items!fdac7451a686a8f0' @ 0 : 0; will stop at (end)

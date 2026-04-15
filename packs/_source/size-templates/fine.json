@@ -1,0 +1,92 @@
+{
+  "_id": "72a32641f70b4748",
+  "name": "Fine (Size Rank -4)",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "size",
+    "tradition": "",
+    "description": "",
+    "pointTotal": -24,
+    "sizeRank": -4,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Ranged Attack",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Ranged Defence",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Small, Light, and Unobtrusive",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Lifting Capacity",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 24
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Running Speed",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Strength Damage",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 8
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Vulnerable",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 16
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Weak Throw",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 4
+        }
+      }
+    ]
+  },
+  "_key": "!items!72a32641f70b4748"
+}

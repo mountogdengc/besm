@@ -1,0 +1,29 @@
+{
+  "_id": "9cb89dc76c6869cd",
+  "name": "Boarding Hook",
+  "type": "attribute",
+  "system": {
+    "description": "A heavy iron hook for ship-to-ship combat.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "11b1e294a0735bc4",
+        "name": "Tangle",
+        "levels": 1
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": []
+  },
+  "_key": "!items!9cb89dc76c6869cd"
+}

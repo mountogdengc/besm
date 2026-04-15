@@ -18,8 +18,10 @@ import { BESMTemplateData } from "./models/items/BESMTemplateData.mjs";
 import { registerSettings } from "./settings/registerSettings.mjs";
 import { registerFolderHooks } from "./hooks/folderHooks.mjs";
 import { BESM_STATUS_EFFECTS } from "./combat/statusEffects.mjs";
-import { performDefenceRoll, applyDamage, promptEpBonus } from "./rolls/BESMCombat.mjs";
+import { performDefenceRoll, applyDamage, promptEpBonus, executeAttackRoll, executeDefenceRoll, executeSanityRoll } from "./rolls/BESMCombat.mjs";
+import { executeStatRoll, executeSkillRoll } from "./rolls/BESMRoll.mjs";
 import { performSocialDefenceRoll, applySocialDamage } from "./rolls/BESMSocial.mjs";
+import { readEdgeSelection } from "./engine/rolls.mjs";
 
 Hooks.on("init", () => {
   console.log("BESM 4e | Initializing BESM 4th Edition system");
@@ -44,45 +46,62 @@ Hooks.on("init", () => {
   try {
     const initMode = game.settings.get("besm", "initiativeMode");
     if (initMode === "cv_static") {
-      CONFIG.Combat.initiative = { formula: "@derived.acv", decimals: 0 };
+      CONFIG.Combat.initiative = { formula: "@derived.initiative", decimals: 0 };
     } else {
-      CONFIG.Combat.initiative = { formula: "2d6 + @derived.acv", decimals: 0 };
+      CONFIG.Combat.initiative = { formula: "2d6 + @derived.initiative", decimals: 0 };
     }
   } catch {
-    CONFIG.Combat.initiative = { formula: "2d6 + @derived.acv", decimals: 0 };
+    CONFIG.Combat.initiative = { formula: "2d6 + @derived.initiative", decimals: 0 };
   }
 
   // Register BESM status effects
   CONFIG.statusEffects = BESM_STATUS_EFFECTS;
 
+  // Type labels so Foundry shows plain text instead of keys
+  CONFIG.Actor.typeLabels = {
+    character: "Character",
+    npc: "NPC",
+    vehicle: "Vehicle",
+    mecha: "Mecha",
+  };
+  CONFIG.Item.typeLabels = {
+    attribute: "Attribute",
+    defect: "Defect",
+    enhancement: "Enhancement",
+    limiter: "Limiter",
+    possession: "Possession",
+    skill: "Skill",
+    besm4eTemplate: "Template",
+  };
+
   foundry.documents.collections.Actors.registerSheet("besm", BESMActorSheet, {
     types: ["character"],
     makeDefault: true,
-    label: "BESM4e.SheetCharacter",
+    label: "Character Sheet",
   });
 
   foundry.documents.collections.Actors.registerSheet("besm", BESMNPCSheet, {
     types: ["npc"],
     makeDefault: true,
-    label: "BESM4e.SheetNPC",
+    label: "NPC Sheet",
   });
 
   foundry.documents.collections.Actors.registerSheet("besm", BESMVehicleSheet, {
     types: ["vehicle"],
     makeDefault: true,
-    label: "BESM4e.SheetVehicle",
+    label: "Vehicle Sheet",
   });
 
   foundry.documents.collections.Actors.registerSheet("besm", BESMMechaSheet, {
     types: ["mecha"],
     makeDefault: true,
-    label: "BESM4e.SheetMecha",
+    label: "Mecha Sheet",
   });
 
   foundry.documents.collections.Items.registerSheet("besm", BESMItemSheet, {
     types: ["attribute", "defect", "enhancement", "limiter", "possession", "skill", "besm4eTemplate"],
     makeDefault: true,
-    label: "BESM4e.SheetItem",
+    label: "Item Sheet",
   });
 });
 
@@ -164,6 +183,50 @@ Hooks.on("renderChatMessageHTML", (message, el) => {
       const damage = Number(btn.getAttribute("data-damage"));
       const defender = game.actors.get(defenderId);
       if (defender) await applySocialDamage(defender, damage);
+    });
+  });
+
+  // Execute roll buttons (chat card pattern)
+  el.querySelectorAll('[data-action="execute-stat-roll"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const edge = readEdgeSelection(btn.closest(".besm-roll"));
+      const actorId = btn.getAttribute("data-actor-id");
+      const statLabel = btn.getAttribute("data-stat-key");
+      const statValue = Number(btn.getAttribute("data-stat-value"));
+      await executeStatRoll(actorId, statLabel, statValue, edge);
+    });
+  });
+
+  el.querySelectorAll('[data-action="execute-skill-roll"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const edge = readEdgeSelection(btn.closest(".besm-roll"));
+      const actorId = btn.getAttribute("data-actor-id");
+      const statLabel = btn.getAttribute("data-stat-key");
+      const statValue = Number(btn.getAttribute("data-stat-value"));
+      const skillLevel = Number(btn.getAttribute("data-skill-level"));
+      const skillName = btn.getAttribute("data-skill-name");
+      await executeSkillRoll(actorId, statLabel, statValue, skillLevel, skillName, edge);
+    });
+  });
+
+  el.querySelectorAll('[data-action="execute-attack-roll"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const edge = readEdgeSelection(btn.closest(".besm-roll"));
+      await executeAttackRoll(btn, edge);
+    });
+  });
+
+  el.querySelectorAll('[data-action="execute-defence-roll"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const edge = readEdgeSelection(btn.closest(".besm-roll"));
+      await executeDefenceRoll(btn, edge);
+    });
+  });
+
+  el.querySelectorAll('[data-action="execute-sanity-roll"]').forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const edge = readEdgeSelection(btn.closest(".besm-roll"));
+      await executeSanityRoll(btn, edge);
     });
   });
 });

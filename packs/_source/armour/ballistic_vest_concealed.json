@@ -1,0 +1,24 @@
+{
+  "_id": "4e46aebc56597f5f",
+  "name": "Ballistic Vest, Concealed",
+  "type": "attribute",
+  "system": {
+    "description": "A thin flexible vest stopping handgun rounds.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "5db2da579a13961a",
+        "name": "Localised",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!4e46aebc56597f5f"
+}

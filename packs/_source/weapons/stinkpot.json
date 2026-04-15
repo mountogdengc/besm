@@ -1,0 +1,50 @@
+{
+  "_id": "71cb16783ce61a8f",
+  "name": "Stinkpot",
+  "type": "attribute",
+  "system": {
+    "description": "A sealed clay jar packed with sulfur and rotting organic matter.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "c665230ec75f5946",
+        "name": "Area",
+        "levels": 2
+      },
+      {
+        "id": "d000ee1f9e771834",
+        "name": "Irritant",
+        "levels": 2
+      },
+      {
+        "id": "7e05827fd38ec4d3",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "06407f25da6c6499",
+        "name": "Ammo",
+        "levels": 4
+      },
+      {
+        "id": "e717350ceaa446a8",
+        "name": "Toxic",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!71cb16783ce61a8f"
+}

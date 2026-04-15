@@ -1,0 +1,55 @@
+{
+  "_id": "5542643467c326f9",
+  "name": "Blisterpod",
+  "type": "attribute",
+  "system": {
+    "description": "A living biological grenade that sprays caustic spores on impact.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 4,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "1f7c3796f37bf877",
+        "name": "Area",
+        "levels": 1
+      },
+      {
+        "id": "e95b6afd81fecab9",
+        "name": "Contact",
+        "levels": 1
+      },
+      {
+        "id": "a3de6c76f232ca26",
+        "name": "Continuing",
+        "levels": 2
+      },
+      {
+        "id": "7b29bcb56ea4116e",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "0c5acd861bf3475c",
+        "name": "Ammo",
+        "levels": 4
+      },
+      {
+        "id": "a6c1cd1c231dad62",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!5542643467c326f9"
+}

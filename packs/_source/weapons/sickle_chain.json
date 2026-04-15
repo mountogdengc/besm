@@ -1,0 +1,45 @@
+{
+  "_id": "a21b499339c96200",
+  "name": "Sickle Chain",
+  "type": "attribute",
+  "system": {
+    "description": "A farming sickle attached to a weighted chain.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "30c0e8717589900c",
+        "name": "Flexible",
+        "levels": 1
+      },
+      {
+        "id": "b177260cae275613",
+        "name": "Range",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "ae2dcf419905114a",
+        "name": "Backlash",
+        "levels": 1
+      },
+      {
+        "id": "3aa6440ca779eb8a",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!a21b499339c96200"
+}

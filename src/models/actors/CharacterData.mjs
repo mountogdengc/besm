@@ -12,6 +12,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     return {
       biography: new fields.HTMLField(),
       genre: new fields.StringField({ initial: "" }),
+      powerLevel: new fields.StringField({ initial: "" }),
       cpBase: new fields.NumberField({ integer: true, initial: 50 }),
       cpTotal: new fields.NumberField({ integer: true, initial: 0 }),
       cpSpent: new fields.NumberField({ integer: true, initial: 0 }),
@@ -144,6 +145,14 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     // Step 6: Combat values
     this.derived.baseCv = computeBaseCv(bv, mv, sv);
 
+    // Helper: check if a combat technique is present (via selectedOptions or item name)
+    const hasCombatTechnique = (technique) => items.some(
+      i => i.type === "attribute" && (
+        (i.system.selectedOptions ?? []).some(o => o.toLowerCase().includes(technique.toLowerCase()))
+        || i.name.toLowerCase().includes(technique.toLowerCase())
+      )
+    );
+
     const attackMastery = items.find(
       i => i.type === "attribute" && i.name === "Attack Mastery"
     );
@@ -154,6 +163,10 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     );
     this.derived.dcv = this.derived.baseCv + (defenceMastery?.system.effectiveLevel ?? 0);
 
+    // Initiative: ACV + Lightning Reflexes bonus
+    const lightningReflexes = hasCombatTechnique("Lightning Reflexes");
+    this.derived.initiative = this.derived.acv + (lightningReflexes ? 3 : 0);
+
     // Step 7: HP
     const tough = items.find(i => i.type === "attribute" && i.name === "Tough");
     const fragile = items.find(i => i.type === "defect" && i.name === "Fragile");
@@ -161,6 +174,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     this.derived.hp = hpResult.hp;
     this.derived.hpMax = hpResult.hp;
     this.derived.hpApplicable = hpResult.applicable;
+    if (this.derived.currentHp === 0 || this.derived.currentHp > hpResult.hp) {
+      this.derived.currentHp = hpResult.hp;
+    }
 
     // Step 8: EP
     const energised = items.find(i => i.type === "attribute" && i.name === "Energised");
@@ -168,12 +184,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     this.derived.ep = epResult.ep;
     this.derived.epMax = epResult.ep;
     this.derived.epApplicable = epResult.applicable;
+    if (this.derived.currentEp === 0 || this.derived.currentEp > epResult.ep) {
+      this.derived.currentEp = epResult.ep;
+    }
 
     // Step 9: Shock Value
-    const hardboiledCount = items.filter(
-      i => i.type === "attribute" && i.name === "Combat Technique (Hardboiled)"
-    ).length;
-    this.derived.sv = computeShockValue(this.derived.hp, this.derived.hpApplicable, hardboiledCount);
+    const hardboiled = hasCombatTechnique("Hardboiled") ? 1 : 0;
+    this.derived.sv = computeShockValue(this.derived.hp, this.derived.hpApplicable, hardboiled);
 
     // Step 10: Damage Multipliers
     const massiveDamage = items.find(i => i.type === "attribute" && i.name === "Massive Damage");
@@ -185,10 +202,10 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     this.derived.damageMultiplier = dm.base;
     this.derived.meleeDamageMultiplier = dm.melee;
 
-    // Step 11: AR
+    // Step 11: AR (each level of Armour/Force Field provides 5 points of AR)
     this.derived.ar = items
       .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
-      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0) * 5;
 
     // Step 12: Movement
     const movement = computeMovement(bv);
@@ -203,6 +220,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
         if (sanity !== null) {
           this.derived.sanityPoints = sanity;
           this.derived.sanityMax = sanity;
+          if (this.derived.currentSanity === 0 || this.derived.currentSanity > sanity) {
+            this.derived.currentSanity = sanity;
+          }
         }
       }
     } catch (e) { /* settings not yet registered during init */ }
@@ -215,6 +235,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           this.derived.socv = socv;
           this.derived.societyPoints = socv;
           this.derived.societyPointsMax = socv;
+          if (this.derived.currentSocietyPoints === 0 || this.derived.currentSocietyPoints > socv) {
+            this.derived.currentSocietyPoints = socv;
+          }
         }
       }
     } catch (e) { /* settings not yet registered during init */ }
@@ -222,7 +245,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     // Step 15: Benchmark validation (settings-gated)
     try {
       if (game.settings.get("besm", "enforceBenchmarks")) {
-        const powerLevel = game.settings.get("besm", "powerLevel");
+        const powerLevel = this.powerLevel || game.settings.get("besm", "powerLevel");
         const result = validateBenchmarks(powerLevel, this.stats, [...items], this.derived);
         this.benchmarkWarnings = result.warnings;
         this.benchmarkValid = result.valid;

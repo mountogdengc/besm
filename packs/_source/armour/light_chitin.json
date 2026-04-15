@@ -1,0 +1,18 @@
+{
+  "_id": "84efe6918e2c7232",
+  "name": "Light Chitin",
+  "type": "attribute",
+  "system": {
+    "description": "Hard segmented plates found on insectoid creatures.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!84efe6918e2c7232"
+}

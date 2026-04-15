@@ -1,0 +1,65 @@
+{
+  "_id": "2747e351338e5527",
+  "name": "Thermobaric Launcher",
+  "type": "attribute",
+  "system": {
+    "description": "A shoulder-fired fuel-air explosive weapon.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 14,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "07f619772c4ccc8f",
+        "name": "Area",
+        "levels": 3
+      },
+      {
+        "id": "2ed6304b71ac4a5d",
+        "name": "Penetrating",
+        "levels": 2
+      },
+      {
+        "id": "ffa670e31eaf9bb0",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "0a6dfedd0ea5727a",
+        "name": "Activation",
+        "levels": 1
+      },
+      {
+        "id": "48b247ee6d13030b",
+        "name": "Backblast",
+        "levels": 1
+      },
+      {
+        "id": "8650639430354c9b",
+        "name": "Ammo",
+        "levels": 3
+      },
+      {
+        "id": "05ca250259dad198",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "6a6f098b6871a750",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!2747e351338e5527"
+}

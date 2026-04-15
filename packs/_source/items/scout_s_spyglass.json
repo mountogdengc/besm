@@ -1,0 +1,29 @@
+{
+  "_id": "1db65139cd2e0c8a",
+  "name": "Scout's Spyglass",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A collapsible brass telescope magnifying distant objects.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!1db65139cd2e0c8a"
+}

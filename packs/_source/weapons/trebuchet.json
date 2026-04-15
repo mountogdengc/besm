@@ -1,0 +1,60 @@
+{
+  "_id": "4ef2781dfa599e1e",
+  "name": "Trebuchet",
+  "type": "attribute",
+  "system": {
+    "description": "A counterweight siege engine hurling massive stones.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 18,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "f1742991631df407",
+        "name": "Area",
+        "levels": 3
+      },
+      {
+        "id": "8aec6c584c0e854e",
+        "name": "Indirect",
+        "levels": 1
+      },
+      {
+        "id": "e875e0a3faaf1cdc",
+        "name": "Range",
+        "levels": 5
+      }
+    ],
+    "limiters": [
+      {
+        "id": "8475ce50bca52035",
+        "name": "Activation",
+        "levels": 3
+      },
+      {
+        "id": "4090aab7977a2f0f",
+        "name": "Assisted",
+        "levels": 3
+      },
+      {
+        "id": "9464f8d1b2d77f23",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "1f66d29b3999d06c",
+        "name": "Inaccurate",
+        "levels": 2
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!4ef2781dfa599e1e"
+}

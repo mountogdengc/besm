@@ -1,0 +1,24 @@
+{
+  "_id": "aa369baa12a6dfa9",
+  "name": "Iron Buckler",
+  "type": "attribute",
+  "system": {
+    "description": "A small round shield strapped to the forearm.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "d9230b56f997c221",
+        "name": "Localised",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!aa369baa12a6dfa9"
+}

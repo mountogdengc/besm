@@ -1,0 +1,29 @@
+{
+  "_id": "317ae7a8790fc975",
+  "name": "Lockbreaker's Roll",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "Picks, tension wrenches, shims, and a small pry bar.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 2
+        }
+      }
+    ]
+  },
+  "_key": "!items!317ae7a8790fc975"
+}

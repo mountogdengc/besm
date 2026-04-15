@@ -1,0 +1,267 @@
+{
+  "_id": "ba0602c68b95e746",
+  "name": "Pirate Captain",
+  "type": "npc",
+  "system": {
+    "biography": "<p>Commander of a raiding crew. Part tactician, part brawler, part con artist.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 6,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 6,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 7,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "4e9d8fe8ba5ce345",
+      "name": "Blaster Pistol",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 7,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "47dcec3f2509e3ee",
+            "name": "Range",
+            "levels": 3
+          }
+        ],
+        "limiters": [
+          {
+            "id": "a6b2bac43090ca14",
+            "name": "Ammo",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!4e9d8fe8ba5ce345"
+    },
+    {
+      "_id": "3e2acd721e79becb",
+      "name": "Boarding Sword",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "4ff9d4631a7fa694",
+            "name": "Penetrating",
+            "levels": 1
+          }
+        ],
+        "limiters": [
+          {
+            "id": "3e1cb39b3e74f75f",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!3e2acd721e79becb"
+    },
+    {
+      "_id": "6cc97153f8d00188",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "c4f63496865bd3ae",
+            "name": "Localised",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!6cc97153f8d00188"
+    },
+    {
+      "_id": "b987305903321c11",
+      "name": "Attack Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!b987305903321c11"
+    },
+    {
+      "_id": "44552a368bf51043",
+      "name": "Defence Mastery",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!44552a368bf51043"
+    },
+    {
+      "_id": "55a22bf631ce69f3",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Pirate Crew"
+        ]
+      },
+      "_key": "!items!55a22bf631ce69f3"
+    },
+    {
+      "_id": "e30bced5bf06f109",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Reputation"
+        ]
+      },
+      "_key": "!items!e30bced5bf06f109"
+    },
+    {
+      "_id": "aba315908db1ac7a",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!aba315908db1ac7a"
+    },
+    {
+      "_id": "2734915a792933d3",
+      "name": "Wanted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!2734915a792933d3"
+    },
+    {
+      "_id": "2f8a5b839bc7f565",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!2f8a5b839bc7f565"
+    },
+    {
+      "_id": "2f5c3e215a5d67e0",
+      "name": "Nemesis",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!2f5c3e215a5d67e0"
+    }
+  ],
+  "_key": "!actors!ba0602c68b95e746"
+}

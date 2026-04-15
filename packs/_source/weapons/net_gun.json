@@ -1,0 +1,45 @@
+{
+  "_id": "e0248e38e1359841",
+  "name": "Net Gun",
+  "type": "attribute",
+  "system": {
+    "description": "A compressed-air launcher firing a weighted net.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "8d9efe6d78d58e40",
+        "name": "Range",
+        "levels": 1
+      },
+      {
+        "id": "fb423f89f2e29c15",
+        "name": "Tangle",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "f5b4d1fcc20c8c40",
+        "name": "Ammo",
+        "levels": 2
+      },
+      {
+        "id": "cbc31c7819a9d44b",
+        "name": "Non-Penetrating",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!e0248e38e1359841"
+}

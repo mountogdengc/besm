@@ -55,6 +55,9 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       sourceTemplateName: new fields.StringField({ initial: "" }),
       linkedActorId: new fields.StringField({ initial: "" }),
       transformationHeal: new fields.BooleanField({ initial: false }),
+      selectedOptions: new fields.ArrayField(
+        new fields.StringField(), { initial: [] }
+      ),
       notes: new fields.HTMLField(),
     };
   }
@@ -64,5 +67,15 @@ export class AttributeData extends foundry.abstract.TypeDataModel {
       this.purchasedLevel, this.enhancements, this.limiters, this.isWeapon
     );
     this.totalCost = totalAttributeCost(this.baseCostPerLevel, this.purchasedLevel);
+
+    // Item attribute auto-cost: half the linked actor's CP spent
+    if (this.linkedActorId && this.baseCostPerLevel === 0) {
+      try {
+        const linked = game.actors?.get(this.linkedActorId);
+        if (linked) {
+          this.totalCost = Math.ceil(linked.system.cpSpent / 2);
+        }
+      } catch { /* game not ready */ }
+    }
   }
 }

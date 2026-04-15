@@ -1,0 +1,24 @@
+{
+  "_id": "8e4fb0ff4deb2a7a",
+  "name": "Gambeson",
+  "type": "attribute",
+  "system": {
+    "description": "A quilted jacket of layered linen or wool.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 1,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [
+      {
+        "id": "3a6f7fbf256e82bb",
+        "name": "Localised",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!8e4fb0ff4deb2a7a"
+}

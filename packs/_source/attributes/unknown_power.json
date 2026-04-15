@@ -4,7 +4,7 @@
   "type": "attribute",
   "system": {
     "description": "Grants hidden abilities unknown to the character and player.",
-    "baseCostPerLevel": 1,
+    "baseCostPerLevel": 0,
     "purchasedLevel": 1,
     "source": "BESM4e"
   },

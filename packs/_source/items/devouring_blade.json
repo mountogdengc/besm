@@ -1,0 +1,47 @@
+{
+  "_id": "fdac7451a686a8f0",
+  "name": "Devouring Blade",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A black iron sword that drinks the life force of those it wounds.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Weapon",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Regeneration",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 5,
+          "purchasedLevel": 1
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Cursed",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 2,
+          "cpGranted": 2
+        }
+      }
+    ]
+  },
+  "_key": "!items!fdac7451a686a8f0"
+}

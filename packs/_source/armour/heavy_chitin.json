@@ -1,0 +1,18 @@
+{
+  "_id": "5a3bf2e64bbd92a6",
+  "name": "Heavy Chitin",
+  "type": "attribute",
+  "system": {
+    "description": "Thick chitin plates from large insectoid creatures.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!5a3bf2e64bbd92a6"
+}

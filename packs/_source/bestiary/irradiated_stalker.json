@@ -1,0 +1,228 @@
+{
+  "_id": "7ebe33d52449257e",
+  "name": "Irradiated Stalker",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A mutated predator twisted by radiation. Hunts by vibration and scent in collapsed buildings and tunnels.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 8,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 3,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "1e9d5e726cd6a1cb",
+      "name": "Natural Weapons",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Claws and Teeth"
+        ]
+      },
+      "_key": "!items!1e9d5e726cd6a1cb"
+    },
+    {
+      "_id": "4e3ce6c5aad9613f",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!4e3ce6c5aad9613f"
+    },
+    {
+      "_id": "5f04a875287528de",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!5f04a875287528de"
+    },
+    {
+      "_id": "d7ac5ca153bba8a3",
+      "name": "Tough",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 2,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!d7ac5ca153bba8a3"
+    },
+    {
+      "_id": "eb401ed115bdc479",
+      "name": "Jumping",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!eb401ed115bdc479"
+    },
+    {
+      "_id": "027d8c4e819b23c4",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Darkvision"
+        ]
+      },
+      "_key": "!items!027d8c4e819b23c4"
+    },
+    {
+      "_id": "80837709b492936b",
+      "name": "Special Movement",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Climbing"
+        ]
+      },
+      "_key": "!items!80837709b492936b"
+    },
+    {
+      "_id": "51fa22ff22240b26",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!51fa22ff22240b26"
+    },
+    {
+      "_id": "257bfc6ce41dc542",
+      "name": "Bane",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!257bfc6ce41dc542"
+    },
+    {
+      "_id": "8ee398f915cee506",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!8ee398f915cee506"
+    },
+    {
+      "_id": "7218d81408da7a8b",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!7218d81408da7a8b"
+    }
+  ],
+  "_key": "!actors!7ebe33d52449257e"
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "60dc58f27d29d493",
+  "name": "Bomb Suit",
+  "type": "attribute",
+  "system": {
+    "description": "A massive padded suit for explosive ordnance disposal.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 8,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!60dc58f27d29d493"
+}

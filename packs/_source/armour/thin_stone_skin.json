@@ -1,0 +1,18 @@
+{
+  "_id": "3bd0b25d135d2117",
+  "name": "Thin Stone Skin",
+  "type": "attribute",
+  "system": {
+    "description": "Minerite growth pattern found in earth-aligned creatures.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 2,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!3bd0b25d135d2117"
+}

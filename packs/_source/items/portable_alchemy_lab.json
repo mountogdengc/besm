@@ -1,0 +1,29 @@
+{
+  "_id": "5e89c963c60dec8e",
+  "name": "Portable Alchemy Lab",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "Glass vials, burner, mortar and pestle, and common reagents.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Features",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 3
+        }
+      }
+    ]
+  },
+  "_key": "!items!5e89c963c60dec8e"
+}

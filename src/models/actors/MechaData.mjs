@@ -131,10 +131,13 @@ export class MechaData extends foundry.abstract.TypeDataModel {
     this.derived.hp = hpResult.hp;
     this.derived.hpMax = hpResult.hp;
     this.derived.hpApplicable = hpResult.applicable;
+    if (this.derived.currentHp === 0 || this.derived.currentHp > hpResult.hp) {
+      this.derived.currentHp = hpResult.hp;
+    }
 
     this.derived.ar = items
       .filter(i => i.type === "attribute" && ["Armour", "Force Field"].includes(i.name))
-      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0);
+      .reduce((sum, attr) => sum + attr.system.effectiveLevel, 0) * 5;
 
     const massiveDamage = items.find(i => i.type === "attribute" && i.name === "Massive Damage");
     const superstrength = items.find(i => i.type === "attribute" && i.name === "Superstrength");

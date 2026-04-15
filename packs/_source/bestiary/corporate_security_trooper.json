@@ -1,0 +1,174 @@
+{
+  "_id": "fad299c3c4661fe6",
+  "name": "Corporate Security Trooper",
+  "type": "npc",
+  "system": {
+    "biography": "<p>Armored fist of megacorp property protection. Deploy in fire teams of 4.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 6,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 4,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "ec99eafa2e278923",
+      "name": "Compact PDW",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 7,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "8959d2c8b95e10a3",
+            "name": "Autofire",
+            "levels": 2
+          },
+          {
+            "id": "4175467d4594732a",
+            "name": "Penetrating",
+            "levels": 1
+          },
+          {
+            "id": "b05a7704c00fb45e",
+            "name": "Range",
+            "levels": 3
+          }
+        ],
+        "limiters": [
+          {
+            "id": "f7ca85e02f85295d",
+            "name": "Ammo",
+            "levels": 1
+          },
+          {
+            "id": "f78bb3a91774b0b2",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!ec99eafa2e278923"
+    },
+    {
+      "_id": "786bdd47c617fffb",
+      "name": "Armour",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 3,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [
+          {
+            "id": "4399d936ca59f3c5",
+            "name": "Localised",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!786bdd47c617fffb"
+    },
+    {
+      "_id": "0fce6153ea5d0686",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Tactical Comms"
+        ]
+      },
+      "_key": "!items!0fce6153ea5d0686"
+    },
+    {
+      "_id": "19444c051f468276",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!19444c051f468276"
+    },
+    {
+      "_id": "84e20b8a678650b8",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!84e20b8a678650b8"
+    },
+    {
+      "_id": "51ff8677ba67db7f",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!51ff8677ba67db7f"
+    }
+  ],
+  "_key": "!actors!fad299c3c4661fe6"
+}

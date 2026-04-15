@@ -1,0 +1,24 @@
+{
+  "_id": "c99578f25fb525c2",
+  "name": "Riot Shield, Ballistic",
+  "type": "attribute",
+  "system": {
+    "description": "A transparent polycarbonate shield with ballistic panels.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 7,
+    "isWeapon": false,
+    "enhancements": [
+      {
+        "id": "0207a281696fa7f7",
+        "name": "Potent",
+        "levels": 2
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!c99578f25fb525c2"
+}

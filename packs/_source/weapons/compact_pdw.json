@@ -1,0 +1,50 @@
+{
+  "_id": "2402d54619f5199e",
+  "name": "Compact PDW",
+  "type": "attribute",
+  "system": {
+    "description": "A personal defense weapon firing high-velocity rounds.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 7,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "40506574f79c2c6b",
+        "name": "Autofire",
+        "levels": 2
+      },
+      {
+        "id": "84313a27e7872965",
+        "name": "Penetrating",
+        "levels": 1
+      },
+      {
+        "id": "4fee3b42a230065e",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "9e122611d73ebc08",
+        "name": "Ammo",
+        "levels": 1
+      },
+      {
+        "id": "5bd1079142d6ec02",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!2402d54619f5199e"
+}

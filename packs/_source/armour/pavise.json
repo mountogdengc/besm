@@ -1,0 +1,24 @@
+{
+  "_id": "e3483b68ba739aea",
+  "name": "Pavise",
+  "type": "attribute",
+  "system": {
+    "description": "A freestanding tall shield providing cover.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 5,
+    "isWeapon": false,
+    "enhancements": [
+      {
+        "id": "bb55d2e58d34d01b",
+        "name": "Potent",
+        "levels": 1
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!e3483b68ba739aea"
+}

@@ -1,0 +1,159 @@
+{
+  "_id": "851f01c001a02290",
+  "name": "Cult Fanatic",
+  "type": "npc",
+  "system": {
+    "biography": "<p>A true believer in service to an occult power. Deploy in cells of 4-6.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 5,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 5,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "a76e9fa0d3e29252",
+      "name": "Ritual Talons",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": true
+        },
+        "enhancements": [
+          {
+            "id": "06d8e8e4d4800add",
+            "name": "Potent",
+            "levels": 1
+          }
+        ],
+        "limiters": [
+          {
+            "id": "27f84c0b9919a39d",
+            "name": "Non-Penetrating",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!a76e9fa0d3e29252"
+    },
+    {
+      "_id": "191c70a90e721e10",
+      "name": "Ritual Dart Launcher",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 2,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "837b8c3fba4ddb0e",
+            "name": "Range",
+            "levels": 2
+          }
+        ],
+        "limiters": [
+          {
+            "id": "fe2004129959ea32",
+            "name": "Ammo",
+            "levels": 3
+          },
+          {
+            "id": "94dc9e55630c047e",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!191c70a90e721e10"
+    },
+    {
+      "_id": "a594c5a9a4b9c708",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Cult Tattoos"
+        ]
+      },
+      "_key": "!items!a594c5a9a4b9c708"
+    },
+    {
+      "_id": "8422425b6ea8be7d",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!8422425b6ea8be7d"
+    },
+    {
+      "_id": "3be8d6d4496e9d10",
+      "name": "Owned",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!3be8d6d4496e9d10"
+    },
+    {
+      "_id": "144f2fa06da0b343",
+      "name": "Unique Defect",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!144f2fa06da0b343"
+    }
+  ],
+  "_key": "!actors!851f01c001a02290"
+}

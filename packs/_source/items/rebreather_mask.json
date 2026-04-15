@@ -1,0 +1,29 @@
+{
+  "_id": "38ffb3eea119642f",
+  "name": "Rebreather Mask",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "bundle",
+    "tradition": "",
+    "description": "A compact filtration mask that scrubs airborne toxins.",
+    "pointTotal": 0,
+    "sizeRank": null,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Resilient",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 1
+        }
+      }
+    ]
+  },
+  "_key": "!items!38ffb3eea119642f"
+}

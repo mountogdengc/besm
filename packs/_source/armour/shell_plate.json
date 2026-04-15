@@ -1,0 +1,18 @@
+{
+  "_id": "dc65ad0857d37c73",
+  "name": "Shell Plate",
+  "type": "attribute",
+  "system": {
+    "description": "Armor crafted from the carapace of giant creatures.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": false,
+    "enhancements": [],
+    "limiters": [],
+    "selectedOptions": [
+      "Armour"
+    ]
+  },
+  "_key": "!items!dc65ad0857d37c73"
+}

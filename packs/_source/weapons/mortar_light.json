@@ -1,0 +1,65 @@
+{
+  "_id": "7eb8d8efb17eb31b",
+  "name": "Mortar, Light",
+  "type": "attribute",
+  "system": {
+    "description": "A portable indirect-fire tube weapon.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 10,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "cdb1d8ae36ecf03d",
+        "name": "Area",
+        "levels": 1
+      },
+      {
+        "id": "3510513dcbb127f1",
+        "name": "Indirect",
+        "levels": 1
+      },
+      {
+        "id": "924cc3eeed912ed6",
+        "name": "Range",
+        "levels": 4
+      }
+    ],
+    "limiters": [
+      {
+        "id": "86300eb4dff90381",
+        "name": "Activation",
+        "levels": 2
+      },
+      {
+        "id": "6bd90b1161b4b951",
+        "name": "Assisted",
+        "levels": 1
+      },
+      {
+        "id": "b319e9f8a860d712",
+        "name": "Ammo",
+        "levels": 2
+      },
+      {
+        "id": "b669d6ae6cb69d6d",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "a7522817b8acd932",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!7eb8d8efb17eb31b"
+}

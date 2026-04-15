@@ -94,7 +94,7 @@
       >
         <option value="">— Select Actor —</option>
         {#each availableActors as a}
-          <option value={a.id}>{a.name} ({a.type})</option>
+          <option value={a.id}>{a.name} ({CONFIG.Actor.typeLabels?.[a.type] ?? a.type})</option>
         {/each}
       </select>
       <div class="flex gap-2">

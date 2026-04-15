@@ -1,0 +1,35 @@
+{
+  "_id": "706c020b3adb4cbd",
+  "name": "Razor Wire Gloves",
+  "type": "attribute",
+  "system": {
+    "description": "Tactical gloves with monofilament wire.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "58b4943c290c4e35",
+        "name": "Penetrating",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "501dc7d5b45d84a6",
+        "name": "Unreliable",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!706c020b3adb4cbd"
+}

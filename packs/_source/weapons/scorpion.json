@@ -1,0 +1,45 @@
+{
+  "_id": "8853f53f52279f8b",
+  "name": "Scorpion",
+  "type": "attribute",
+  "system": {
+    "description": "A smaller crew-served bolt thrower.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 6,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "3b513c62c8ef2c97",
+        "name": "Range",
+        "levels": 3
+      }
+    ],
+    "limiters": [
+      {
+        "id": "83a4a60f783dc0fd",
+        "name": "Activation",
+        "levels": 2
+      },
+      {
+        "id": "64b1c2f2e8be99c9",
+        "name": "Hands",
+        "levels": 1
+      },
+      {
+        "id": "aab17749f1432fe4",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!8853f53f52279f8b"
+}

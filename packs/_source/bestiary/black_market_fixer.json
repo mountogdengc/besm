@@ -1,0 +1,214 @@
+{
+  "_id": "15c9ea49a27ee359",
+  "name": "Black Market Fixer",
+  "type": "npc",
+  "system": {
+    "biography": "<p>The person you call when you need something that doesn't officially exist. Social encounter — combat is a failure state.</p>",
+    "genre": "",
+    "powerLevel": "",
+    "cpBase": 0,
+    "stats": {
+      "body": {
+        "value": 4,
+        "mode": "normal"
+      },
+      "mind": {
+        "value": 7,
+        "mode": "normal"
+      },
+      "soul": {
+        "value": 6,
+        "mode": "normal"
+      }
+    },
+    "derived": {
+      "currentHp": 0,
+      "currentEp": 0,
+      "currentSanity": 0,
+      "currentSocietyPoints": 0
+    },
+    "notes": ""
+  },
+  "items": [
+    {
+      "_id": "ef79de0df7d46c4a",
+      "name": "Pistol, Holdout",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 2,
+        "purchasedLevel": 4,
+        "isWeapon": true,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [
+          {
+            "id": "c9565df8961c79a2",
+            "name": "Range",
+            "levels": 2
+          }
+        ],
+        "limiters": [
+          {
+            "id": "1407bfdfc687333b",
+            "name": "Ammo",
+            "levels": 2
+          },
+          {
+            "id": "c47f2b6b0b761727",
+            "name": "Inaccurate",
+            "levels": 1
+          }
+        ],
+        "selectedOptions": []
+      },
+      "_key": "!items!ef79de0df7d46c4a"
+    },
+    {
+      "_id": "1eecd5be0fbe7cb9",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 3,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Contact Network"
+        ]
+      },
+      "_key": "!items!1eecd5be0fbe7cb9"
+    },
+    {
+      "_id": "e4465dfc4354746b",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Encrypted Comms"
+        ]
+      },
+      "_key": "!items!e4465dfc4354746b"
+    },
+    {
+      "_id": "694d16da419441b9",
+      "name": "Features",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": [
+          "Safe Houses"
+        ]
+      },
+      "_key": "!items!694d16da419441b9"
+    },
+    {
+      "_id": "c2cbce9e5ee77177",
+      "name": "Heightened Awareness",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!c2cbce9e5ee77177"
+    },
+    {
+      "_id": "7b47ad4ac31f7777",
+      "name": "Mind Shield",
+      "type": "attribute",
+      "system": {
+        "baseCostPerLevel": 1,
+        "purchasedLevel": 1,
+        "isWeapon": false,
+        "weaponOptions": {
+          "damage": "",
+          "range": "",
+          "accurate": 0,
+          "spreading": false,
+          "isMuscleAttack": false
+        },
+        "enhancements": [],
+        "limiters": [],
+        "selectedOptions": []
+      },
+      "_key": "!items!7b47ad4ac31f7777"
+    },
+    {
+      "_id": "b3fa1a2f9e57ece7",
+      "name": "Wanted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!b3fa1a2f9e57ece7"
+    },
+    {
+      "_id": "40dc3a3094503381",
+      "name": "Skeleton in the Closet",
+      "type": "defect",
+      "system": {
+        "rankLevel": 2,
+        "cpGranted": 2
+      },
+      "_key": "!items!40dc3a3094503381"
+    },
+    {
+      "_id": "14b7df0d3c269f7e",
+      "name": "Easily Distracted",
+      "type": "defect",
+      "system": {
+        "rankLevel": 1,
+        "cpGranted": 1
+      },
+      "_key": "!items!14b7df0d3c269f7e"
+    }
+  ],
+  "_key": "!actors!15c9ea49a27ee359"
+}

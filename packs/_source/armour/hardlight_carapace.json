@@ -1,0 +1,24 @@
+{
+  "_id": "a7436b1b58ea4e8c",
+  "name": "Hardlight Carapace",
+  "type": "attribute",
+  "system": {
+    "description": "Projected solid-light panels forming weightless armor.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 4,
+    "purchasedLevel": 5,
+    "isWeapon": false,
+    "enhancements": [
+      {
+        "id": "09b338b975ec67d7",
+        "name": "Regenerating",
+        "levels": 1
+      }
+    ],
+    "limiters": [],
+    "selectedOptions": [
+      "Force Field"
+    ]
+  },
+  "_key": "!items!a7436b1b58ea4e8c"
+}

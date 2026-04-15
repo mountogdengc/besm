@@ -1,0 +1,55 @@
+{
+  "_id": "22b7328de603adfb",
+  "name": "Flashfire Flask",
+  "type": "attribute",
+  "system": {
+    "description": "A thin-walled ceramic sphere filled with volatile alchemical accelerant.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": false
+    },
+    "enhancements": [
+      {
+        "id": "857c20bfc1c2c661",
+        "name": "Area",
+        "levels": 1
+      },
+      {
+        "id": "f132832407acfd87",
+        "name": "Continuing",
+        "levels": 2
+      },
+      {
+        "id": "87d293e785a29e2f",
+        "name": "Range",
+        "levels": 2
+      }
+    ],
+    "limiters": [
+      {
+        "id": "03ac015af661a9a4",
+        "name": "Activation",
+        "levels": 1
+      },
+      {
+        "id": "0413451ca5251ee3",
+        "name": "Ammo",
+        "levels": 4
+      },
+      {
+        "id": "f069dfea29233310",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!22b7328de603adfb"
+}

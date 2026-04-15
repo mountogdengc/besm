@@ -1,0 +1,35 @@
+{
+  "_id": "39f8b99b3bad2826",
+  "name": "Falx",
+  "type": "attribute",
+  "system": {
+    "description": "A curved sword designed to reach around shields.",
+    "source": "BESM4e",
+    "baseCostPerLevel": 2,
+    "purchasedLevel": 3,
+    "isWeapon": true,
+    "weaponOptions": {
+      "damage": "",
+      "range": "",
+      "accurate": 0,
+      "spreading": false,
+      "isMuscleAttack": true
+    },
+    "enhancements": [
+      {
+        "id": "c2a07d5b4840802c",
+        "name": "Penetrating",
+        "levels": 1
+      }
+    ],
+    "limiters": [
+      {
+        "id": "a28ab341a8794f6a",
+        "name": "Inaccurate",
+        "levels": 1
+      }
+    ],
+    "selectedOptions": []
+  },
+  "_key": "!items!39f8b99b3bad2826"
+}

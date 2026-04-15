@@ -1,0 +1,83 @@
+{
+  "_id": "9a927d2a13bda260",
+  "name": "Gigantic (Size Rank 4)",
+  "type": "besm4eTemplate",
+  "system": {
+    "templateType": "size",
+    "tradition": "",
+    "description": "",
+    "pointTotal": 40,
+    "sizeRank": 4,
+    "statModifiers": {
+      "body": 0,
+      "mind": 0,
+      "soul": 0
+    },
+    "entries": [
+      {
+        "entryType": "item",
+        "name": "Superstrength",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 4,
+          "purchasedLevel": 8
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Armour",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 2,
+          "purchasedLevel": 8
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Special Movement",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Unique Attribute",
+        "itemType": "attribute",
+        "systemData": {
+          "baseCostPerLevel": 1,
+          "purchasedLevel": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Big, Heavy, and Obvious",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 8
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Inept Attack: Ranged",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 4
+        }
+      },
+      {
+        "entryType": "item",
+        "name": "Inept Defence: Ranged",
+        "itemType": "defect",
+        "systemData": {
+          "rankLevel": 4,
+          "cpGranted": 4
+        }
+      }
+    ]
+  },
+  "_key": "!items!9a927d2a13bda260"
+}

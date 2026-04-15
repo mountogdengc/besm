@@ -32,6 +32,24 @@ export async function applyTemplate(template, actor, applying = new Set()) {
     await actor.createEmbeddedDocuments("Item", itemEntries);
   }
 
+  // Apply stat modifiers
+  const mods = template.system.statModifiers;
+  if (mods && (mods.body || mods.mind || mods.soul)) {
+    const updates = {};
+    if (mods.body && actor.system.stats.body.mode !== "missing") {
+      updates["system.stats.body.value"] = actor.system.stats.body.value + mods.body;
+    }
+    if (mods.mind && actor.system.stats.mind.mode !== "missing") {
+      updates["system.stats.mind.value"] = actor.system.stats.mind.value + mods.mind;
+    }
+    if (mods.soul && actor.system.stats.soul.mode !== "missing") {
+      updates["system.stats.soul.value"] = actor.system.stats.soul.value + mods.soul;
+    }
+    if (Object.keys(updates).length > 0) {
+      await actor.update(updates);
+    }
+  }
+
   const appliedTemplates = [...(actor.system.appliedTemplates ?? [])];
   appliedTemplates.push({
     id: template.id,
